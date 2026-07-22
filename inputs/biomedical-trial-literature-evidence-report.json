@@ -1,0 +1,16 @@
+{
+  "searchTerms": [
+    "GLP-1 obesity clinical trial"
+  ],
+  "fromDate": "2025",
+  "sort": "most_recent",
+  "maxResultsPerQuery": 5,
+  "maxArticles": 5,
+  "runMode": "audit",
+  "emitRawRows": true,
+  "generateReport": false,
+  "generateExport": false,
+  "emitUnchanged": false,
+  "maxChargeUsd": 0.5,
+  "dryRun": false
+}

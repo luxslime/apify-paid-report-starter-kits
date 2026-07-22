@@ -1,0 +1,21 @@
+{
+  "appleAppIds": [
+    "284882215"
+  ],
+  "appleCountries": [
+    "us"
+  ],
+  "googlePlayIds": [],
+  "reviewLimit": 5,
+  "lookbackDays": 60,
+  "releaseWindowDays": 21,
+  "runMode": "audit",
+  "initialRunMode": "emit_backfill",
+  "emitRawReviews": false,
+  "emitRawRows": true,
+  "generateReport": false,
+  "generateExport": false,
+  "emitUnchanged": false,
+  "maxChargeUsd": 0.5,
+  "dryRun": false
+}

@@ -1,0 +1,17 @@
+{
+  "packages": [
+    {
+      "name": "lodash",
+      "ecosystem": "npm",
+      "version": "4.17.20"
+    }
+  ],
+  "includeGitHub": false,
+  "initialRunMode": "emit_backfill",
+  "generateReport": false,
+  "emitRawRows": true,
+  "emitUnchanged": false,
+  "emitExport": false,
+  "maxChargeUsd": 0.5,
+  "dryRun": false
+}

@@ -1,0 +1,20 @@
+{
+  "urls": [
+    "https://example.com/"
+  ],
+  "aiCrawlerUserAgents": [
+    "GPTBot",
+    "ClaudeBot"
+  ],
+  "maxPages": 3,
+  "checkRobotsTxt": true,
+  "checkLlmsTxt": true,
+  "authorizedUseConfirmed": true,
+  "emitPageRows": true,
+  "generateReport": false,
+  "emitExport": false,
+  "emitUnchanged": false,
+  "initialRunMode": "emit_backfill",
+  "maxChargeUsd": 0.5,
+  "dryRun": false
+}

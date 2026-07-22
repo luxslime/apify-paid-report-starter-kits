@@ -1,0 +1,19 @@
+{
+  "rssFeedUrls": [
+    "https://feeds.npr.org/510289/podcast.xml"
+  ],
+  "showUrls": [],
+  "searchTerms": [],
+  "targetKeywords": [
+    "business",
+    "technology"
+  ],
+  "maxEpisodesPerFeed": 3,
+  "initialRunMode": "emit_backfill",
+  "generateReport": false,
+  "emitRawRows": true,
+  "emitShortlistExport": false,
+  "emitUnchanged": false,
+  "maxChargeUsd": 0.5,
+  "dryRun": false
+}
