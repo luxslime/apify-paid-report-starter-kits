@@ -16,10 +16,10 @@ These examples are intentionally **not dry runs**: they exercise the real public
 
 ## Use
 
-1. Open the Actor link.
-2. Paste the matching JSON from `inputs/`.
-3. Replace sample watch terms or URLs with your own authorized scope.
-4. Confirm the live Store pricing and run cap.
+1. Clone this repository and sign in with the [Apify CLI](https://docs.apify.com/cli).
+2. Replace sample watch terms or URLs with your own authorized scope.
+3. Confirm the live Store pricing and run cap.
+4. Run `apify actors call taroyamada/<actor-slug> --input-file inputs/<actor-slug>.json --output-dataset`.
 5. Enable the report/export option only after the entry result fits your workflow.
 
 ## Billing behavior
