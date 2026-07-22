@@ -1,0 +1,19 @@
+# Apify Paid Report Starter Kits
+
+Buyer-capped starter inputs for seven source-linked Apify report Actors. Starter runs are not dry runs, use public or authorized sources, and cap event charges at $1 or less.
+
+## Catalog
+
+- [Technical SEO & AI Crawler Audit](https://luxslime.github.io/apify-paid-report-starter-kits/technical-seo-portfolio-regression-report/): Find indexability and AI crawler access regressions across authorized sites. Sources: Public pages, robots.txt, sitemap.xml, and llms.txt.
+- [Apple Podcasts Category Benchmark](https://luxslime.github.io/apify-paid-report-starter-kits/podcast-category-network-benchmark-report/): Compare public show, category, publisher, and episode signals before a full benchmark. Sources: Apple Podcasts metadata and public RSS feeds.
+- [Clinical Trials & PubMed Evidence Gap Report](https://luxslime.github.io/apify-paid-report-starter-kits/biomedical-trial-literature-evidence-report/): Compare trial records and publications to surface source-linked evidence gaps. Sources: ClinicalTrials.gov and PubMed APIs.
+- [App Store Release & Review Benchmark](https://luxslime.github.io/apify-paid-report-starter-kits/app-release-category-review-benchmark-report/): Compare releases, ratings, and review samples around app release windows. Sources: Public Apple App Store and Google Play metadata.
+- [npm & PyPI Dependency Risk Report](https://luxslime.github.io/apify-paid-report-starter-kits/package-portfolio-upgrade-risk-report/): Check package versions and vulnerability evidence before a portfolio report. Sources: npm, PyPI, and OSV public APIs.
+- [CPSC & NHTSA Recall Portfolio Watch](https://luxslime.github.io/apify-paid-report-starter-kits/product-safety-market-action-portfolio-report/): Monitor official recall records across product and vehicle watchlists. Sources: CPSC and NHTSA public records.
+- [eCFR & Federal Register Change Report](https://luxslime.github.io/apify-paid-report-starter-kits/regulatory-obligation-change-impact-report/): Track source-linked CFR sections and Federal Register notices by watchlist. Sources: eCFR and Federal Register public APIs.
+
+## Usage and billing
+
+- Review live Apify Store pricing before a paid run.
+- Zero-row and unchanged monitor runs have zero event charge.
+- Outputs are research and workflow inputs, not legal, medical, investment, procurement, safety-certification, ranking, or business-outcome advice.
