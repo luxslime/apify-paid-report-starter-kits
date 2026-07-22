@@ -1,0 +1,91 @@
+[
+  {
+    "actorName": "podcast-category-network-benchmark-report",
+    "sourceName": "apple-podcasts-public-metadata-and-rss",
+    "rowType": "podcast_show_candidate",
+    "billingEventName": "podcast-show-benchmarked",
+    "stableKey": "podcast:sample-show:candidate",
+    "showTitle": "Sample Business Growth Podcast",
+    "publisher": "Sample Network",
+    "episodeCountScanned": 8,
+    "matchedKeywords": [
+      "business",
+      "marketing"
+    ],
+    "mediaBuyerFitScore": 72,
+    "sourceUrl": "https://feeds.example.org/sample-business-growth-podcast.xml",
+    "sourceMethod": "public_rss_or_show_page",
+    "authorizationBasis": "public_rss_or_show_page",
+    "retrievedAt": "2026-05-16T00:00:00.000Z",
+    "fetchedAt": "2026-05-16T00:00:00.000Z",
+    "warnings": [],
+    "limitations": [
+      "Rows are source-linked observations, not legal, investment, advertising, pricing, or compliance advice.",
+      "Uses only public, non-authenticated source access; no private account data or bypass technique is used."
+    ],
+    "prohibitedInterpretations": [
+      "Use sponsor evidence only for source-linked research; it does not create permission for solicitation."
+    ]
+  },
+  {
+    "actorName": "podcast-category-network-benchmark-report",
+    "sourceName": "apple-podcasts-public-metadata-and-rss",
+    "rowType": "podcast_fit_evidence",
+    "billingEventName": "podcast-network-signal",
+    "stableKey": "podcast:sample-show:fit-evidence",
+    "showTitle": "Sample Business Growth Podcast",
+    "publisher": "Sample Network",
+    "fitEvidence": [
+      {
+        "phrase": "business growth and marketing operations",
+        "matchedKeywords": [
+          "business",
+          "marketing"
+        ],
+        "evidenceType": "public_text"
+      }
+    ],
+    "matchedKeywords": [
+      "business",
+      "marketing"
+    ],
+    "mediaBuyerFitScore": 72,
+    "sourceUrl": "https://feeds.example.org/sample-business-growth-podcast.xml",
+    "sourceMethod": "public_rss_or_show_page",
+    "authorizationBasis": "public_rss_or_show_page",
+    "retrievedAt": "2026-05-16T00:00:00.000Z",
+    "fetchedAt": "2026-05-16T00:00:00.000Z",
+    "warnings": [],
+    "limitations": [
+      "Rows are source-linked observations, not legal, investment, advertising, pricing, or compliance advice.",
+      "Uses only public, non-authenticated source access; no private account data or bypass technique is used."
+    ],
+    "prohibitedInterpretations": [
+      "Use sponsor evidence only for source-linked research; it does not create permission for solicitation."
+    ]
+  },
+  {
+    "actorName": "podcast-category-network-benchmark-report",
+    "sourceName": "apple-podcasts-public-metadata-and-rss",
+    "rowType": "podcast_shortlist_export",
+    "billingEventName": "podcast-category-benchmark-report",
+    "stableKey": "podcast:sample-show:shortlist-export",
+    "candidateCount": 1,
+    "shows": [
+      "Sample Business Growth Podcast"
+    ],
+    "sourceUrl": "https://feeds.example.org/sample-business-growth-podcast.xml",
+    "sourceMethod": "public_rss_or_show_page",
+    "authorizationBasis": "public_rss_or_show_page",
+    "retrievedAt": "2026-05-16T00:00:00.000Z",
+    "fetchedAt": "2026-05-16T00:00:00.000Z",
+    "warnings": [],
+    "limitations": [
+      "Rows are source-linked observations, not legal, investment, advertising, pricing, or compliance advice.",
+      "Uses only public, non-authenticated source access; no private account data or bypass technique is used."
+    ],
+    "prohibitedInterpretations": [
+      "Use sponsor evidence only for source-linked research; it does not create permission for solicitation."
+    ]
+  }
+]

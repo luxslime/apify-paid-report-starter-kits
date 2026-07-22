@@ -1,0 +1,116 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Apple Podcasts Category Benchmark | Apify Starter Input</title><meta name="description" content="Compare public show, category, publisher, and episode signals before a full benchmark. Start with a buyer-controlled paid run capped at $0.50.">
+<link rel="canonical" href="https://luxslime.github.io/apify-paid-report-starter-kits/podcast-category-network-benchmark-report/"><link rel="stylesheet" href="../styles.css"><script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Apple Podcasts Category Benchmark","applicationCategory":"BusinessApplication","operatingSystem":"Web","url":"https://apify.com/taroyamada/podcast-category-network-benchmark-report","description":"Compare public show, category, publisher, and episode signals before a full benchmark. Sources: Apple Podcasts metadata and public RSS feeds."}</script></head>
+<body class="detail-page"><header class="detail-header"><div class="header-inner"><a class="back" href="../">All starter kits</a><p class="eyebrow">Media planning</p><h1>Apple Podcasts Category Benchmark</h1><p class="intro">Compare public show, category, publisher, and episode signals before a full benchmark.</p></div></header>
+<main><section class="detail-summary"><img src="../assets/podcast-category-network-benchmark-report.png" alt="" width="240" height="240"><div><p class="buyer">For Podcast networks and media planners</p><p><strong>Public sources:</strong> Apple Podcasts metadata and public RSS feeds</p><dl><div><dt>Starter cap</dt><dd>$0.50</dd></div><div><dt>Entry row</dt><dd>$0.008</dd></div><div><dt>Full report</dt><dd>$2.50</dd></div></dl><div class="actions"><a class="primary" href="https://apify.com/taroyamada/podcast-category-network-benchmark-report" rel="noopener">Open on Apify</a><a class="icon-link" href="https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/podcast-category-network-benchmark-report.json">View maintained JSON</a></div></div></section>
+<section class="code-section"><h2>Buyer-capped starter input</h2><p>This is a real paid source check, not a dry run. Report and export events remain disabled until you opt in.</p><pre><code>{
+  &quot;rssFeedUrls&quot;: [
+    &quot;https://feeds.npr.org/510289/podcast.xml&quot;
+  ],
+  &quot;showUrls&quot;: [],
+  &quot;searchTerms&quot;: [],
+  &quot;targetKeywords&quot;: [
+    &quot;business&quot;,
+    &quot;technology&quot;
+  ],
+  &quot;maxEpisodesPerFeed&quot;: 3,
+  &quot;initialRunMode&quot;: &quot;emit_backfill&quot;,
+  &quot;generateReport&quot;: false,
+  &quot;emitRawRows&quot;: true,
+  &quot;emitShortlistExport&quot;: false,
+  &quot;emitUnchanged&quot;: false,
+  &quot;maxChargeUsd&quot;: 0.5,
+  &quot;dryRun&quot;: false
+}</code></pre></section>
+<section class="code-section"><h2>Sample output</h2><p>Inspect the source-linked output shape before enabling the full report event.</p><pre><code>[
+  {
+    &quot;actorName&quot;: &quot;podcast-category-network-benchmark-report&quot;,
+    &quot;sourceName&quot;: &quot;apple-podcasts-public-metadata-and-rss&quot;,
+    &quot;rowType&quot;: &quot;podcast_show_candidate&quot;,
+    &quot;billingEventName&quot;: &quot;podcast-show-benchmarked&quot;,
+    &quot;stableKey&quot;: &quot;podcast:sample-show:candidate&quot;,
+    &quot;showTitle&quot;: &quot;Sample Business Growth Podcast&quot;,
+    &quot;publisher&quot;: &quot;Sample Network&quot;,
+    &quot;episodeCountScanned&quot;: 8,
+    &quot;matchedKeywords&quot;: [
+      &quot;business&quot;,
+      &quot;marketing&quot;
+    ],
+    &quot;mediaBuyerFitScore&quot;: 72,
+    &quot;sourceUrl&quot;: &quot;https://feeds.example.org/sample-business-growth-podcast.xml&quot;,
+    &quot;sourceMethod&quot;: &quot;public_rss_or_show_page&quot;,
+    &quot;authorizationBasis&quot;: &quot;public_rss_or_show_page&quot;,
+    &quot;retrievedAt&quot;: &quot;2026-05-16T00:00:00.000Z&quot;,
+    &quot;fetchedAt&quot;: &quot;2026-05-16T00:00:00.000Z&quot;,
+    &quot;warnings&quot;: [],
+    &quot;limitations&quot;: [
+      &quot;Rows are source-linked observations, not legal, investment, advertising, pricing, or compliance advice.&quot;,
+      &quot;Uses only public, non-authenticated source access; no private account data or bypass technique is used.&quot;
+    ],
+    &quot;prohibitedInterpretations&quot;: [
+      &quot;Use sponsor evidence only for source-linked research; it does not create permission for solicitation.&quot;
+    ]
+  },
+  {
+    &quot;actorName&quot;: &quot;podcast-category-network-benchmark-report&quot;,
+    &quot;sourceName&quot;: &quot;apple-podcasts-public-metadata-and-rss&quot;,
+    &quot;rowType&quot;: &quot;podcast_fit_evidence&quot;,
+    &quot;billingEventName&quot;: &quot;podcast-network-signal&quot;,
+    &quot;stableKey&quot;: &quot;podcast:sample-show:fit-evidence&quot;,
+    &quot;showTitle&quot;: &quot;Sample Business Growth Podcast&quot;,
+    &quot;publisher&quot;: &quot;Sample Network&quot;,
+    &quot;fitEvidence&quot;: [
+      {
+        &quot;phrase&quot;: &quot;business growth and marketing operations&quot;,
+        &quot;matchedKeywords&quot;: [
+          &quot;business&quot;,
+          &quot;marketing&quot;
+        ],
+        &quot;evidenceType&quot;: &quot;public_text&quot;
+      }
+    ],
+    &quot;matchedKeywords&quot;: [
+      &quot;business&quot;,
+      &quot;marketing&quot;
+    ],
+    &quot;mediaBuyerFitScore&quot;: 72,
+    &quot;sourceUrl&quot;: &quot;https://feeds.example.org/sample-business-growth-podcast.xml&quot;,
+    &quot;sourceMethod&quot;: &quot;public_rss_or_show_page&quot;,
+    &quot;authorizationBasis&quot;: &quot;public_rss_or_show_page&quot;,
+    &quot;retrievedAt&quot;: &quot;2026-05-16T00:00:00.000Z&quot;,
+    &quot;fetchedAt&quot;: &quot;2026-05-16T00:00:00.000Z&quot;,
+    &quot;warnings&quot;: [],
+    &quot;limitations&quot;: [
+      &quot;Rows are source-linked observations, not legal, investment, advertising, pricing, or compliance advice.&quot;,
+      &quot;Uses only public, non-authenticated source access; no private account data or bypass technique is used.&quot;
+    ],
+    &quot;prohibitedInterpretations&quot;: [
+      &quot;Use sponsor evidence only for source-linked research; it does not create permission for solicitation.&quot;
+    ]
+  },
+  {
+    &quot;actorName&quot;: &quot;podcast-category-network-benchmark-report&quot;,
+    &quot;sourceName&quot;: &quot;apple-podcasts-public-metadata-and-rss&quot;,
+    &quot;rowType&quot;: &quot;podcast_shortlist_export&quot;,
+    &quot;billingEventName&quot;: &quot;podcast-category-benchmark-report&quot;,
+    &quot;stableKey&quot;: &quot;podcast:sample-show:shortlist-export&quot;,
+    &quot;candidateCount&quot;: 1,
+    &quot;shows&quot;: [
+      &quot;Sample Business Growth Podcast&quot;
+    ],
+    &quot;sourceUrl&quot;: &quot;https://feeds.example.org/sample-business-growth-podcast.xml&quot;,
+    &quot;sourceMethod&quot;: &quot;public_rss_or_show_page&quot;,
+    &quot;authorizationBasis&quot;: &quot;public_rss_or_show_page&quot;,
+    &quot;retrievedAt&quot;: &quot;2026-05-16T00:00:00.000Z&quot;,
+    &quot;fetchedAt&quot;: &quot;2026-05-16T00:00:00.000Z&quot;,
+    &quot;warnings&quot;: [],
+    &quot;limitations&quot;: [
+      &quot;Rows are source-linked observations, not legal, investment, advertising, pricing, or compliance advice.&quot;,
+      &quot;Uses only public, non-authenticated source access; no private account data or bypass technique is used.&quot;
+    ],
+    &quot;prohibitedInterpretations&quot;: [
+      &quot;Use sponsor evidence only for source-linked research; it does not create permission for solicitation.&quot;
+    ]
+  }
+]</code></pre><a class="icon-link" href="sample-output.json">Open sample output JSON</a></section>
+<section class="how"><h2>Billing and use guardrails</h2><ul><li>No actor-start charge.</li><li>Zero-row and unchanged monitor runs have zero event charge.</li><li><code>maxChargeUsd</code> is checked before delivery.</li><li>Review the live Store pricing before every paid run.</li></ul><p>Outputs are source-linked research and workflow inputs, not legal, medical, investment, procurement, safety-certification, ranking, or business-outcome advice.</p></section></main><footer><a href="../">Compare all seven workflows</a><a href="https://github.com/luxslime/apify-paid-report-starter-kits">Source repository</a></footer></body></html>

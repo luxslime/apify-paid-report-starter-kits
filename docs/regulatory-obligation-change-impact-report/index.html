@@ -1,0 +1,54 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>eCFR &amp; Federal Register Change Report | Apify Starter Input</title><meta name="description" content="Track source-linked CFR sections and Federal Register notices by watchlist. Start with a buyer-controlled paid run capped at $1.00.">
+<link rel="canonical" href="https://luxslime.github.io/apify-paid-report-starter-kits/regulatory-obligation-change-impact-report/"><link rel="stylesheet" href="../styles.css"><script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"eCFR & Federal Register Change Report","applicationCategory":"BusinessApplication","operatingSystem":"Web","url":"https://apify.com/taroyamada/regulatory-obligation-change-impact-report","description":"Track source-linked CFR sections and Federal Register notices by watchlist. Sources: eCFR and Federal Register public APIs."}</script></head>
+<body class="detail-page"><header class="detail-header"><div class="header-inner"><a class="back" href="../">All starter kits</a><p class="eyebrow">Regulatory operations</p><h1>eCFR &amp; Federal Register Change Report</h1><p class="intro">Track source-linked CFR sections and Federal Register notices by watchlist.</p></div></header>
+<main><section class="detail-summary"><img src="../assets/regulatory-obligation-change-impact-report.png" alt="" width="240" height="240"><div><p class="buyer">For Compliance and regulatory operations</p><p><strong>Public sources:</strong> eCFR and Federal Register public APIs</p><dl><div><dt>Starter cap</dt><dd>$1.00</dd></div><div><dt>Entry row</dt><dd>$0.008</dd></div><div><dt>Full report</dt><dd>$12.00</dd></div></dl><div class="actions"><a class="primary" href="https://apify.com/taroyamada/regulatory-obligation-change-impact-report" rel="noopener">Open on Apify</a><a class="icon-link" href="https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/regulatory-obligation-change-impact-report.json">View maintained JSON</a></div></div></section>
+<section class="code-section"><h2>Buyer-capped starter input</h2><p>This is a real paid source check, not a dry run. Report and export events remain disabled until you opt in.</p><pre><code>{
+  &quot;watchlists&quot;: [
+    {
+      &quot;id&quot;: &quot;electronic-records&quot;,
+      &quot;cfrTitle&quot;: 21,
+      &quot;part&quot;: &quot;11&quot;,
+      &quot;keywords&quot;: [
+        &quot;electronic record&quot;
+      ]
+    }
+  ],
+  &quot;monitorKey&quot;: &quot;starter-electronic-records&quot;,
+  &quot;initialRunMode&quot;: &quot;emit_backfill&quot;,
+  &quot;generateReport&quot;: false,
+  &quot;emitRawRows&quot;: true,
+  &quot;emitUnchanged&quot;: false,
+  &quot;emitExport&quot;: false,
+  &quot;maxFederalRegisterDocuments&quot;: 5,
+  &quot;lookbackDays&quot;: 30,
+  &quot;maxChargeUsd&quot;: 1,
+  &quot;dryRun&quot;: false
+}</code></pre></section>
+<section class="code-section"><h2>Sample output</h2><p>Inspect the source-linked output shape before enabling the full report event.</p><pre><code>[
+  {
+    &quot;rowType&quot;: &quot;regulatory_impact_report&quot;,
+    &quot;billingEventName&quot;: &quot;regulatory-impact-report&quot;,
+    &quot;stableKey&quot;: &quot;regulatory-report:sample&quot;,
+    &quot;sourceUrls&quot;: [
+      &quot;https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-21?part=11&quot;,
+      &quot;https://www.federalregister.gov/api/v1/documents.json&quot;
+    ],
+    &quot;watchlistCount&quot;: 1,
+    &quot;changedWatchlistCount&quot;: 1,
+    &quot;legalEffectDetermined&quot;: false,
+    &quot;checkedAt&quot;: &quot;2026-07-18T00:00:00.000Z&quot;
+  },
+  {
+    &quot;rowType&quot;: &quot;obligation_impact_alert&quot;,
+    &quot;billingEventName&quot;: &quot;obligation-impact-alert&quot;,
+    &quot;stableKey&quot;: &quot;obligation-alert:electronic-records:sample&quot;,
+    &quot;watchlistId&quot;: &quot;electronic-records&quot;,
+    &quot;obligationId&quot;: &quot;electronic-records&quot;,
+    &quot;cfrCitation&quot;: &quot;21 CFR Part 11&quot;,
+    &quot;impactLevel&quot;: &quot;review_priority&quot;,
+    &quot;legalEffectDetermined&quot;: false,
+    &quot;checkedAt&quot;: &quot;2026-07-18T00:00:00.000Z&quot;
+  }
+]</code></pre><a class="icon-link" href="sample-output.json">Open sample output JSON</a></section>
+<section class="how"><h2>Billing and use guardrails</h2><ul><li>No actor-start charge.</li><li>Zero-row and unchanged monitor runs have zero event charge.</li><li><code>maxChargeUsd</code> is checked before delivery.</li><li>Review the live Store pricing before every paid run.</li></ul><p>Outputs are source-linked research and workflow inputs, not legal, medical, investment, procurement, safety-certification, ranking, or business-outcome advice.</p></section></main><footer><a href="../">Compare all seven workflows</a><a href="https://github.com/luxslime/apify-paid-report-starter-kits">Source repository</a></footer></body></html>

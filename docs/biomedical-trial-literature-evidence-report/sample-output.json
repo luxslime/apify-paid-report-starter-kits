@@ -1,0 +1,32 @@
+[
+  {
+    "actorName": "biomedical-trial-literature-evidence-report",
+    "rowType": "new_publication_alert",
+    "billingEventName": "evidence-gap-alert",
+    "stableKey": "alert:39763750",
+    "pmid": "39763750",
+    "title": "Example biomedical publication",
+    "publicationDate": "2026",
+    "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/39763750/",
+    "fetchedAt": "2026-07-15T00:00:00.000Z"
+  },
+  {
+    "actorName": "biomedical-trial-literature-evidence-report",
+    "rowType": "literature_update_report",
+    "billingEventName": "biomedical-evidence-report",
+    "stableKey": "report:sample",
+    "articleCount": 12,
+    "pmids": [
+      "39763750",
+      "39763800"
+    ],
+    "topJournals": [
+      {
+        "value": "Cancer Research",
+        "count": 3
+      }
+    ],
+    "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/",
+    "fetchedAt": "2026-07-15T00:00:00.000Z"
+  }
+]

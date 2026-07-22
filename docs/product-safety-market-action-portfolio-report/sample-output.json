@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "actorName": "product-safety-market-action-portfolio-report",
+    "officialSourceFamilies": [
+      "CPSC",
+      "NHTSA"
+    ],
+    "rowCount": 4
+  },
+  "rows": [
+    {
+      "rowType": "product_safety_portfolio_report",
+      "billingEventName": "product-safety-portfolio-report",
+      "stableKey": "product-safety-report-example",
+      "idempotencyKey": "product-safety-report-example",
+      "reportFirst": true,
+      "watchlistCount": 2,
+      "observedRecordCount": 3,
+      "changedRecordCount": 1,
+      "recallCount": 1,
+      "complaintCount": 0,
+      "sourceUrls": [
+        "https://www.saferproducts.gov/RestWebServices/Recall?format=json&ProductName=toy"
+      ]
+    },
+    {
+      "rowType": "safety_record",
+      "billingEventName": "safety-record-row",
+      "stableKey": "safety-record-example",
+      "idempotencyKey": "safety-record-example",
+      "agency": "CPSC",
+      "recordType": "recall",
+      "recordId": "SAMPLE-CPSC-0001",
+      "watchlistId": "children-products",
+      "title": "Illustrative CPSC public recall record",
+      "sources": [
+        {
+          "url": "https://www.saferproducts.gov/RestWebServices/Recall?format=json&ProductName=toy",
+          "official": true
+        }
+      ]
+    },
+    {
+      "rowType": "market_action_alert",
+      "billingEventName": "market-action-alert",
+      "stableKey": "market-action-alert-example",
+      "idempotencyKey": "market-action-alert-example",
+      "agency": "CPSC",
+      "recordType": "recall",
+      "recordId": "SAMPLE-CPSC-0001",
+      "alertReason": "new_or_changed_recall_record",
+      "recommendedAction": "Review the official agency record and internal response owner."
+    },
+    {
+      "rowType": "product_safety_export",
+      "billingEventName": "product-safety-export",
+      "stableKey": "product-safety-export-example",
+      "idempotencyKey": "product-safety-export-example",
+      "exportFormat": "dataset-json",
+      "exportedRowCount": 3
+    }
+  ],
+  "deliveryAudit": {
+    "deliveryStatus": "skipped",
+    "dryRun": true,
+    "rowCount": 4,
+    "chargedCountTotal": 0,
+    "chargedAmountUsd": 0,
+    "maxChargeUsd": 25,
+    "idempotency": {
+      "skippedIdempotencyKeys": [],
+      "deliveredIdempotencyKeys": []
+    }
+  }
+}

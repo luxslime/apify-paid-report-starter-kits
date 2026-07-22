@@ -1,0 +1,54 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Clinical Trials &amp; PubMed Evidence Gap Report | Apify Starter Input</title><meta name="description" content="Compare trial records and publications to surface source-linked evidence gaps. Start with a buyer-controlled paid run capped at $0.50.">
+<link rel="canonical" href="https://luxslime.github.io/apify-paid-report-starter-kits/biomedical-trial-literature-evidence-report/"><link rel="stylesheet" href="../styles.css"><script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Clinical Trials & PubMed Evidence Gap Report","applicationCategory":"BusinessApplication","operatingSystem":"Web","url":"https://apify.com/taroyamada/biomedical-trial-literature-evidence-report","description":"Compare trial records and publications to surface source-linked evidence gaps. Sources: ClinicalTrials.gov and PubMed APIs."}</script></head>
+<body class="detail-page"><header class="detail-header"><div class="header-inner"><a class="back" href="../">All starter kits</a><p class="eyebrow">Research operations</p><h1>Clinical Trials &amp; PubMed Evidence Gap Report</h1><p class="intro">Compare trial records and publications to surface source-linked evidence gaps.</p></div></header>
+<main><section class="detail-summary"><img src="../assets/biomedical-trial-literature-evidence-report.png" alt="" width="240" height="240"><div><p class="buyer">For Biomedical research and diligence teams</p><p><strong>Public sources:</strong> ClinicalTrials.gov and PubMed APIs</p><dl><div><dt>Starter cap</dt><dd>$0.50</dd></div><div><dt>Entry row</dt><dd>$0.008</dd></div><div><dt>Full report</dt><dd>$5.00</dd></div></dl><div class="actions"><a class="primary" href="https://apify.com/taroyamada/biomedical-trial-literature-evidence-report" rel="noopener">Open on Apify</a><a class="icon-link" href="https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/biomedical-trial-literature-evidence-report.json">View maintained JSON</a></div></div></section>
+<section class="code-section"><h2>Buyer-capped starter input</h2><p>This is a real paid source check, not a dry run. Report and export events remain disabled until you opt in.</p><pre><code>{
+  &quot;searchTerms&quot;: [
+    &quot;GLP-1 obesity clinical trial&quot;
+  ],
+  &quot;fromDate&quot;: &quot;2025&quot;,
+  &quot;sort&quot;: &quot;most_recent&quot;,
+  &quot;maxResultsPerQuery&quot;: 5,
+  &quot;maxArticles&quot;: 5,
+  &quot;runMode&quot;: &quot;audit&quot;,
+  &quot;emitRawRows&quot;: true,
+  &quot;generateReport&quot;: false,
+  &quot;generateExport&quot;: false,
+  &quot;emitUnchanged&quot;: false,
+  &quot;maxChargeUsd&quot;: 0.5,
+  &quot;dryRun&quot;: false
+}</code></pre></section>
+<section class="code-section"><h2>Sample output</h2><p>Inspect the source-linked output shape before enabling the full report event.</p><pre><code>[
+  {
+    &quot;actorName&quot;: &quot;biomedical-trial-literature-evidence-report&quot;,
+    &quot;rowType&quot;: &quot;new_publication_alert&quot;,
+    &quot;billingEventName&quot;: &quot;evidence-gap-alert&quot;,
+    &quot;stableKey&quot;: &quot;alert:39763750&quot;,
+    &quot;pmid&quot;: &quot;39763750&quot;,
+    &quot;title&quot;: &quot;Example biomedical publication&quot;,
+    &quot;publicationDate&quot;: &quot;2026&quot;,
+    &quot;sourceUrl&quot;: &quot;https://pubmed.ncbi.nlm.nih.gov/39763750/&quot;,
+    &quot;fetchedAt&quot;: &quot;2026-07-15T00:00:00.000Z&quot;
+  },
+  {
+    &quot;actorName&quot;: &quot;biomedical-trial-literature-evidence-report&quot;,
+    &quot;rowType&quot;: &quot;literature_update_report&quot;,
+    &quot;billingEventName&quot;: &quot;biomedical-evidence-report&quot;,
+    &quot;stableKey&quot;: &quot;report:sample&quot;,
+    &quot;articleCount&quot;: 12,
+    &quot;pmids&quot;: [
+      &quot;39763750&quot;,
+      &quot;39763800&quot;
+    ],
+    &quot;topJournals&quot;: [
+      {
+        &quot;value&quot;: &quot;Cancer Research&quot;,
+        &quot;count&quot;: 3
+      }
+    ],
+    &quot;sourceUrl&quot;: &quot;https://pubmed.ncbi.nlm.nih.gov/&quot;,
+    &quot;fetchedAt&quot;: &quot;2026-07-15T00:00:00.000Z&quot;
+  }
+]</code></pre><a class="icon-link" href="sample-output.json">Open sample output JSON</a></section>
+<section class="how"><h2>Billing and use guardrails</h2><ul><li>No actor-start charge.</li><li>Zero-row and unchanged monitor runs have zero event charge.</li><li><code>maxChargeUsd</code> is checked before delivery.</li><li>Review the live Store pricing before every paid run.</li></ul><p>Outputs are source-linked research and workflow inputs, not legal, medical, investment, procurement, safety-certification, ranking, or business-outcome advice.</p></section></main><footer><a href="../">Compare all seven workflows</a><a href="https://github.com/luxslime/apify-paid-report-starter-kits">Source repository</a></footer></body></html>

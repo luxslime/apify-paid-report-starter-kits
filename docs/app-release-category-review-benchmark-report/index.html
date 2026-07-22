@@ -1,0 +1,56 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>App Store Release &amp; Review Benchmark | Apify Starter Input</title><meta name="description" content="Compare releases, ratings, and review samples around app release windows. Start with a buyer-controlled paid run capped at $0.50.">
+<link rel="canonical" href="https://luxslime.github.io/apify-paid-report-starter-kits/app-release-category-review-benchmark-report/"><link rel="stylesheet" href="../styles.css"><script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"App Store Release & Review Benchmark","applicationCategory":"BusinessApplication","operatingSystem":"Web","url":"https://apify.com/taroyamada/app-release-category-review-benchmark-report","description":"Compare releases, ratings, and review samples around app release windows. Sources: Public Apple App Store and Google Play metadata."}</script></head>
+<body class="detail-page"><header class="detail-header"><div class="header-inner"><a class="back" href="../">All starter kits</a><p class="eyebrow">Product intelligence</p><h1>App Store Release &amp; Review Benchmark</h1><p class="intro">Compare releases, ratings, and review samples around app release windows.</p></div></header>
+<main><section class="detail-summary"><img src="../assets/app-release-category-review-benchmark-report.png" alt="" width="240" height="240"><div><p class="buyer">For Mobile product and ASO teams</p><p><strong>Public sources:</strong> Public Apple App Store and Google Play metadata</p><dl><div><dt>Starter cap</dt><dd>$0.50</dd></div><div><dt>Entry row</dt><dd>$0.015</dd></div><div><dt>Full report</dt><dd>$3.00</dd></div></dl><div class="actions"><a class="primary" href="https://apify.com/taroyamada/app-release-category-review-benchmark-report" rel="noopener">Open on Apify</a><a class="icon-link" href="https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/app-release-category-review-benchmark-report.json">View maintained JSON</a></div></div></section>
+<section class="code-section"><h2>Buyer-capped starter input</h2><p>This is a real paid source check, not a dry run. Report and export events remain disabled until you opt in.</p><pre><code>{
+  &quot;appleAppIds&quot;: [
+    &quot;284882215&quot;
+  ],
+  &quot;appleCountries&quot;: [
+    &quot;us&quot;
+  ],
+  &quot;googlePlayIds&quot;: [],
+  &quot;reviewLimit&quot;: 5,
+  &quot;lookbackDays&quot;: 60,
+  &quot;releaseWindowDays&quot;: 21,
+  &quot;runMode&quot;: &quot;audit&quot;,
+  &quot;initialRunMode&quot;: &quot;emit_backfill&quot;,
+  &quot;emitRawReviews&quot;: false,
+  &quot;emitRawRows&quot;: true,
+  &quot;generateReport&quot;: false,
+  &quot;generateExport&quot;: false,
+  &quot;emitUnchanged&quot;: false,
+  &quot;maxChargeUsd&quot;: 0.5,
+  &quot;dryRun&quot;: false
+}</code></pre></section>
+<section class="code-section"><h2>Sample output</h2><p>Inspect the source-linked output shape before enabling the full report event.</p><pre><code>[
+  {
+    &quot;actorName&quot;: &quot;app-release-category-review-benchmark-report&quot;,
+    &quot;rowType&quot;: &quot;app_review_regression_alert&quot;,
+    &quot;billingEventName&quot;: &quot;app-review-regression&quot;,
+    &quot;stableKey&quot;: &quot;alert:app-store:us:284882215:sample&quot;,
+    &quot;productKey&quot;: &quot;app-store:us:284882215&quot;,
+    &quot;productName&quot;: &quot;Sample App&quot;,
+    &quot;status&quot;: &quot;urgent&quot;,
+    &quot;summary&quot;: &quot;A likely post-release review regression was detected.&quot;,
+    &quot;sourceUrl&quot;: &quot;https://apps.apple.com/us/app/id284882215&quot;,
+    &quot;fetchedAt&quot;: &quot;2026-07-15T00:00:00.000Z&quot;
+  },
+  {
+    &quot;actorName&quot;: &quot;app-release-category-review-benchmark-report&quot;,
+    &quot;rowType&quot;: &quot;app_release_review_report&quot;,
+    &quot;billingEventName&quot;: &quot;app-category-benchmark-report&quot;,
+    &quot;stableKey&quot;: &quot;report:app-store:us:284882215:sample&quot;,
+    &quot;productKey&quot;: &quot;app-store:us:284882215&quot;,
+    &quot;productName&quot;: &quot;Sample App&quot;,
+    &quot;status&quot;: &quot;urgent&quot;,
+    &quot;reviewsAnalyzed&quot;: 30,
+    &quot;recommendedActions&quot;: [
+      &quot;Inspect crash complaints introduced after the latest release.&quot;
+    ],
+    &quot;sourceUrl&quot;: &quot;https://apps.apple.com/us/app/id284882215&quot;,
+    &quot;fetchedAt&quot;: &quot;2026-07-15T00:00:00.000Z&quot;
+  }
+]</code></pre><a class="icon-link" href="sample-output.json">Open sample output JSON</a></section>
+<section class="how"><h2>Billing and use guardrails</h2><ul><li>No actor-start charge.</li><li>Zero-row and unchanged monitor runs have zero event charge.</li><li><code>maxChargeUsd</code> is checked before delivery.</li><li>Review the live Store pricing before every paid run.</li></ul><p>Outputs are source-linked research and workflow inputs, not legal, medical, investment, procurement, safety-certification, ranking, or business-outcome advice.</p></section></main><footer><a href="../">Compare all seven workflows</a><a href="https://github.com/luxslime/apify-paid-report-starter-kits">Source repository</a></footer></body></html>

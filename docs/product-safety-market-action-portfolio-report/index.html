@@ -1,0 +1,101 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CPSC &amp; NHTSA Recall Portfolio Watch | Apify Starter Input</title><meta name="description" content="Monitor official recall records across product and vehicle watchlists. Start with a buyer-controlled paid run capped at $1.00.">
+<link rel="canonical" href="https://luxslime.github.io/apify-paid-report-starter-kits/product-safety-market-action-portfolio-report/"><link rel="stylesheet" href="../styles.css"><script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"CPSC & NHTSA Recall Portfolio Watch","applicationCategory":"BusinessApplication","operatingSystem":"Web","url":"https://apify.com/taroyamada/product-safety-market-action-portfolio-report","description":"Monitor official recall records across product and vehicle watchlists. Sources: CPSC and NHTSA public records."}</script></head>
+<body class="detail-page"><header class="detail-header"><div class="header-inner"><a class="back" href="../">All starter kits</a><p class="eyebrow">Safety operations</p><h1>CPSC &amp; NHTSA Recall Portfolio Watch</h1><p class="intro">Monitor official recall records across product and vehicle watchlists.</p></div></header>
+<main><section class="detail-summary"><img src="../assets/product-safety-market-action-portfolio-report.png" alt="" width="240" height="240"><div><p class="buyer">For Product safety and marketplace operations</p><p><strong>Public sources:</strong> CPSC and NHTSA public records</p><dl><div><dt>Starter cap</dt><dd>$1.00</dd></div><div><dt>Entry row</dt><dd>$0.006</dd></div><div><dt>Full report</dt><dd>$8.00</dd></div></dl><div class="actions"><a class="primary" href="https://apify.com/taroyamada/product-safety-market-action-portfolio-report" rel="noopener">Open on Apify</a><a class="icon-link" href="https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/product-safety-market-action-portfolio-report.json">View maintained JSON</a></div></div></section>
+<section class="code-section"><h2>Buyer-capped starter input</h2><p>This is a real paid source check, not a dry run. Report and export events remain disabled until you opt in.</p><pre><code>{
+  &quot;watchlists&quot;: [
+    {
+      &quot;id&quot;: &quot;battery-recalls&quot;,
+      &quot;agency&quot;: &quot;CPSC&quot;,
+      &quot;productNames&quot;: [
+        &quot;battery&quot;
+      ],
+      &quot;lookbackDays&quot;: 30
+    }
+  ],
+  &quot;monitorKey&quot;: &quot;starter-battery-recalls&quot;,
+  &quot;initialRunMode&quot;: &quot;emit_backfill&quot;,
+  &quot;generateReport&quot;: false,
+  &quot;emitRawRows&quot;: true,
+  &quot;emitUnchanged&quot;: false,
+  &quot;emitExport&quot;: false,
+  &quot;maxChargeUsd&quot;: 1,
+  &quot;dryRun&quot;: false
+}</code></pre></section>
+<section class="code-section"><h2>Sample output</h2><p>Inspect the source-linked output shape before enabling the full report event.</p><pre><code>{
+  &quot;meta&quot;: {
+    &quot;actorName&quot;: &quot;product-safety-market-action-portfolio-report&quot;,
+    &quot;officialSourceFamilies&quot;: [
+      &quot;CPSC&quot;,
+      &quot;NHTSA&quot;
+    ],
+    &quot;rowCount&quot;: 4
+  },
+  &quot;rows&quot;: [
+    {
+      &quot;rowType&quot;: &quot;product_safety_portfolio_report&quot;,
+      &quot;billingEventName&quot;: &quot;product-safety-portfolio-report&quot;,
+      &quot;stableKey&quot;: &quot;product-safety-report-example&quot;,
+      &quot;idempotencyKey&quot;: &quot;product-safety-report-example&quot;,
+      &quot;reportFirst&quot;: true,
+      &quot;watchlistCount&quot;: 2,
+      &quot;observedRecordCount&quot;: 3,
+      &quot;changedRecordCount&quot;: 1,
+      &quot;recallCount&quot;: 1,
+      &quot;complaintCount&quot;: 0,
+      &quot;sourceUrls&quot;: [
+        &quot;https://www.saferproducts.gov/RestWebServices/Recall?format=json&amp;ProductName=toy&quot;
+      ]
+    },
+    {
+      &quot;rowType&quot;: &quot;safety_record&quot;,
+      &quot;billingEventName&quot;: &quot;safety-record-row&quot;,
+      &quot;stableKey&quot;: &quot;safety-record-example&quot;,
+      &quot;idempotencyKey&quot;: &quot;safety-record-example&quot;,
+      &quot;agency&quot;: &quot;CPSC&quot;,
+      &quot;recordType&quot;: &quot;recall&quot;,
+      &quot;recordId&quot;: &quot;SAMPLE-CPSC-0001&quot;,
+      &quot;watchlistId&quot;: &quot;children-products&quot;,
+      &quot;title&quot;: &quot;Illustrative CPSC public recall record&quot;,
+      &quot;sources&quot;: [
+        {
+          &quot;url&quot;: &quot;https://www.saferproducts.gov/RestWebServices/Recall?format=json&amp;ProductName=toy&quot;,
+          &quot;official&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;rowType&quot;: &quot;market_action_alert&quot;,
+      &quot;billingEventName&quot;: &quot;market-action-alert&quot;,
+      &quot;stableKey&quot;: &quot;market-action-alert-example&quot;,
+      &quot;idempotencyKey&quot;: &quot;market-action-alert-example&quot;,
+      &quot;agency&quot;: &quot;CPSC&quot;,
+      &quot;recordType&quot;: &quot;recall&quot;,
+      &quot;recordId&quot;: &quot;SAMPLE-CPSC-0001&quot;,
+      &quot;alertReason&quot;: &quot;new_or_changed_recall_record&quot;,
+      &quot;recommendedAction&quot;: &quot;Review the official agency record and internal response owner.&quot;
+    },
+    {
+      &quot;rowType&quot;: &quot;product_safety_export&quot;,
+      &quot;billingEventName&quot;: &quot;product-safety-export&quot;,
+      &quot;stableKey&quot;: &quot;product-safety-export-example&quot;,
+      &quot;idempotencyKey&quot;: &quot;product-safety-export-example&quot;,
+      &quot;exportFormat&quot;: &quot;dataset-json&quot;,
+      &quot;exportedRowCount&quot;: 3
+    }
+  ],
+  &quot;deliveryAudit&quot;: {
+    &quot;deliveryStatus&quot;: &quot;skipped&quot;,
+    &quot;dryRun&quot;: true,
+    &quot;rowCount&quot;: 4,
+    &quot;chargedCountTotal&quot;: 0,
+    &quot;chargedAmountUsd&quot;: 0,
+    &quot;maxChargeUsd&quot;: 25,
+    &quot;idempotency&quot;: {
+      &quot;skippedIdempotencyKeys&quot;: [],
+      &quot;deliveredIdempotencyKeys&quot;: []
+    }
+  }
+}</code></pre><a class="icon-link" href="sample-output.json">Open sample output JSON</a></section>
+<section class="how"><h2>Billing and use guardrails</h2><ul><li>No actor-start charge.</li><li>Zero-row and unchanged monitor runs have zero event charge.</li><li><code>maxChargeUsd</code> is checked before delivery.</li><li>Review the live Store pricing before every paid run.</li></ul><p>Outputs are source-linked research and workflow inputs, not legal, medical, investment, procurement, safety-certification, ranking, or business-outcome advice.</p></section></main><footer><a href="../">Compare all seven workflows</a><a href="https://github.com/luxslime/apify-paid-report-starter-kits">Source repository</a></footer></body></html>

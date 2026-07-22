@@ -1,0 +1,112 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>npm &amp; PyPI Dependency Risk Report | Apify Starter Input</title><meta name="description" content="Check package versions and vulnerability evidence before a portfolio report. Start with a buyer-controlled paid run capped at $0.50.">
+<link rel="canonical" href="https://luxslime.github.io/apify-paid-report-starter-kits/package-portfolio-upgrade-risk-report/"><link rel="stylesheet" href="../styles.css"><script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"npm & PyPI Dependency Risk Report","applicationCategory":"BusinessApplication","operatingSystem":"Web","url":"https://apify.com/taroyamada/package-portfolio-upgrade-risk-report","description":"Check package versions and vulnerability evidence before a portfolio report. Sources: npm, PyPI, and OSV public APIs."}</script></head>
+<body class="detail-page"><header class="detail-header"><div class="header-inner"><a class="back" href="../">All starter kits</a><p class="eyebrow">Engineering risk</p><h1>npm &amp; PyPI Dependency Risk Report</h1><p class="intro">Check package versions and vulnerability evidence before a portfolio report.</p></div></header>
+<main><section class="detail-summary"><img src="../assets/package-portfolio-upgrade-risk-report.png" alt="" width="240" height="240"><div><p class="buyer">For Platform engineering and security teams</p><p><strong>Public sources:</strong> npm, PyPI, and OSV public APIs</p><dl><div><dt>Starter cap</dt><dd>$0.50</dd></div><div><dt>Entry row</dt><dd>$0.010</dd></div><div><dt>Full report</dt><dd>$9.00</dd></div></dl><div class="actions"><a class="primary" href="https://apify.com/taroyamada/package-portfolio-upgrade-risk-report" rel="noopener">Open on Apify</a><a class="icon-link" href="https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/package-portfolio-upgrade-risk-report.json">View maintained JSON</a></div></div></section>
+<section class="code-section"><h2>Buyer-capped starter input</h2><p>This is a real paid source check, not a dry run. Report and export events remain disabled until you opt in.</p><pre><code>{
+  &quot;packages&quot;: [
+    {
+      &quot;name&quot;: &quot;lodash&quot;,
+      &quot;ecosystem&quot;: &quot;npm&quot;,
+      &quot;version&quot;: &quot;4.17.20&quot;
+    }
+  ],
+  &quot;includeGitHub&quot;: false,
+  &quot;initialRunMode&quot;: &quot;emit_backfill&quot;,
+  &quot;generateReport&quot;: false,
+  &quot;emitRawRows&quot;: true,
+  &quot;emitUnchanged&quot;: false,
+  &quot;emitExport&quot;: false,
+  &quot;maxChargeUsd&quot;: 0.5,
+  &quot;dryRun&quot;: false
+}</code></pre></section>
+<section class="code-section"><h2>Sample output</h2><p>Inspect the source-linked output shape before enabling the full report event.</p><pre><code>{
+  &quot;meta&quot;: {
+    &quot;actorName&quot;: &quot;package-portfolio-upgrade-risk-report&quot;,
+    &quot;officialSourceFamilies&quot;: [
+      &quot;npm&quot;,
+      &quot;PyPI&quot;,
+      &quot;OSV&quot;
+    ],
+    &quot;githubOptional&quot;: true,
+    &quot;rowCount&quot;: 3
+  },
+  &quot;rows&quot;: [
+    {
+      &quot;rowType&quot;: &quot;package_portfolio_risk_report&quot;,
+      &quot;billingEventName&quot;: &quot;package-portfolio-risk-report&quot;,
+      &quot;stableKey&quot;: &quot;package-report-sample-change&quot;,
+      &quot;idempotencyKey&quot;: &quot;package-report-sample-change&quot;,
+      &quot;reportFirst&quot;: true,
+      &quot;packageCount&quot;: 2,
+      &quot;changedPackageCount&quot;: 1,
+      &quot;highRiskPackageCount&quot;: 1,
+      &quot;advisoryCount&quot;: 1,
+      &quot;sourceUrls&quot;: [
+        &quot;https://registry.npmjs.org/lodash&quot;,
+        &quot;https://api.osv.dev/v1/query&quot;
+      ],
+      &quot;limitations&quot;: [
+        &quot;Illustrative sample; source observations are point-in-time.&quot;
+      ],
+      &quot;prohibitedInterpretations&quot;: [
+        &quot;Do not treat this as compatibility or exploitability proof.&quot;
+      ]
+    },
+    {
+      &quot;rowType&quot;: &quot;package_risk&quot;,
+      &quot;billingEventName&quot;: &quot;package-risk-row&quot;,
+      &quot;stableKey&quot;: &quot;package-risk-npm-lodash-sample&quot;,
+      &quot;idempotencyKey&quot;: &quot;package-risk-npm-lodash-sample&quot;,
+      &quot;packageName&quot;: &quot;lodash&quot;,
+      &quot;ecosystem&quot;: &quot;npm&quot;,
+      &quot;currentVersion&quot;: &quot;4.17.20&quot;,
+      &quot;latestVersion&quot;: &quot;4.17.21&quot;,
+      &quot;upgradeKind&quot;: &quot;patch&quot;,
+      &quot;riskLevel&quot;: &quot;high&quot;,
+      &quot;vulnerabilityCount&quot;: 1,
+      &quot;vulnerabilities&quot;: [
+        {
+          &quot;id&quot;: &quot;SAMPLE-OSV-ADVISORY&quot;,
+          &quot;severity&quot;: &quot;high&quot;,
+          &quot;summary&quot;: &quot;Illustrative dry-run advisory row; not live evidence.&quot;
+        }
+      ],
+      &quot;sources&quot;: [
+        {
+          &quot;source&quot;: &quot;npm-registry&quot;,
+          &quot;url&quot;: &quot;https://registry.npmjs.org/lodash&quot;,
+          &quot;official&quot;: true
+        },
+        {
+          &quot;source&quot;: &quot;osv&quot;,
+          &quot;url&quot;: &quot;https://api.osv.dev/v1/query&quot;,
+          &quot;official&quot;: true
+        }
+      ]
+    },
+    {
+      &quot;rowType&quot;: &quot;package_upgrade_risk_alert&quot;,
+      &quot;billingEventName&quot;: &quot;package-upgrade-risk-alert&quot;,
+      &quot;stableKey&quot;: &quot;package-alert-npm-lodash-sample&quot;,
+      &quot;idempotencyKey&quot;: &quot;package-alert-npm-lodash-sample&quot;,
+      &quot;packageName&quot;: &quot;lodash&quot;,
+      &quot;ecosystem&quot;: &quot;npm&quot;,
+      &quot;alertReason&quot;: &quot;known_vulnerability&quot;,
+      &quot;recommendedAction&quot;: &quot;Review OSV advisories and prioritize an upgrade or compensating control.&quot;
+    }
+  ],
+  &quot;deliveryAudit&quot;: {
+    &quot;deliveryStatus&quot;: &quot;skipped&quot;,
+    &quot;dryRun&quot;: true,
+    &quot;rowCount&quot;: 3,
+    &quot;chargedCountTotal&quot;: 0,
+    &quot;chargedAmountUsd&quot;: 0,
+    &quot;maxChargeUsd&quot;: 25,
+    &quot;idempotency&quot;: {
+      &quot;skippedIdempotencyKeys&quot;: [],
+      &quot;deliveredIdempotencyKeys&quot;: []
+    }
+  }
+}</code></pre><a class="icon-link" href="sample-output.json">Open sample output JSON</a></section>
+<section class="how"><h2>Billing and use guardrails</h2><ul><li>No actor-start charge.</li><li>Zero-row and unchanged monitor runs have zero event charge.</li><li><code>maxChargeUsd</code> is checked before delivery.</li><li>Review the live Store pricing before every paid run.</li></ul><p>Outputs are source-linked research and workflow inputs, not legal, medical, investment, procurement, safety-certification, ranking, or business-outcome advice.</p></section></main><footer><a href="../">Compare all seven workflows</a><a href="https://github.com/luxslime/apify-paid-report-starter-kits">Source repository</a></footer></body></html>

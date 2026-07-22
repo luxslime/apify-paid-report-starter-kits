@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "actorName": "package-portfolio-upgrade-risk-report",
+    "officialSourceFamilies": [
+      "npm",
+      "PyPI",
+      "OSV"
+    ],
+    "githubOptional": true,
+    "rowCount": 3
+  },
+  "rows": [
+    {
+      "rowType": "package_portfolio_risk_report",
+      "billingEventName": "package-portfolio-risk-report",
+      "stableKey": "package-report-sample-change",
+      "idempotencyKey": "package-report-sample-change",
+      "reportFirst": true,
+      "packageCount": 2,
+      "changedPackageCount": 1,
+      "highRiskPackageCount": 1,
+      "advisoryCount": 1,
+      "sourceUrls": [
+        "https://registry.npmjs.org/lodash",
+        "https://api.osv.dev/v1/query"
+      ],
+      "limitations": [
+        "Illustrative sample; source observations are point-in-time."
+      ],
+      "prohibitedInterpretations": [
+        "Do not treat this as compatibility or exploitability proof."
+      ]
+    },
+    {
+      "rowType": "package_risk",
+      "billingEventName": "package-risk-row",
+      "stableKey": "package-risk-npm-lodash-sample",
+      "idempotencyKey": "package-risk-npm-lodash-sample",
+      "packageName": "lodash",
+      "ecosystem": "npm",
+      "currentVersion": "4.17.20",
+      "latestVersion": "4.17.21",
+      "upgradeKind": "patch",
+      "riskLevel": "high",
+      "vulnerabilityCount": 1,
+      "vulnerabilities": [
+        {
+          "id": "SAMPLE-OSV-ADVISORY",
+          "severity": "high",
+          "summary": "Illustrative dry-run advisory row; not live evidence."
+        }
+      ],
+      "sources": [
+        {
+          "source": "npm-registry",
+          "url": "https://registry.npmjs.org/lodash",
+          "official": true
+        },
+        {
+          "source": "osv",
+          "url": "https://api.osv.dev/v1/query",
+          "official": true
+        }
+      ]
+    },
+    {
+      "rowType": "package_upgrade_risk_alert",
+      "billingEventName": "package-upgrade-risk-alert",
+      "stableKey": "package-alert-npm-lodash-sample",
+      "idempotencyKey": "package-alert-npm-lodash-sample",
+      "packageName": "lodash",
+      "ecosystem": "npm",
+      "alertReason": "known_vulnerability",
+      "recommendedAction": "Review OSV advisories and prioritize an upgrade or compensating control."
+    }
+  ],
+  "deliveryAudit": {
+    "deliveryStatus": "skipped",
+    "dryRun": true,
+    "rowCount": 3,
+    "chargedCountTotal": 0,
+    "chargedAmountUsd": 0,
+    "maxChargeUsd": 25,
+    "idempotency": {
+      "skippedIdempotencyKeys": [],
+      "deliveredIdempotencyKeys": []
+    }
+  }
+}

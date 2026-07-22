@@ -1,0 +1,26 @@
+[
+  {
+    "rowType": "regulatory_impact_report",
+    "billingEventName": "regulatory-impact-report",
+    "stableKey": "regulatory-report:sample",
+    "sourceUrls": [
+      "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-21?part=11",
+      "https://www.federalregister.gov/api/v1/documents.json"
+    ],
+    "watchlistCount": 1,
+    "changedWatchlistCount": 1,
+    "legalEffectDetermined": false,
+    "checkedAt": "2026-07-18T00:00:00.000Z"
+  },
+  {
+    "rowType": "obligation_impact_alert",
+    "billingEventName": "obligation-impact-alert",
+    "stableKey": "obligation-alert:electronic-records:sample",
+    "watchlistId": "electronic-records",
+    "obligationId": "electronic-records",
+    "cfrCitation": "21 CFR Part 11",
+    "impactLevel": "review_priority",
+    "legalEffectDetermined": false,
+    "checkedAt": "2026-07-18T00:00:00.000Z"
+  }
+]

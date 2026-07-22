@@ -1,0 +1,29 @@
+[
+  {
+    "actorName": "app-release-category-review-benchmark-report",
+    "rowType": "app_review_regression_alert",
+    "billingEventName": "app-review-regression",
+    "stableKey": "alert:app-store:us:284882215:sample",
+    "productKey": "app-store:us:284882215",
+    "productName": "Sample App",
+    "status": "urgent",
+    "summary": "A likely post-release review regression was detected.",
+    "sourceUrl": "https://apps.apple.com/us/app/id284882215",
+    "fetchedAt": "2026-07-15T00:00:00.000Z"
+  },
+  {
+    "actorName": "app-release-category-review-benchmark-report",
+    "rowType": "app_release_review_report",
+    "billingEventName": "app-category-benchmark-report",
+    "stableKey": "report:app-store:us:284882215:sample",
+    "productKey": "app-store:us:284882215",
+    "productName": "Sample App",
+    "status": "urgent",
+    "reviewsAnalyzed": 30,
+    "recommendedActions": [
+      "Inspect crash complaints introduced after the latest release."
+    ],
+    "sourceUrl": "https://apps.apple.com/us/app/id284882215",
+    "fetchedAt": "2026-07-15T00:00:00.000Z"
+  }
+]
