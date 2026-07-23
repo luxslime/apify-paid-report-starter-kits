@@ -4,6 +4,8 @@ Small, capped inputs for testing seven public-data and authorized-site Apify Act
 
 Six examples exercise the real public source and bill only delivered source and buyer-facing signal rows. The authorized-site SEO example remains a free safe demo until you confirm authorization and choose a paid output. Every input has `maxChargeUsd <= 1`. Full reports remain opt-in and use the prices shown on each Actor's live Apify Store page.
 
+[Download the stable v1.0.0 starter-kit release](https://github.com/luxslime/apify-paid-report-starter-kits/releases/tag/v1.0.0).
+
 | Actor | Expected starter outcome | Expected charge | Run cap | Starter input |
 | --- | --- | ---: | ---: | --- |
 | [Technical SEO & AI Crawler Audit](https://apify.com/taroyamada/technical-seo-portfolio-regression-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=technical-seo-portfolio-regression-report__github_readme) | Free authorization-safe demo | $0.000 | $0.00 | [starter](inputs/technical-seo-portfolio-regression-report.json) / [report](report-inputs/technical-seo-portfolio-regression-report.json) |
