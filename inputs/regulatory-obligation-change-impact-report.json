@@ -15,7 +15,7 @@
   "emitRawRows": true,
   "emitUnchanged": false,
   "emitExport": false,
-  "maxFederalRegisterDocuments": 5,
+  "maxFederalRegisterDocuments": 1,
   "lookbackDays": 30,
   "maxChargeUsd": 1,
   "dryRun": false
