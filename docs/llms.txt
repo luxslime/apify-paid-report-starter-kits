@@ -1,6 +1,6 @@
 # Apify Paid Report Starter Kits
 
-Buyer-capped starter inputs for seven source-linked Apify report Actors. Starter runs are not dry runs, use public or authorized sources, and cap event charges at $1 or less.
+Buyer-capped starter inputs for seven source-linked Apify report Actors. Six starters exercise public sources and deliver a buyer-facing signal; the authorized-site SEO starter is a free safe demo until the buyer confirms authorization. Every input caps event charges at $1 or less.
 
 ## Catalog
 
