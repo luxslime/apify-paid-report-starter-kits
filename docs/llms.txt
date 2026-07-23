@@ -12,6 +12,12 @@ Buyer-capped starter inputs for seven source-linked Apify report Actors. Six sta
 - [CPSC & NHTSA Recall Portfolio Watch](https://luxslime.github.io/apify-paid-report-starter-kits/product-safety-market-action-portfolio-report/): Monitor official recall records across product and vehicle watchlists. Sources: CPSC and NHTSA public records.
 - [eCFR & Federal Register Change Report](https://luxslime.github.io/apify-paid-report-starter-kits/regulatory-obligation-change-impact-report/): Track source-linked CFR sections and Federal Register notices by watchlist. Sources: eCFR and Federal Register public APIs.
 
+## Buyer workflows
+
+- [Podcast Media Planning Workflow](https://luxslime.github.io/apify-paid-report-starter-kits/bundles/podcast-media-planning/): Benchmark public podcast metadata first, then move from a category signal to a source-linked planning report.
+- [Research & Regulatory Evidence Workflow](https://luxslime.github.io/apify-paid-report-starter-kits/bundles/research-regulatory-evidence/): Use official public sources to triage evidence gaps, recall actions, and regulatory changes without treating the output as advice.
+- [Engineering & Product Operations Workflow](https://luxslime.github.io/apify-paid-report-starter-kits/bundles/engineering-product-operations/): Start with bounded audits for authorized sites, app reviews, and dependency risk before enabling portfolio reports.
+
 ## Usage and billing
 
 - Review live Apify Store pricing before a paid run.
