@@ -1,0 +1,21 @@
+{
+  "watchlists": [
+    {
+      "id": "battery-recalls",
+      "agency": "CPSC",
+      "productNames": [
+        "battery"
+      ],
+      "lookbackDays": 30
+    }
+  ],
+  "monitorKey": "starter-battery-recalls",
+  "initialRunMode": "emit_backfill",
+  "generateReport": true,
+  "emitRawRows": false,
+  "emitUnchanged": false,
+  "emitExport": false,
+  "maxChangedRecords": 3,
+  "maxChargeUsd": 9.5,
+  "dryRun": false
+}

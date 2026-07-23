@@ -1,0 +1,27 @@
+{
+  "searchTerms": [],
+  "watchlists": [
+    {
+      "id": "starter-study",
+      "nctIds": [
+        "NCT04280705"
+      ],
+      "maxStudies": 1
+    }
+  ],
+  "fromDate": "2025",
+  "sort": "most_recent",
+  "maxResultsPerQuery": 1,
+  "maxArticles": 1,
+  "maxStudiesPerWatchlist": 1,
+  "maxPagesPerWatchlist": 1,
+  "runMode": "monitor",
+  "monitorKey": "starter-nct04280705-v2",
+  "initialRunMode": "emit_backfill",
+  "emitRawRows": false,
+  "generateReport": true,
+  "generateExport": false,
+  "emitUnchanged": false,
+  "maxChargeUsd": 6.5,
+  "dryRun": false
+}

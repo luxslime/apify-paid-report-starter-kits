@@ -1,0 +1,20 @@
+{
+  "rssFeedUrls": [
+    "https://feeds.npr.org/510289/podcast.xml"
+  ],
+  "showUrls": [],
+  "searchTerms": [],
+  "targetKeywords": [
+    "economics",
+    "business",
+    "money"
+  ],
+  "maxEpisodesPerFeed": 3,
+  "initialRunMode": "emit_backfill",
+  "generateReport": true,
+  "emitRawRows": false,
+  "emitShortlistExport": false,
+  "emitUnchanged": false,
+  "maxChargeUsd": 4,
+  "dryRun": false
+}

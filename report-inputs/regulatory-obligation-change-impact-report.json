@@ -1,0 +1,22 @@
+{
+  "watchlists": [
+    {
+      "id": "electronic-records",
+      "cfrTitle": 21,
+      "part": "11",
+      "keywords": [
+        "electronic record"
+      ]
+    }
+  ],
+  "monitorKey": "starter-electronic-records",
+  "initialRunMode": "emit_backfill",
+  "generateReport": true,
+  "emitRawRows": false,
+  "emitUnchanged": false,
+  "emitExport": false,
+  "maxFederalRegisterDocuments": 1,
+  "lookbackDays": 30,
+  "maxChargeUsd": 13.5,
+  "dryRun": false
+}
