@@ -3,7 +3,7 @@
 <link rel="canonical" href="https://luxslime.github.io/apify-paid-report-starter-kits/regulatory-obligation-change-impact-report/"><link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="eCFR &amp; Federal Register Change Report"><meta property="og:description" content="Track source-linked CFR sections and Federal Register notices by watchlist."><meta property="og:type" content="website"><meta property="og:url" content="https://luxslime.github.io/apify-paid-report-starter-kits/regulatory-obligation-change-impact-report/"><meta property="og:image" content="https://luxslime.github.io/apify-paid-report-starter-kits/assets/regulatory-obligation-change-impact-report.png"><meta name="twitter:card" content="summary"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"eCFR & Federal Register Change Report","applicationCategory":"BusinessApplication","operatingSystem":"Web","url":"https://apify.com/taroyamada/regulatory-obligation-change-impact-report","description":"Track source-linked CFR sections and Federal Register notices by watchlist. Sources: eCFR and Federal Register public APIs."},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much can the starter run charge?","acceptedAnswer":{"@type":"Answer","text":"The maintained starter input caps total event charges at $1.00."}},{"@type":"Question","name":"Are zero-row runs charged?","acceptedAnswer":{"@type":"Answer","text":"No actor-start charge is configured, and a zero-row or unchanged monitor run has zero event charge."}},{"@type":"Question","name":"What are the data limitations?","acceptedAnswer":{"@type":"Answer","text":"Current eCFR text is informational and the report does not provide legal interpretation or compliance advice."}}]}]}</script></head>
 <body class="detail-page"><header class="detail-header"><div class="header-inner"><a class="back" href="../">All starter kits</a><p class="eyebrow">Regulatory operations</p><h1>eCFR &amp; Federal Register Change Report</h1><p class="intro">Track source-linked CFR sections and Federal Register notices by watchlist.</p></div></header>
-<main><section class="detail-summary"><img src="../assets/regulatory-obligation-change-impact-report.png" alt="" width="240" height="240"><div><p class="buyer">For Compliance and regulatory operations</p><p><strong>Public sources:</strong> eCFR and Federal Register public APIs</p><dl><div><dt>Starter cap</dt><dd>$1.00</dd></div><div><dt>Expected starter</dt><dd>$0.308</dd></div><div><dt>Full report</dt><dd>$12.00</dd></div></dl><p><strong>Starter outcome:</strong> regulatory-change-row + obligation-impact-alert</p><div class="actions"><a class="primary" href="https://apify.com/taroyamada/regulatory-obligation-change-impact-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=regulatory-obligation-change-impact-report__detail" rel="noopener">Open on Apify</a><a class="icon-link" href="https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/regulatory-obligation-change-impact-report.json">View maintained JSON</a></div></div></section>
+<main><section class="detail-summary"><img src="../assets/regulatory-obligation-change-impact-report.png" alt="" width="240" height="240"><div><p class="buyer">For Compliance and regulatory operations</p><p><strong>Public sources:</strong> eCFR and Federal Register public APIs</p><dl><div><dt>Starter cap</dt><dd>$1.00</dd></div><div><dt>Expected starter</dt><dd>$0.308</dd></div><div><dt>Full report</dt><dd>$12.00</dd></div></dl><p><strong>Starter outcome:</strong> regulatory-change-row + obligation-impact-alert</p><div class="actions"><a class="primary" href="https://apify.com/taroyamada/regulatory-obligation-change-impact-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=regulatory-obligation-change-impact-report__detail" rel="noopener">Open on Apify</a><a class="icon-link" href="https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/regulatory-obligation-change-impact-report.json">Starter JSON</a><a class="icon-link" href="https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/report-inputs/regulatory-obligation-change-impact-report.json">Full-report JSON</a></div></div></section>
 <section class="decision-section"><h2>Decisions this report supports</h2><ul><li>Identify changed CFR sections and matched Federal Register notices</li><li>Prioritize regulatory watchlists for human review</li><li>Export source-linked change evidence for an internal workflow</li></ul><p><strong>Data limitation:</strong> Current eCFR text is informational and the report does not provide legal interpretation or compliance advice.</p></section>
 <section class="code-section"><h2>Buyer-capped starter input</h2><p>The maintained starter is expected to deliver one `regulatory-change-row` event at $0.008 and one `obligation-impact-alert` event at $0.30 when the sample evidence still matches. The buyer-controlled cap remains $1.00.</p><pre><code>{
   &quot;watchlists&quot;: [
@@ -28,30 +28,175 @@
   &quot;dryRun&quot;: false
 }</code></pre></section>
 <section class="code-section"><h2>Run with the Apify CLI</h2><p>After cloning the starter repository and signing in with the Apify CLI, run the maintained capped input directly:</p><pre><code>apify actors call taroyamada/regulatory-obligation-change-impact-report --input-file inputs/regulatory-obligation-change-impact-report.json --output-dataset</code></pre></section>
-<section class="code-section"><h2>Sample output</h2><p>Inspect the source-linked output shape before enabling the full report event.</p><pre><code>[
+<section class="code-section"><h2>Verified starter output</h2><p>This output was captured from the qualifying Cloud starter run identified by the operational audit. It is runtime proof, not external buyer revenue.</p><pre><code>[
   {
-    &quot;rowType&quot;: &quot;regulatory_impact_report&quot;,
-    &quot;billingEventName&quot;: &quot;regulatory-impact-report&quot;,
-    &quot;stableKey&quot;: &quot;regulatory-report:sample&quot;,
-    &quot;sourceUrls&quot;: [
-      &quot;https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-21?part=11&quot;,
-      &quot;https://www.federalregister.gov/api/v1/documents.json&quot;
+    &quot;actorName&quot;: &quot;regulatory-obligation-change-impact-report&quot;,
+    &quot;actorTitle&quot;: &quot;Regulatory Obligation Change Impact Report&quot;,
+    &quot;sourceMethod&quot;: &quot;official_ecfr_and_federal_register_api_fetch&quot;,
+    &quot;authorizationBasis&quot;: &quot;public_official_source_data&quot;,
+    &quot;limitations&quot;: [
+      &quot;eCFR observations are a current editorial compilation and are not the official legal edition of the Code of Federal Regulations.&quot;,
+      &quot;Federal Register API results are source-linked publication metadata and are not a legal-effect or compliance determination.&quot;,
+      &quot;The impact level and review triggers are deterministic triage signals, not legal advice, regulatory interpretation, or an implementation plan.&quot;
     ],
-    &quot;watchlistCount&quot;: 1,
-    &quot;changedWatchlistCount&quot;: 1,
-    &quot;legalEffectDetermined&quot;: false,
-    &quot;checkedAt&quot;: &quot;2026-07-18T00:00:00.000Z&quot;
-  },
-  {
+    &quot;prohibitedInterpretations&quot;: [
+      &quot;Do not treat this output as legal advice, a legal opinion, or a substitute for qualified counsel.&quot;,
+      &quot;Do not treat a changed row or alert as proof of a legal obligation, breach, compliance status, effective date, or required business action.&quot;,
+      &quot;Do not imply endorsement, approval, sponsorship, or an official determination by eCFR, the Office of the Federal Register, or any agency.&quot;
+    ],
+    &quot;retrievedAt&quot;: &quot;2026-07-23T11:15:48.125Z&quot;,
+    &quot;fetchedAt&quot;: &quot;2026-07-23T11:15:48.125Z&quot;,
+    &quot;warnings&quot;: [],
     &quot;rowType&quot;: &quot;obligation_impact_alert&quot;,
     &quot;billingEventName&quot;: &quot;obligation-impact-alert&quot;,
-    &quot;stableKey&quot;: &quot;obligation-alert:electronic-records:sample&quot;,
+    &quot;stableKey&quot;: &quot;obligation-alert:electronic-records:699dda861b17934be76a&quot;,
+    &quot;idempotencyKey&quot;: &quot;obligation-alert:electronic-records:699dda861b17934be76a&quot;,
+    &quot;sourceName&quot;: &quot;ecfr-and-federal-register&quot;,
+    &quot;sourceUrls&quot;: [
+      &quot;https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-21?part=11&quot;,
+      &quot;https://www.ecfr.gov/api/versioner/v1/versions/title-21.json&quot;,
+      &quot;https://www.federalregister.gov/api/v1/documents.json?per_page=1&amp;order=newest&amp;conditions%5Bcfr%5D%5Btitle%5D=21&amp;conditions%5Bcfr%5D%5Bpart%5D=11&amp;conditions%5Bpublication_date%5D%5Bgte%5D=2026-06-23&quot;
+    ],
+    &quot;sources&quot;: [
+      {
+        &quot;source&quot;: &quot;ecfr-renderer&quot;,
+        &quot;url&quot;: &quot;https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-21?part=11&quot;,
+        &quot;official&quot;: true,
+        &quot;retrievedAt&quot;: &quot;2026-07-23T11:15:48.432Z&quot;
+      },
+      {
+        &quot;source&quot;: &quot;ecfr-versioner&quot;,
+        &quot;url&quot;: &quot;https://www.ecfr.gov/api/versioner/v1/versions/title-21.json&quot;,
+        &quot;official&quot;: true,
+        &quot;retrievedAt&quot;: &quot;2026-07-23T11:15:48.432Z&quot;
+      },
+      {
+        &quot;source&quot;: &quot;federal-register-api&quot;,
+        &quot;url&quot;: &quot;https://www.federalregister.gov/api/v1/documents.json?per_page=1&amp;order=newest&amp;conditions%5Bcfr%5D%5Btitle%5D=21&amp;conditions%5Bcfr%5D%5Bpart%5D=11&amp;conditions%5Bpublication_date%5D%5Bgte%5D=2026-06-23&quot;,
+        &quot;official&quot;: true,
+        &quot;retrievedAt&quot;: &quot;2026-07-23T11:15:48.432Z&quot;
+      }
+    ],
     &quot;watchlistId&quot;: &quot;electronic-records&quot;,
     &quot;obligationId&quot;: &quot;electronic-records&quot;,
+    &quot;obligationLabel&quot;: &quot;21 CFR Part 11&quot;,
     &quot;cfrCitation&quot;: &quot;21 CFR Part 11&quot;,
     &quot;impactLevel&quot;: &quot;review_priority&quot;,
+    &quot;alertReason&quot;: &quot;ecfr_content_or_version_changed+federal_register_observation_changed+watch_term_hit&quot;,
+    &quot;changeKinds&quot;: [
+      &quot;ecfr_content_or_version_changed&quot;,
+      &quot;federal_register_observation_changed&quot;,
+      &quot;watch_term_hit&quot;
+    ],
+    &quot;watchTermHits&quot;: [
+      &quot;electronic record&quot;
+    ],
+    &quot;federalRegisterDocumentCount&quot;: 0,
+    &quot;recommendedReviewAction&quot;: &quot;Assign an owner to review the linked eCFR text and Federal Register documents, then determine whether the change affects the monitored obligation.&quot;,
     &quot;legalEffectDetermined&quot;: false,
-    &quot;checkedAt&quot;: &quot;2026-07-18T00:00:00.000Z&quot;
+    &quot;checkedAt&quot;: &quot;2026-07-23T11:15:48.125Z&quot;
+  },
+  {
+    &quot;actorName&quot;: &quot;regulatory-obligation-change-impact-report&quot;,
+    &quot;actorTitle&quot;: &quot;Regulatory Obligation Change Impact Report&quot;,
+    &quot;sourceMethod&quot;: &quot;official_ecfr_and_federal_register_api_fetch&quot;,
+    &quot;authorizationBasis&quot;: &quot;public_official_source_data&quot;,
+    &quot;limitations&quot;: [
+      &quot;eCFR observations are a current editorial compilation and are not the official legal edition of the Code of Federal Regulations.&quot;,
+      &quot;Federal Register API results are source-linked publication metadata and are not a legal-effect or compliance determination.&quot;,
+      &quot;The impact level and review triggers are deterministic triage signals, not legal advice, regulatory interpretation, or an implementation plan.&quot;
+    ],
+    &quot;prohibitedInterpretations&quot;: [
+      &quot;Do not treat this output as legal advice, a legal opinion, or a substitute for qualified counsel.&quot;,
+      &quot;Do not treat a changed row or alert as proof of a legal obligation, breach, compliance status, effective date, or required business action.&quot;,
+      &quot;Do not imply endorsement, approval, sponsorship, or an official determination by eCFR, the Office of the Federal Register, or any agency.&quot;
+    ],
+    &quot;retrievedAt&quot;: &quot;2026-07-23T11:15:48.125Z&quot;,
+    &quot;fetchedAt&quot;: &quot;2026-07-23T11:15:48.125Z&quot;,
+    &quot;warnings&quot;: [],
+    &quot;rowType&quot;: &quot;regulatory_change_row&quot;,
+    &quot;billingEventName&quot;: &quot;regulatory-change-row&quot;,
+    &quot;stableKey&quot;: &quot;regulatory-change:electronic-records:699dda861b17934be76a&quot;,
+    &quot;idempotencyKey&quot;: &quot;regulatory-change:electronic-records:699dda861b17934be76a&quot;,
+    &quot;sourceName&quot;: &quot;ecfr-and-federal-register&quot;,
+    &quot;sourceUrls&quot;: [
+      &quot;https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-21?part=11&quot;,
+      &quot;https://www.ecfr.gov/api/versioner/v1/versions/title-21.json&quot;,
+      &quot;https://www.federalregister.gov/api/v1/documents.json?per_page=1&amp;order=newest&amp;conditions%5Bcfr%5D%5Btitle%5D=21&amp;conditions%5Bcfr%5D%5Bpart%5D=11&amp;conditions%5Bpublication_date%5D%5Bgte%5D=2026-06-23&quot;
+    ],
+    &quot;sources&quot;: [
+      {
+        &quot;source&quot;: &quot;ecfr-renderer&quot;,
+        &quot;url&quot;: &quot;https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-21?part=11&quot;,
+        &quot;official&quot;: true,
+        &quot;retrievedAt&quot;: &quot;2026-07-23T11:15:48.432Z&quot;
+      },
+      {
+        &quot;source&quot;: &quot;ecfr-versioner&quot;,
+        &quot;url&quot;: &quot;https://www.ecfr.gov/api/versioner/v1/versions/title-21.json&quot;,
+        &quot;official&quot;: true,
+        &quot;retrievedAt&quot;: &quot;2026-07-23T11:15:48.432Z&quot;
+      },
+      {
+        &quot;source&quot;: &quot;federal-register-api&quot;,
+        &quot;url&quot;: &quot;https://www.federalregister.gov/api/v1/documents.json?per_page=1&amp;order=newest&amp;conditions%5Bcfr%5D%5Btitle%5D=21&amp;conditions%5Bcfr%5D%5Bpart%5D=11&amp;conditions%5Bpublication_date%5D%5Bgte%5D=2026-06-23&quot;,
+        &quot;official&quot;: true,
+        &quot;retrievedAt&quot;: &quot;2026-07-23T11:15:48.432Z&quot;
+      }
+    ],
+    &quot;watchlistId&quot;: &quot;electronic-records&quot;,
+    &quot;obligationId&quot;: &quot;electronic-records&quot;,
+    &quot;obligationLabel&quot;: &quot;21 CFR Part 11&quot;,
+    &quot;cfrCitation&quot;: &quot;21 CFR Part 11&quot;,
+    &quot;changeKinds&quot;: [
+      &quot;ecfr_content_or_version_changed&quot;,
+      &quot;federal_register_observation_changed&quot;,
+      &quot;watch_term_hit&quot;
+    ],
+    &quot;ecfr&quot;: {
+      &quot;sourceUrl&quot;: &quot;https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-21?part=11&quot;,
+      &quot;versionsUrl&quot;: &quot;https://www.ecfr.gov/api/versioner/v1/versions/title-21.json&quot;,
+      &quot;citation&quot;: &quot;21 CFR Part 11&quot;,
+      &quot;currentAsOf&quot;: &quot;2026-07-20&quot;,
+      &quot;headings&quot;: [
+        &quot;PART 11—ELECTRONIC RECORDS; ELECTRONIC SIGNATURES&quot;,
+        &quot;Authority:&quot;,
+        &quot;Source:&quot;,
+        &quot;Subpart A—General Provisions&quot;,
+        &quot;§ 11.1 Scope.&quot;,
+        &quot;§ 11.2 Implementation.&quot;,
+        &quot;§ 11.3 Definitions.&quot;,
+        &quot;Subpart B—Electronic Records&quot;,
+        &quot;§ 11.10 Controls for closed systems.&quot;,
+        &quot;§ 11.30 Controls for open systems.&quot;,
+        &quot;§ 11.50 Signature manifestations.&quot;,
+        &quot;§ 11.70 Signature/record linking.&quot;,
+        &quot;Subpart C—Electronic Signatures&quot;,
+        &quot;§ 11.100 General requirements.&quot;,
+        &quot;§ 11.200 Electronic signature components and controls.&quot;,
+        &quot;§ 11.300 Controls for identification codes/passwords.&quot;
+      ],
+      &quot;textPreview&quot;: &quot;PART 11—ELECTRONIC RECORDS; ELECTRONIC SIGNATURES Authority: 21 U.S.C. 321-393 ; 42 U.S.C. 262 . Source: 62 FR 13464 , Mar. 20, 1997, unless otherwise noted. Subpart A—General Provisions § 11.1 Scope. ( a ) The regulations in this part set forth the criteria under which the agency considers electronic records, electronic signatures, and handwritten signatures executed to electronic records to be trustworthy, reliable, and generally equivalent to paper records and handwritten signatures executed on paper. ( b ) This part applies to records in electronic form that are created, modified, maintained, archived, retrieved, or transmitted, under any records requirements set forth in agency regulations. This part also applies to electronic records submitted to the agency under requirements of the Federal Food, Drug, and Cosmetic Act and the Public Health Service Act, even if such records are not specifically identified in agency regulations. However, this part does not apply to paper records that are, or have been, transmitted by electronic means. ( c ) Where electronic signatures and their associated electronic records meet the requirements of this part, the agency will consider the electronic signatures to be equivalent to full handwritten signatures, initials, and other general signings as required by agency regulations, unless specifically excepted by regulation(s) effective on or after August 20, 1997. ( d ) Electronic records that meet the requirements of this part may be used in lieu of paper records, in accordance with § 11.2 , unless paper records are specifically required. ( e ) Computer systems (including hardware and software), controls, and attendant documentation maintained under this part shall be readily available for, and subject to, FDA inspection. ( f ) This part does not apply to records required to be established or maintained by §§ 1.326 through 1.368 of this chapter . Records that satisfy the requirements of part 1, subpart J of this chapter , but that also are required under other applicable statutory provisions or regulations, remain subject to this part. ( g ) This part does not apply to electronic signatures obtained under § 101.11(d) of this chapter . ( h ) This part does not apply to electronic signatures obtained under § 101.8(d) of this chapter . ( i ) This part does not apply to records required to be established or maintained by part&quot;,
+      &quot;contentHash&quot;: &quot;739c3b605fa1f50434fe&quot;,
+      &quot;federalRegisterCitations&quot;: [
+        &quot;62 FR 13464&quot;,
+        &quot;69 FR 71655&quot;,
+        &quot;79 FR 71253&quot;,
+        &quot;80 FR 56144&quot;,
+        &quot;80 FR 74352&quot;,
+        &quot;81 FR 20170&quot;,
+        &quot;81 FR 34218&quot;,
+        &quot;86 FR 68830&quot;
+      ],
+      &quot;officialLegalEdition&quot;: false
+    },
+    &quot;federalRegisterDocuments&quot;: [],
+    &quot;federalRegisterDocumentCount&quot;: 0,
+    &quot;watchTermHits&quot;: [
+      &quot;electronic record&quot;
+    ],
+    &quot;rawObservation&quot;: true,
+    &quot;checkedAt&quot;: &quot;2026-07-23T11:15:48.125Z&quot;
   }
-]</code></pre><a class="icon-link" href="sample-output.json">Open sample output JSON</a></section>
+]</code></pre><a class="icon-link" href="sample-output.json">Open verified starter output JSON</a></section>
 <section class="how"><h2>Billing and use guardrails</h2><ul><li>No actor-start charge.</li><li>Zero-row and unchanged monitor runs have zero event charge.</li><li><code>maxChargeUsd</code> is checked before delivery.</li><li>Review the live Store pricing before every paid run.</li></ul><p>Outputs are source-linked research and workflow inputs, not legal, medical, investment, procurement, safety-certification, ranking, or business-outcome advice.</p></section></main><footer><a href="../">Compare all seven workflows</a><a href="https://github.com/luxslime/apify-paid-report-starter-kits">Source repository</a></footer></body></html>

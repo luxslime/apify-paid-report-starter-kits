@@ -1,75 +1,359 @@
-{
-  "meta": {
+[
+  {
     "actorName": "product-safety-market-action-portfolio-report",
-    "officialSourceFamilies": [
-      "CPSC",
-      "NHTSA"
+    "sourceMethod": "official_public_api_fetch",
+    "authorizationBasis": "official_public_cpsc_or_nhtsa_public_record",
+    "limitations": [
+      "CPSC and NHTSA records are point-in-time observations from official public APIs.",
+      "A source record or alert is a review signal, not an independent product-safety or defect determination.",
+      "Publication and update fields can be delayed, incomplete, or changed by the source agency."
     ],
-    "rowCount": 4
+    "prohibitedInterpretations": [
+      "Do not infer that a product, vehicle, or component is safe, unsafe, compliant, or defective beyond the source record wording.",
+      "Do not treat a complaint as proof of a defect, injury causation, or an agency finding.",
+      "Do not use this report as a substitute for the official recall notice or professional legal, safety, or regulatory review."
+    ],
+    "retrievedAt": "2026-07-23T11:15:41.893Z",
+    "fetchedAt": "2026-07-23T11:15:41.893Z",
+    "warnings": [],
+    "rowType": "safety_record",
+    "billingEventName": "safety-record-row",
+    "stableKey": "safety-record:battery-recalls:CPSC:recall:26610:60ab8b8ce84ce8a4",
+    "idempotencyKey": "safety-record:battery-recalls:CPSC:recall:26610:60ab8b8ce84ce8a4",
+    "sourceName": "cpsc-recall-api",
+    "sourceUrls": [
+      "https://www.saferproducts.gov/RestWebServices/Recall?format=json&ProductName=battery",
+      "https://www.cpsc.gov/Recalls/2026/Flaunt-Recalls-Magsafe-Battery-Chargers-Due-to-Risk-of-Serious-Injury-or-Death-from-Fire-and-Burn-Hazards"
+    ],
+    "sources": [
+      {
+        "source": "cpsc-recall-api",
+        "url": "https://www.saferproducts.gov/RestWebServices/Recall?format=json&ProductName=battery",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:15:41.968Z"
+      },
+      {
+        "source": "cpsc-record",
+        "url": "https://www.cpsc.gov/Recalls/2026/Flaunt-Recalls-Magsafe-Battery-Chargers-Due-to-Risk-of-Serious-Injury-or-Death-from-Fire-and-Burn-Hazards",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:15:41.968Z"
+      }
+    ],
+    "watchlistId": "battery-recalls",
+    "agency": "CPSC",
+    "recordType": "recall",
+    "recordId": "26610",
+    "title": "Flaunt Recalls Magsafe Battery Chargers Due to Risk of Serious Injury or Death from Fire and Burn Hazards",
+    "description": "This recall involves the Flaunt MagSafe Battery Charger power banks with model number E33A. \"FLAUNT\" is engraved on the front right side of the power bank and there is a small circular button in the bottom center of the front side of the power bank. The back label of the unit is marked \"FLAUNT\" and \"Model: E33A\". The power banks were sold in melon, black, lavender and white. The chargers measure 3 by 2 by 0.25 inches and weigh around 3.2 ounces.",
+    "publicationDate": "2026-07-09T00:00:00",
+    "lastUpdated": "2026-07-10T00:00:00",
+    "productName": null,
+    "manufacturer": null,
+    "category": null,
+    "unitsAffected": null,
+    "make": null,
+    "model": null,
+    "modelYear": null,
+    "component": null,
+    "injuries": [
+      "The firm has received five reports of the power banks overheating and catching fire, including one report of a burn to a consumer's hand, one report of a burn to a consumer's arm and four reports of minor property damage."
+    ],
+    "crashes": null,
+    "watchTermHits": [
+      "battery"
+    ],
+    "contentFingerprint": "60ab8b8ce84ce8a4",
+    "checkedAt": "2026-07-23T11:15:41.893Z"
   },
-  "rows": [
-    {
-      "rowType": "product_safety_portfolio_report",
-      "billingEventName": "product-safety-portfolio-report",
-      "stableKey": "product-safety-report-example",
-      "idempotencyKey": "product-safety-report-example",
-      "reportFirst": true,
-      "watchlistCount": 2,
-      "observedRecordCount": 3,
-      "changedRecordCount": 1,
-      "recallCount": 1,
-      "complaintCount": 0,
-      "sourceUrls": [
-        "https://www.saferproducts.gov/RestWebServices/Recall?format=json&ProductName=toy"
-      ]
-    },
-    {
-      "rowType": "safety_record",
-      "billingEventName": "safety-record-row",
-      "stableKey": "safety-record-example",
-      "idempotencyKey": "safety-record-example",
-      "agency": "CPSC",
-      "recordType": "recall",
-      "recordId": "SAMPLE-CPSC-0001",
-      "watchlistId": "children-products",
-      "title": "Illustrative CPSC public recall record",
-      "sources": [
-        {
-          "url": "https://www.saferproducts.gov/RestWebServices/Recall?format=json&ProductName=toy",
-          "official": true
-        }
-      ]
-    },
-    {
-      "rowType": "market_action_alert",
-      "billingEventName": "market-action-alert",
-      "stableKey": "market-action-alert-example",
-      "idempotencyKey": "market-action-alert-example",
-      "agency": "CPSC",
-      "recordType": "recall",
-      "recordId": "SAMPLE-CPSC-0001",
-      "alertReason": "new_or_changed_recall_record",
-      "recommendedAction": "Review the official agency record and internal response owner."
-    },
-    {
-      "rowType": "product_safety_export",
-      "billingEventName": "product-safety-export",
-      "stableKey": "product-safety-export-example",
-      "idempotencyKey": "product-safety-export-example",
-      "exportFormat": "dataset-json",
-      "exportedRowCount": 3
-    }
-  ],
-  "deliveryAudit": {
-    "deliveryStatus": "skipped",
-    "dryRun": true,
-    "rowCount": 4,
-    "chargedCountTotal": 0,
-    "chargedAmountUsd": 0,
-    "maxChargeUsd": 25,
-    "idempotency": {
-      "skippedIdempotencyKeys": [],
-      "deliveredIdempotencyKeys": []
-    }
+  {
+    "actorName": "product-safety-market-action-portfolio-report",
+    "sourceMethod": "official_public_api_fetch",
+    "authorizationBasis": "official_public_cpsc_or_nhtsa_public_record",
+    "limitations": [
+      "CPSC and NHTSA records are point-in-time observations from official public APIs.",
+      "A source record or alert is a review signal, not an independent product-safety or defect determination.",
+      "Publication and update fields can be delayed, incomplete, or changed by the source agency."
+    ],
+    "prohibitedInterpretations": [
+      "Do not infer that a product, vehicle, or component is safe, unsafe, compliant, or defective beyond the source record wording.",
+      "Do not treat a complaint as proof of a defect, injury causation, or an agency finding.",
+      "Do not use this report as a substitute for the official recall notice or professional legal, safety, or regulatory review."
+    ],
+    "retrievedAt": "2026-07-23T11:15:41.893Z",
+    "fetchedAt": "2026-07-23T11:15:41.893Z",
+    "warnings": [],
+    "rowType": "safety_record",
+    "billingEventName": "safety-record-row",
+    "stableKey": "safety-record:battery-recalls:CPSC:recall:26595:d0cab472c4f5f017",
+    "idempotencyKey": "safety-record:battery-recalls:CPSC:recall:26595:d0cab472c4f5f017",
+    "sourceName": "cpsc-recall-api",
+    "sourceUrls": [
+      "https://www.saferproducts.gov/RestWebServices/Recall?format=json&ProductName=battery",
+      "https://www.cpsc.gov/Recalls/2026/Rowenta-Recalls-Cordless-Vacuum-Cleaners-Due-to-Risk-of-Serious-Injury-from-fire-and-Burn-Hazards"
+    ],
+    "sources": [
+      {
+        "source": "cpsc-recall-api",
+        "url": "https://www.saferproducts.gov/RestWebServices/Recall?format=json&ProductName=battery",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:15:41.968Z"
+      },
+      {
+        "source": "cpsc-record",
+        "url": "https://www.cpsc.gov/Recalls/2026/Rowenta-Recalls-Cordless-Vacuum-Cleaners-Due-to-Risk-of-Serious-Injury-from-fire-and-Burn-Hazards",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:15:41.968Z"
+      }
+    ],
+    "watchlistId": "battery-recalls",
+    "agency": "CPSC",
+    "recordType": "recall",
+    "recordId": "26595",
+    "title": "Rowenta Recalls Cordless Vacuum Cleaners Due to Risk of Serious Injury from Fire and Burn Hazards",
+    "description": "This recall involves cordless vacuum cleaners with a recalled lithium-ion battery that is housed in the handle of the device. The vacuum is sold in red, black and silver. There are two models, X-Force Flex 14.60 Animal, model number RH99A2U1 and X-Force Flex 15.60 Animal, model number RH99F2U1. The Versatile X-Force's lithium-ion battery model number is ZR0097U2 with a date code that begins with either 23 or 24. The batteries were sold separately or with the vacuum cleaners.",
+    "publicationDate": "2026-07-02T00:00:00",
+    "lastUpdated": "2026-07-03T00:00:00",
+    "productName": null,
+    "manufacturer": null,
+    "category": null,
+    "unitsAffected": null,
+    "make": null,
+    "model": null,
+    "modelYear": null,
+    "component": null,
+    "injuries": [
+      "The firm has received two reports of the lithium-ion battery overheating or not charging and an additional 65 reports globally. No injuries have been reported."
+    ],
+    "crashes": null,
+    "watchTermHits": [
+      "battery"
+    ],
+    "contentFingerprint": "d0cab472c4f5f017",
+    "checkedAt": "2026-07-23T11:15:41.893Z"
+  },
+  {
+    "actorName": "product-safety-market-action-portfolio-report",
+    "sourceMethod": "official_public_api_fetch",
+    "authorizationBasis": "official_public_cpsc_or_nhtsa_public_record",
+    "limitations": [
+      "CPSC and NHTSA records are point-in-time observations from official public APIs.",
+      "A source record or alert is a review signal, not an independent product-safety or defect determination.",
+      "Publication and update fields can be delayed, incomplete, or changed by the source agency."
+    ],
+    "prohibitedInterpretations": [
+      "Do not infer that a product, vehicle, or component is safe, unsafe, compliant, or defective beyond the source record wording.",
+      "Do not treat a complaint as proof of a defect, injury causation, or an agency finding.",
+      "Do not use this report as a substitute for the official recall notice or professional legal, safety, or regulatory review."
+    ],
+    "retrievedAt": "2026-07-23T11:15:41.893Z",
+    "fetchedAt": "2026-07-23T11:15:41.893Z",
+    "warnings": [],
+    "rowType": "safety_record",
+    "billingEventName": "safety-record-row",
+    "stableKey": "safety-record:battery-recalls:CPSC:recall:26465:50e929800e172efd",
+    "idempotencyKey": "safety-record:battery-recalls:CPSC:recall:26465:50e929800e172efd",
+    "sourceName": "cpsc-recall-api",
+    "sourceUrls": [
+      "https://www.saferproducts.gov/RestWebServices/Recall?format=json&ProductName=battery",
+      "https://www.cpsc.gov/Recalls/2026/EEMB-USA-Recalls-Battery-Pouches-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Federal-Statute-for-Child-Resistant-Packaging-of-Coin-Batteries"
+    ],
+    "sources": [
+      {
+        "source": "cpsc-recall-api",
+        "url": "https://www.saferproducts.gov/RestWebServices/Recall?format=json&ProductName=battery",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:15:41.968Z"
+      },
+      {
+        "source": "cpsc-record",
+        "url": "https://www.cpsc.gov/Recalls/2026/EEMB-USA-Recalls-Battery-Pouches-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Federal-Statute-for-Child-Resistant-Packaging-of-Coin-Batteries",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:15:41.968Z"
+      }
+    ],
+    "watchlistId": "battery-recalls",
+    "agency": "CPSC",
+    "recordType": "recall",
+    "recordId": "26465",
+    "title": "EEMB USA Recalls Battery Pouches Due to Risk of Serious Injury or Death from Battery Ingestion; Violate Federal Statute for Child-Resistant Packaging of Coin Batteries",
+    "description": "This recall involves EEMB lithium batteries in individual pouches, models include: CR2025, CR2032, CR2450, CR2477, CR2016, CR1220, CR1225, CR1616, CR1620, CR1632 and CR2025-10. The lithium coin batteries come in a five, ten or twenty size pack. \"EEMB\" and the battery type is printed on the face of the coin battery. The white pouch has \"EEMB\" printed in the upper left corner.",
+    "publicationDate": "2026-05-07T00:00:00",
+    "lastUpdated": "2026-05-07T00:00:00",
+    "productName": null,
+    "manufacturer": null,
+    "category": null,
+    "unitsAffected": null,
+    "make": null,
+    "model": null,
+    "modelYear": null,
+    "component": null,
+    "injuries": [
+      "None reported"
+    ],
+    "crashes": null,
+    "watchTermHits": [
+      "battery"
+    ],
+    "contentFingerprint": "50e929800e172efd",
+    "checkedAt": "2026-07-23T11:15:41.893Z"
+  },
+  {
+    "actorName": "product-safety-market-action-portfolio-report",
+    "sourceMethod": "official_public_api_fetch",
+    "authorizationBasis": "official_public_cpsc_or_nhtsa_public_record",
+    "limitations": [
+      "CPSC and NHTSA records are point-in-time observations from official public APIs.",
+      "A source record or alert is a review signal, not an independent product-safety or defect determination.",
+      "Publication and update fields can be delayed, incomplete, or changed by the source agency."
+    ],
+    "prohibitedInterpretations": [
+      "Do not infer that a product, vehicle, or component is safe, unsafe, compliant, or defective beyond the source record wording.",
+      "Do not treat a complaint as proof of a defect, injury causation, or an agency finding.",
+      "Do not use this report as a substitute for the official recall notice or professional legal, safety, or regulatory review."
+    ],
+    "retrievedAt": "2026-07-23T11:15:41.893Z",
+    "fetchedAt": "2026-07-23T11:15:41.893Z",
+    "warnings": [],
+    "rowType": "market_action_alert",
+    "billingEventName": "market-action-alert",
+    "stableKey": "market-action-alert:battery-recalls:CPSC:recall:26610:60ab8b8ce84ce8a4",
+    "idempotencyKey": "market-action-alert:battery-recalls:CPSC:recall:26610:60ab8b8ce84ce8a4",
+    "sourceName": "cpsc-recall-api",
+    "sourceUrls": [
+      "https://www.saferproducts.gov/RestWebServices/Recall?format=json&ProductName=battery",
+      "https://www.cpsc.gov/Recalls/2026/Flaunt-Recalls-Magsafe-Battery-Chargers-Due-to-Risk-of-Serious-Injury-or-Death-from-Fire-and-Burn-Hazards"
+    ],
+    "sources": [
+      {
+        "source": "cpsc-recall-api",
+        "url": "https://www.saferproducts.gov/RestWebServices/Recall?format=json&ProductName=battery",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:15:41.968Z"
+      },
+      {
+        "source": "cpsc-record",
+        "url": "https://www.cpsc.gov/Recalls/2026/Flaunt-Recalls-Magsafe-Battery-Chargers-Due-to-Risk-of-Serious-Injury-or-Death-from-Fire-and-Burn-Hazards",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:15:41.968Z"
+      }
+    ],
+    "watchlistId": "battery-recalls",
+    "agency": "CPSC",
+    "recordType": "recall",
+    "recordId": "26610",
+    "title": "Flaunt Recalls Magsafe Battery Chargers Due to Risk of Serious Injury or Death from Fire and Burn Hazards",
+    "alertReason": "new_or_changed_recall_record",
+    "signalOnly": false,
+    "watchTermHits": [
+      "battery"
+    ],
+    "recommendedAction": "Review the official agency record, affected scope, remedy information, and internal response owner.",
+    "checkedAt": "2026-07-23T11:15:41.893Z"
+  },
+  {
+    "actorName": "product-safety-market-action-portfolio-report",
+    "sourceMethod": "official_public_api_fetch",
+    "authorizationBasis": "official_public_cpsc_or_nhtsa_public_record",
+    "limitations": [
+      "CPSC and NHTSA records are point-in-time observations from official public APIs.",
+      "A source record or alert is a review signal, not an independent product-safety or defect determination.",
+      "Publication and update fields can be delayed, incomplete, or changed by the source agency."
+    ],
+    "prohibitedInterpretations": [
+      "Do not infer that a product, vehicle, or component is safe, unsafe, compliant, or defective beyond the source record wording.",
+      "Do not treat a complaint as proof of a defect, injury causation, or an agency finding.",
+      "Do not use this report as a substitute for the official recall notice or professional legal, safety, or regulatory review."
+    ],
+    "retrievedAt": "2026-07-23T11:15:41.893Z",
+    "fetchedAt": "2026-07-23T11:15:41.893Z",
+    "warnings": [],
+    "rowType": "market_action_alert",
+    "billingEventName": "market-action-alert",
+    "stableKey": "market-action-alert:battery-recalls:CPSC:recall:26595:d0cab472c4f5f017",
+    "idempotencyKey": "market-action-alert:battery-recalls:CPSC:recall:26595:d0cab472c4f5f017",
+    "sourceName": "cpsc-recall-api",
+    "sourceUrls": [
+      "https://www.saferproducts.gov/RestWebServices/Recall?format=json&ProductName=battery",
+      "https://www.cpsc.gov/Recalls/2026/Rowenta-Recalls-Cordless-Vacuum-Cleaners-Due-to-Risk-of-Serious-Injury-from-fire-and-Burn-Hazards"
+    ],
+    "sources": [
+      {
+        "source": "cpsc-recall-api",
+        "url": "https://www.saferproducts.gov/RestWebServices/Recall?format=json&ProductName=battery",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:15:41.968Z"
+      },
+      {
+        "source": "cpsc-record",
+        "url": "https://www.cpsc.gov/Recalls/2026/Rowenta-Recalls-Cordless-Vacuum-Cleaners-Due-to-Risk-of-Serious-Injury-from-fire-and-Burn-Hazards",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:15:41.968Z"
+      }
+    ],
+    "watchlistId": "battery-recalls",
+    "agency": "CPSC",
+    "recordType": "recall",
+    "recordId": "26595",
+    "title": "Rowenta Recalls Cordless Vacuum Cleaners Due to Risk of Serious Injury from Fire and Burn Hazards",
+    "alertReason": "new_or_changed_recall_record",
+    "signalOnly": false,
+    "watchTermHits": [
+      "battery"
+    ],
+    "recommendedAction": "Review the official agency record, affected scope, remedy information, and internal response owner.",
+    "checkedAt": "2026-07-23T11:15:41.893Z"
+  },
+  {
+    "actorName": "product-safety-market-action-portfolio-report",
+    "sourceMethod": "official_public_api_fetch",
+    "authorizationBasis": "official_public_cpsc_or_nhtsa_public_record",
+    "limitations": [
+      "CPSC and NHTSA records are point-in-time observations from official public APIs.",
+      "A source record or alert is a review signal, not an independent product-safety or defect determination.",
+      "Publication and update fields can be delayed, incomplete, or changed by the source agency."
+    ],
+    "prohibitedInterpretations": [
+      "Do not infer that a product, vehicle, or component is safe, unsafe, compliant, or defective beyond the source record wording.",
+      "Do not treat a complaint as proof of a defect, injury causation, or an agency finding.",
+      "Do not use this report as a substitute for the official recall notice or professional legal, safety, or regulatory review."
+    ],
+    "retrievedAt": "2026-07-23T11:15:41.893Z",
+    "fetchedAt": "2026-07-23T11:15:41.893Z",
+    "warnings": [],
+    "rowType": "market_action_alert",
+    "billingEventName": "market-action-alert",
+    "stableKey": "market-action-alert:battery-recalls:CPSC:recall:26465:50e929800e172efd",
+    "idempotencyKey": "market-action-alert:battery-recalls:CPSC:recall:26465:50e929800e172efd",
+    "sourceName": "cpsc-recall-api",
+    "sourceUrls": [
+      "https://www.saferproducts.gov/RestWebServices/Recall?format=json&ProductName=battery",
+      "https://www.cpsc.gov/Recalls/2026/EEMB-USA-Recalls-Battery-Pouches-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Federal-Statute-for-Child-Resistant-Packaging-of-Coin-Batteries"
+    ],
+    "sources": [
+      {
+        "source": "cpsc-recall-api",
+        "url": "https://www.saferproducts.gov/RestWebServices/Recall?format=json&ProductName=battery",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:15:41.968Z"
+      },
+      {
+        "source": "cpsc-record",
+        "url": "https://www.cpsc.gov/Recalls/2026/EEMB-USA-Recalls-Battery-Pouches-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Federal-Statute-for-Child-Resistant-Packaging-of-Coin-Batteries",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:15:41.968Z"
+      }
+    ],
+    "watchlistId": "battery-recalls",
+    "agency": "CPSC",
+    "recordType": "recall",
+    "recordId": "26465",
+    "title": "EEMB USA Recalls Battery Pouches Due to Risk of Serious Injury or Death from Battery Ingestion; Violate Federal Statute for Child-Resistant Packaging of Coin Batteries",
+    "alertReason": "new_or_changed_recall_record",
+    "signalOnly": false,
+    "watchTermHits": [
+      "battery"
+    ],
+    "recommendedAction": "Review the official agency record, affected scope, remedy information, and internal response owner.",
+    "checkedAt": "2026-07-23T11:15:41.893Z"
   }
-}
+]

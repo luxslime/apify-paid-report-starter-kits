@@ -1,32 +1,96 @@
 [
   {
     "actorName": "biomedical-trial-literature-evidence-report",
-    "rowType": "new_publication_alert",
-    "billingEventName": "evidence-gap-alert",
-    "stableKey": "alert:39763750",
-    "pmid": "39763750",
-    "title": "Example biomedical publication",
-    "publicationDate": "2026",
-    "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/39763750/",
-    "fetchedAt": "2026-07-15T00:00:00.000Z"
+    "sourceName": "NCBI PubMed E-utilities",
+    "sourceMethod": "ClinicalTrials.gov API v2",
+    "authorizationBasis": "public_ncbi_eutilities",
+    "limitations": [
+      "Metadata comes from NCBI ESearch and ESummary JSON; this Actor does not reproduce article full text or abstracts.",
+      "A saved-query alert means a PMID newly observed by this monitor, not a clinical, medical, or causal conclusion.",
+      "Very recent records can be incomplete or updated later by NCBI."
+    ],
+    "prohibitedInterpretations": [
+      "No medical advice.",
+      "No causal or clinical efficacy claim.",
+      "No reproduction of article full text."
+    ],
+    "warnings": [],
+    "retrievedAt": "2026-07-23T12:04:07.107Z",
+    "fetchedAt": "2026-07-23T12:04:07.107Z",
+    "rowType": "clinical_trial_evidence",
+    "billingEventName": "biomedical-evidence-row",
+    "stableKey": "trial:NCT04280705:88292245869c694b8308b24d7ca38a109442776f7231ab1c6a03abe7063b4e8d",
+    "sourceUrl": "https://clinicaltrials.gov/study/NCT04280705",
+    "nctId": "NCT04280705",
+    "briefTitle": "Adaptive COVID-19 Treatment Trial (ACTT)",
+    "officialTitle": "A Multicenter, Adaptive, Randomized Blinded Controlled Trial of the Safety and Efficacy of Investigational Therapeutics for the Treatment of COVID-19 in Hospitalized Adults",
+    "acronym": "",
+    "overallStatus": "COMPLETED",
+    "statusVerifiedDate": "",
+    "lastUpdatePostDate": "2022-03-14",
+    "studyFirstPostDate": "2020-02-21",
+    "resultsFirstPostDate": "2020-09-25",
+    "startDate": "2020-02-21",
+    "primaryCompletionDate": "2020-05-21",
+    "completionDate": "2020-05-21",
+    "studyType": "INTERVENTIONAL",
+    "phases": [
+      "PHASE3"
+    ],
+    "enrollmentCount": 1062,
+    "enrollmentType": "ACTUAL",
+    "allocation": "RANDOMIZED",
+    "interventionModel": "PARALLEL",
+    "primaryPurpose": "TREATMENT",
+    "masking": "DOUBLE",
+    "conditions": [
+      "COVID-19"
+    ],
+    "interventions": [
+      {
+        "type": "OTHER",
+        "name": "Placebo"
+      },
+      {
+        "type": "DRUG",
+        "name": "Remdesivir"
+      }
+    ],
+    "leadSponsor": "National Institute of Allergy and Infectious Diseases (NIAID)",
+    "collaborators": []
   },
   {
     "actorName": "biomedical-trial-literature-evidence-report",
-    "rowType": "literature_update_report",
-    "billingEventName": "biomedical-evidence-report",
-    "stableKey": "report:sample",
-    "articleCount": 12,
-    "pmids": [
-      "39763750",
-      "39763800"
+    "sourceName": "NCBI PubMed E-utilities",
+    "sourceMethod": "official_ncbi_eutils_json",
+    "authorizationBasis": "public_ncbi_eutilities",
+    "limitations": [
+      "Metadata comes from NCBI ESearch and ESummary JSON; this Actor does not reproduce article full text or abstracts.",
+      "A saved-query alert means a PMID newly observed by this monitor, not a clinical, medical, or causal conclusion.",
+      "Very recent records can be incomplete or updated later by NCBI."
     ],
-    "topJournals": [
-      {
-        "value": "Cancer Research",
-        "count": 3
-      }
+    "prohibitedInterpretations": [
+      "No medical advice.",
+      "No causal or clinical efficacy claim.",
+      "No reproduction of article full text."
     ],
-    "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/",
-    "fetchedAt": "2026-07-15T00:00:00.000Z"
+    "warnings": [],
+    "retrievedAt": "2026-07-23T12:04:07.107Z",
+    "fetchedAt": "2026-07-23T12:04:07.107Z",
+    "rowType": "trial_literature_evidence_gap",
+    "billingEventName": "evidence-gap-alert",
+    "stableKey": "gap:NCT04280705:88292245869c694b8308b24d7ca38a109442776f7231ab1c6a03abe7063b4e8d",
+    "sourceUrl": "https://clinicaltrials.gov/study/NCT04280705",
+    "nctId": "NCT04280705",
+    "title": "Adaptive COVID-19 Treatment Trial (ACTT)",
+    "status": "COMPLETED",
+    "conditions": [
+      "COVID-19"
+    ],
+    "sponsor": "National Institute of Allergy and Infectious Diseases (NIAID)",
+    "watchlists": [
+      "starter-study"
+    ],
+    "summary": "A watched trial changed without a publication matched in this run. Verify the linked sources before drawing conclusions."
   }
 ]

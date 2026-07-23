@@ -1,26 +1,171 @@
 [
   {
-    "rowType": "regulatory_impact_report",
-    "billingEventName": "regulatory-impact-report",
-    "stableKey": "regulatory-report:sample",
-    "sourceUrls": [
-      "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-21?part=11",
-      "https://www.federalregister.gov/api/v1/documents.json"
+    "actorName": "regulatory-obligation-change-impact-report",
+    "actorTitle": "Regulatory Obligation Change Impact Report",
+    "sourceMethod": "official_ecfr_and_federal_register_api_fetch",
+    "authorizationBasis": "public_official_source_data",
+    "limitations": [
+      "eCFR observations are a current editorial compilation and are not the official legal edition of the Code of Federal Regulations.",
+      "Federal Register API results are source-linked publication metadata and are not a legal-effect or compliance determination.",
+      "The impact level and review triggers are deterministic triage signals, not legal advice, regulatory interpretation, or an implementation plan."
     ],
-    "watchlistCount": 1,
-    "changedWatchlistCount": 1,
-    "legalEffectDetermined": false,
-    "checkedAt": "2026-07-18T00:00:00.000Z"
-  },
-  {
+    "prohibitedInterpretations": [
+      "Do not treat this output as legal advice, a legal opinion, or a substitute for qualified counsel.",
+      "Do not treat a changed row or alert as proof of a legal obligation, breach, compliance status, effective date, or required business action.",
+      "Do not imply endorsement, approval, sponsorship, or an official determination by eCFR, the Office of the Federal Register, or any agency."
+    ],
+    "retrievedAt": "2026-07-23T11:15:48.125Z",
+    "fetchedAt": "2026-07-23T11:15:48.125Z",
+    "warnings": [],
     "rowType": "obligation_impact_alert",
     "billingEventName": "obligation-impact-alert",
-    "stableKey": "obligation-alert:electronic-records:sample",
+    "stableKey": "obligation-alert:electronic-records:699dda861b17934be76a",
+    "idempotencyKey": "obligation-alert:electronic-records:699dda861b17934be76a",
+    "sourceName": "ecfr-and-federal-register",
+    "sourceUrls": [
+      "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-21?part=11",
+      "https://www.ecfr.gov/api/versioner/v1/versions/title-21.json",
+      "https://www.federalregister.gov/api/v1/documents.json?per_page=1&order=newest&conditions%5Bcfr%5D%5Btitle%5D=21&conditions%5Bcfr%5D%5Bpart%5D=11&conditions%5Bpublication_date%5D%5Bgte%5D=2026-06-23"
+    ],
+    "sources": [
+      {
+        "source": "ecfr-renderer",
+        "url": "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-21?part=11",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:15:48.432Z"
+      },
+      {
+        "source": "ecfr-versioner",
+        "url": "https://www.ecfr.gov/api/versioner/v1/versions/title-21.json",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:15:48.432Z"
+      },
+      {
+        "source": "federal-register-api",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?per_page=1&order=newest&conditions%5Bcfr%5D%5Btitle%5D=21&conditions%5Bcfr%5D%5Bpart%5D=11&conditions%5Bpublication_date%5D%5Bgte%5D=2026-06-23",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:15:48.432Z"
+      }
+    ],
     "watchlistId": "electronic-records",
     "obligationId": "electronic-records",
+    "obligationLabel": "21 CFR Part 11",
     "cfrCitation": "21 CFR Part 11",
     "impactLevel": "review_priority",
+    "alertReason": "ecfr_content_or_version_changed+federal_register_observation_changed+watch_term_hit",
+    "changeKinds": [
+      "ecfr_content_or_version_changed",
+      "federal_register_observation_changed",
+      "watch_term_hit"
+    ],
+    "watchTermHits": [
+      "electronic record"
+    ],
+    "federalRegisterDocumentCount": 0,
+    "recommendedReviewAction": "Assign an owner to review the linked eCFR text and Federal Register documents, then determine whether the change affects the monitored obligation.",
     "legalEffectDetermined": false,
-    "checkedAt": "2026-07-18T00:00:00.000Z"
+    "checkedAt": "2026-07-23T11:15:48.125Z"
+  },
+  {
+    "actorName": "regulatory-obligation-change-impact-report",
+    "actorTitle": "Regulatory Obligation Change Impact Report",
+    "sourceMethod": "official_ecfr_and_federal_register_api_fetch",
+    "authorizationBasis": "public_official_source_data",
+    "limitations": [
+      "eCFR observations are a current editorial compilation and are not the official legal edition of the Code of Federal Regulations.",
+      "Federal Register API results are source-linked publication metadata and are not a legal-effect or compliance determination.",
+      "The impact level and review triggers are deterministic triage signals, not legal advice, regulatory interpretation, or an implementation plan."
+    ],
+    "prohibitedInterpretations": [
+      "Do not treat this output as legal advice, a legal opinion, or a substitute for qualified counsel.",
+      "Do not treat a changed row or alert as proof of a legal obligation, breach, compliance status, effective date, or required business action.",
+      "Do not imply endorsement, approval, sponsorship, or an official determination by eCFR, the Office of the Federal Register, or any agency."
+    ],
+    "retrievedAt": "2026-07-23T11:15:48.125Z",
+    "fetchedAt": "2026-07-23T11:15:48.125Z",
+    "warnings": [],
+    "rowType": "regulatory_change_row",
+    "billingEventName": "regulatory-change-row",
+    "stableKey": "regulatory-change:electronic-records:699dda861b17934be76a",
+    "idempotencyKey": "regulatory-change:electronic-records:699dda861b17934be76a",
+    "sourceName": "ecfr-and-federal-register",
+    "sourceUrls": [
+      "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-21?part=11",
+      "https://www.ecfr.gov/api/versioner/v1/versions/title-21.json",
+      "https://www.federalregister.gov/api/v1/documents.json?per_page=1&order=newest&conditions%5Bcfr%5D%5Btitle%5D=21&conditions%5Bcfr%5D%5Bpart%5D=11&conditions%5Bpublication_date%5D%5Bgte%5D=2026-06-23"
+    ],
+    "sources": [
+      {
+        "source": "ecfr-renderer",
+        "url": "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-21?part=11",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:15:48.432Z"
+      },
+      {
+        "source": "ecfr-versioner",
+        "url": "https://www.ecfr.gov/api/versioner/v1/versions/title-21.json",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:15:48.432Z"
+      },
+      {
+        "source": "federal-register-api",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?per_page=1&order=newest&conditions%5Bcfr%5D%5Btitle%5D=21&conditions%5Bcfr%5D%5Bpart%5D=11&conditions%5Bpublication_date%5D%5Bgte%5D=2026-06-23",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:15:48.432Z"
+      }
+    ],
+    "watchlistId": "electronic-records",
+    "obligationId": "electronic-records",
+    "obligationLabel": "21 CFR Part 11",
+    "cfrCitation": "21 CFR Part 11",
+    "changeKinds": [
+      "ecfr_content_or_version_changed",
+      "federal_register_observation_changed",
+      "watch_term_hit"
+    ],
+    "ecfr": {
+      "sourceUrl": "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-21?part=11",
+      "versionsUrl": "https://www.ecfr.gov/api/versioner/v1/versions/title-21.json",
+      "citation": "21 CFR Part 11",
+      "currentAsOf": "2026-07-20",
+      "headings": [
+        "PART 11—ELECTRONIC RECORDS; ELECTRONIC SIGNATURES",
+        "Authority:",
+        "Source:",
+        "Subpart A—General Provisions",
+        "§ 11.1 Scope.",
+        "§ 11.2 Implementation.",
+        "§ 11.3 Definitions.",
+        "Subpart B—Electronic Records",
+        "§ 11.10 Controls for closed systems.",
+        "§ 11.30 Controls for open systems.",
+        "§ 11.50 Signature manifestations.",
+        "§ 11.70 Signature/record linking.",
+        "Subpart C—Electronic Signatures",
+        "§ 11.100 General requirements.",
+        "§ 11.200 Electronic signature components and controls.",
+        "§ 11.300 Controls for identification codes/passwords."
+      ],
+      "textPreview": "PART 11—ELECTRONIC RECORDS; ELECTRONIC SIGNATURES Authority: 21 U.S.C. 321-393 ; 42 U.S.C. 262 . Source: 62 FR 13464 , Mar. 20, 1997, unless otherwise noted. Subpart A—General Provisions § 11.1 Scope. ( a ) The regulations in this part set forth the criteria under which the agency considers electronic records, electronic signatures, and handwritten signatures executed to electronic records to be trustworthy, reliable, and generally equivalent to paper records and handwritten signatures executed on paper. ( b ) This part applies to records in electronic form that are created, modified, maintained, archived, retrieved, or transmitted, under any records requirements set forth in agency regulations. This part also applies to electronic records submitted to the agency under requirements of the Federal Food, Drug, and Cosmetic Act and the Public Health Service Act, even if such records are not specifically identified in agency regulations. However, this part does not apply to paper records that are, or have been, transmitted by electronic means. ( c ) Where electronic signatures and their associated electronic records meet the requirements of this part, the agency will consider the electronic signatures to be equivalent to full handwritten signatures, initials, and other general signings as required by agency regulations, unless specifically excepted by regulation(s) effective on or after August 20, 1997. ( d ) Electronic records that meet the requirements of this part may be used in lieu of paper records, in accordance with § 11.2 , unless paper records are specifically required. ( e ) Computer systems (including hardware and software), controls, and attendant documentation maintained under this part shall be readily available for, and subject to, FDA inspection. ( f ) This part does not apply to records required to be established or maintained by §§ 1.326 through 1.368 of this chapter . Records that satisfy the requirements of part 1, subpart J of this chapter , but that also are required under other applicable statutory provisions or regulations, remain subject to this part. ( g ) This part does not apply to electronic signatures obtained under § 101.11(d) of this chapter . ( h ) This part does not apply to electronic signatures obtained under § 101.8(d) of this chapter . ( i ) This part does not apply to records required to be established or maintained by part",
+      "contentHash": "739c3b605fa1f50434fe",
+      "federalRegisterCitations": [
+        "62 FR 13464",
+        "69 FR 71655",
+        "79 FR 71253",
+        "80 FR 56144",
+        "80 FR 74352",
+        "81 FR 20170",
+        "81 FR 34218",
+        "86 FR 68830"
+      ],
+      "officialLegalEdition": false
+    },
+    "federalRegisterDocuments": [],
+    "federalRegisterDocumentCount": 0,
+    "watchTermHits": [
+      "electronic record"
+    ],
+    "rawObservation": true,
+    "checkedAt": "2026-07-23T11:15:48.125Z"
   }
 ]

@@ -2,90 +2,100 @@
   {
     "actorName": "podcast-category-network-benchmark-report",
     "sourceName": "apple-podcasts-public-metadata-and-rss",
-    "rowType": "podcast_show_candidate",
-    "billingEventName": "podcast-show-benchmarked",
-    "stableKey": "podcast:sample-show:candidate",
-    "showTitle": "Sample Business Growth Podcast",
-    "publisher": "Sample Network",
-    "episodeCountScanned": 8,
-    "matchedKeywords": [
-      "business",
-      "marketing"
-    ],
-    "mediaBuyerFitScore": 72,
-    "sourceUrl": "https://feeds.example.org/sample-business-growth-podcast.xml",
+    "sourceUrl": "https://feeds.npr.org/510289/podcast.xml",
+    "retrievedAt": "2026-07-23T11:57:29.746Z",
+    "fetchedAt": "2026-07-23T11:57:29.746Z",
+    "warnings": [],
     "sourceMethod": "public_rss_or_show_page",
     "authorizationBasis": "public_rss_or_show_page",
-    "retrievedAt": "2026-05-16T00:00:00.000Z",
-    "fetchedAt": "2026-05-16T00:00:00.000Z",
-    "warnings": [],
     "limitations": [
       "Rows are source-linked observations, not legal, investment, advertising, pricing, or compliance advice.",
       "Uses only public, non-authenticated source access; no private account data or bypass technique is used."
     ],
     "prohibitedInterpretations": [
-      "Use sponsor evidence only for source-linked research; it does not create permission for solicitation."
+      "Use shortlist rows only for source-linked media planning research and human review."
+    ],
+    "rowType": "podcast_show_candidate",
+    "billingEventName": "podcast-show-benchmarked",
+    "stableKey": "7dd9ce0eaad1ddab5479197c",
+    "showTitle": "Planet Money",
+    "publisher": "NPR",
+    "episodeCountScanned": 3,
+    "matchedKeywords": [
+      "money"
+    ],
+    "mediaBuyerFitScore": 72,
+    "recentEpisodeTitles": [
+      "Big Lettuce meets Small Intestine",
+      "New NPR Series: \"We Keep Us Safe\" from the Embedded podcast",
+      "Can World Cup mania grow MLS in the U.S.?"
     ]
   },
   {
     "actorName": "podcast-category-network-benchmark-report",
     "sourceName": "apple-podcasts-public-metadata-and-rss",
+    "sourceUrl": "https://feeds.npr.org/510289/podcast.xml",
+    "retrievedAt": "2026-07-23T11:57:29.746Z",
+    "fetchedAt": "2026-07-23T11:57:29.746Z",
+    "warnings": [],
+    "sourceMethod": "public_rss_or_show_page",
+    "authorizationBasis": "public_rss_or_show_page",
+    "limitations": [
+      "Rows are source-linked observations, not legal, investment, advertising, pricing, or compliance advice.",
+      "Uses only public, non-authenticated source access; no private account data or bypass technique is used."
+    ],
+    "prohibitedInterpretations": [
+      "Use shortlist rows only for source-linked media planning research and human review."
+    ],
     "rowType": "podcast_fit_evidence",
     "billingEventName": "podcast-network-signal",
-    "stableKey": "podcast:sample-show:fit-evidence",
-    "showTitle": "Sample Business Growth Podcast",
-    "publisher": "Sample Network",
+    "stableKey": "484bc18763b18d22e21f3b7d",
+    "showTitle": "Planet Money",
+    "publisher": "NPR",
     "fitEvidence": [
       {
-        "phrase": "business growth and marketing operations",
+        "phrase": "Planet Money NPR Big Lettuce meets Small Intestine The cyclospora outbreak that’s sickening thousands of Americans got us interested",
         "matchedKeywords": [
-          "business",
-          "marketing"
+          "money"
+        ],
+        "evidenceType": "public_text"
+      },
+      {
+        "phrase": "pisodes: Food Scare Squad How refrigeration took over the world Support: Planet Money+ Read: Our book: Planet Money: A Guide to the Economic Forces That Shape Your Life Our weekly longform Planet Money new",
+        "matchedKeywords": [
+          "money"
+        ],
+        "evidenceType": "public_text"
+      },
+      {
+        "phrase": "Alex Goldmark is Planet Money ’s executive producer",
+        "matchedKeywords": [
+          "money"
+        ],
+        "evidenceType": "public_text"
+      },
+      {
+        "phrase": "strategies are teams using? And does it stand a chance to work? Support: Planet Money+ Read: Our book: Planet Money: A Guide to the Economic Forces That Shape Your Life Our weekly longform Planet Money new",
+        "matchedKeywords": [
+          "money"
+        ],
+        "evidenceType": "public_text"
+      },
+      {
+        "phrase": "-up newsletter Follow: Instagram TikTok YouTube Facebook This episode of Planet Money was hosted by Becky Sullivan and Kenny Malone",
+        "matchedKeywords": [
+          "money"
+        ],
+        "evidenceType": "public_text"
+      },
+      {
+        "phrase": "Alex Goldmark is Planet Money’s executive producer",
+        "matchedKeywords": [
+          "money"
         ],
         "evidenceType": "public_text"
       }
     ],
-    "matchedKeywords": [
-      "business",
-      "marketing"
-    ],
-    "mediaBuyerFitScore": 72,
-    "sourceUrl": "https://feeds.example.org/sample-business-growth-podcast.xml",
-    "sourceMethod": "public_rss_or_show_page",
-    "authorizationBasis": "public_rss_or_show_page",
-    "retrievedAt": "2026-05-16T00:00:00.000Z",
-    "fetchedAt": "2026-05-16T00:00:00.000Z",
-    "warnings": [],
-    "limitations": [
-      "Rows are source-linked observations, not legal, investment, advertising, pricing, or compliance advice.",
-      "Uses only public, non-authenticated source access; no private account data or bypass technique is used."
-    ],
-    "prohibitedInterpretations": [
-      "Use sponsor evidence only for source-linked research; it does not create permission for solicitation."
-    ]
-  },
-  {
-    "actorName": "podcast-category-network-benchmark-report",
-    "sourceName": "apple-podcasts-public-metadata-and-rss",
-    "rowType": "podcast_shortlist_export",
-    "billingEventName": "podcast-category-benchmark-report",
-    "stableKey": "podcast:sample-show:shortlist-export",
-    "candidateCount": 1,
-    "shows": [
-      "Sample Business Growth Podcast"
-    ],
-    "sourceUrl": "https://feeds.example.org/sample-business-growth-podcast.xml",
-    "sourceMethod": "public_rss_or_show_page",
-    "authorizationBasis": "public_rss_or_show_page",
-    "retrievedAt": "2026-05-16T00:00:00.000Z",
-    "fetchedAt": "2026-05-16T00:00:00.000Z",
-    "warnings": [],
-    "limitations": [
-      "Rows are source-linked observations, not legal, investment, advertising, pricing, or compliance advice.",
-      "Uses only public, non-authenticated source access; no private account data or bypass technique is used."
-    ],
-    "prohibitedInterpretations": [
-      "Use sponsor evidence only for source-linked research; it does not create permission for solicitation."
-    ]
+    "mediaBuyerFitScore": 72
   }
 ]

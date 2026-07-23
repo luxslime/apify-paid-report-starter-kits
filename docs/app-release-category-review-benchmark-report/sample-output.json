@@ -1,29 +1,203 @@
 [
   {
     "actorName": "app-release-category-review-benchmark-report",
-    "rowType": "app_review_regression_alert",
-    "billingEventName": "app-review-regression",
-    "stableKey": "alert:app-store:us:284882215:sample",
+    "sourceName": "public-app-storefronts",
+    "sourceMethod": "public_store_metadata_and_review_samples",
+    "authorizationBasis": "public_storefront_metadata",
+    "limitations": [
+      "Apple data uses public iTunes Lookup and customer-review RSS endpoints.",
+      "Google Play data is best-effort from public listing HTML and can expose fewer review samples.",
+      "Regression classifications are deterministic review-sample signals, not product, medical, legal, or financial advice."
+    ],
+    "prohibitedInterpretations": [
+      "Do not target individual reviewers or generate fake reviews.",
+      "Do not treat a sample-based regression signal as a guarantee."
+    ],
+    "warnings": [],
+    "retrievedAt": "2026-07-23T12:04:14.654Z",
+    "fetchedAt": "2026-07-23T12:04:14.654Z",
+    "rowType": "app_review_sample",
+    "billingEventName": "app-benchmarked",
+    "stableKey": "review:app-store:us:284882215:14333292811",
+    "sourceUrl": "https://apps.apple.com/us/app/facebook/id284882215?uo=4",
     "productKey": "app-store:us:284882215",
-    "productName": "Sample App",
-    "status": "urgent",
-    "summary": "A likely post-release review regression was detected.",
-    "sourceUrl": "https://apps.apple.com/us/app/id284882215",
-    "fetchedAt": "2026-07-15T00:00:00.000Z"
+    "platform": "appStore",
+    "appId": "284882215",
+    "appName": "Facebook",
+    "reviewId": "14333292811",
+    "rating": 3,
+    "reviewTitle": "About vpn",
+    "reviewText": "Sometimes it may be difficult to fb user",
+    "version": "570.0.0",
+    "updatedAt": "2026-07-22T06:50:51.000Z"
   },
   {
     "actorName": "app-release-category-review-benchmark-report",
-    "rowType": "app_release_review_report",
-    "billingEventName": "app-category-benchmark-report",
-    "stableKey": "report:app-store:us:284882215:sample",
-    "productKey": "app-store:us:284882215",
-    "productName": "Sample App",
-    "status": "urgent",
-    "reviewsAnalyzed": 30,
-    "recommendedActions": [
-      "Inspect crash complaints introduced after the latest release."
+    "sourceName": "public-app-storefronts",
+    "sourceMethod": "public_store_metadata_and_review_samples",
+    "authorizationBasis": "public_storefront_metadata",
+    "limitations": [
+      "Apple data uses public iTunes Lookup and customer-review RSS endpoints.",
+      "Google Play data is best-effort from public listing HTML and can expose fewer review samples.",
+      "Regression classifications are deterministic review-sample signals, not product, medical, legal, or financial advice."
     ],
-    "sourceUrl": "https://apps.apple.com/us/app/id284882215",
-    "fetchedAt": "2026-07-15T00:00:00.000Z"
+    "prohibitedInterpretations": [
+      "Do not target individual reviewers or generate fake reviews.",
+      "Do not treat a sample-based regression signal as a guarantee."
+    ],
+    "warnings": [],
+    "retrievedAt": "2026-07-23T12:04:14.654Z",
+    "fetchedAt": "2026-07-23T12:04:14.654Z",
+    "rowType": "app_review_sample",
+    "billingEventName": "app-benchmarked",
+    "stableKey": "review:app-store:us:284882215:14333230528",
+    "sourceUrl": "https://apps.apple.com/us/app/facebook/id284882215?uo=4",
+    "productKey": "app-store:us:284882215",
+    "platform": "appStore",
+    "appId": "284882215",
+    "appName": "Facebook",
+    "reviewId": "14333230528",
+    "rating": 2,
+    "reviewTitle": "Ito",
+    "reviewText": "Diana11",
+    "version": "570.0.0",
+    "updatedAt": "2026-07-22T06:24:09.000Z"
+  },
+  {
+    "actorName": "app-release-category-review-benchmark-report",
+    "sourceName": "public-app-storefronts",
+    "sourceMethod": "public_store_metadata_and_review_samples",
+    "authorizationBasis": "public_storefront_metadata",
+    "limitations": [
+      "Apple data uses public iTunes Lookup and customer-review RSS endpoints.",
+      "Google Play data is best-effort from public listing HTML and can expose fewer review samples.",
+      "Regression classifications are deterministic review-sample signals, not product, medical, legal, or financial advice."
+    ],
+    "prohibitedInterpretations": [
+      "Do not target individual reviewers or generate fake reviews.",
+      "Do not treat a sample-based regression signal as a guarantee."
+    ],
+    "warnings": [],
+    "retrievedAt": "2026-07-23T12:04:14.654Z",
+    "fetchedAt": "2026-07-23T12:04:14.654Z",
+    "rowType": "app_review_sample",
+    "billingEventName": "app-benchmarked",
+    "stableKey": "review:app-store:us:284882215:14333211399",
+    "sourceUrl": "https://apps.apple.com/us/app/facebook/id284882215?uo=4",
+    "productKey": "app-store:us:284882215",
+    "platform": "appStore",
+    "appId": "284882215",
+    "appName": "Facebook",
+    "reviewId": "14333211399",
+    "rating": 5,
+    "reviewTitle": "Good apps",
+    "reviewText": "I like this app, rrly help me to keep up my live with my friends",
+    "version": "570.0.0",
+    "updatedAt": "2026-07-22T06:15:51.000Z"
+  },
+  {
+    "actorName": "app-release-category-review-benchmark-report",
+    "sourceName": "public-app-storefronts",
+    "sourceMethod": "public_store_metadata_and_review_samples",
+    "authorizationBasis": "public_storefront_metadata",
+    "limitations": [
+      "Apple data uses public iTunes Lookup and customer-review RSS endpoints.",
+      "Google Play data is best-effort from public listing HTML and can expose fewer review samples.",
+      "Regression classifications are deterministic review-sample signals, not product, medical, legal, or financial advice."
+    ],
+    "prohibitedInterpretations": [
+      "Do not target individual reviewers or generate fake reviews.",
+      "Do not treat a sample-based regression signal as a guarantee."
+    ],
+    "warnings": [],
+    "retrievedAt": "2026-07-23T12:04:14.654Z",
+    "fetchedAt": "2026-07-23T12:04:14.654Z",
+    "rowType": "app_review_sample",
+    "billingEventName": "app-benchmarked",
+    "stableKey": "review:app-store:us:284882215:14333202661",
+    "sourceUrl": "https://apps.apple.com/us/app/facebook/id284882215?uo=4",
+    "productKey": "app-store:us:284882215",
+    "platform": "appStore",
+    "appId": "284882215",
+    "appName": "Facebook",
+    "reviewId": "14333202661",
+    "rating": 5,
+    "reviewTitle": "anden",
+    "reviewText": "Algo bello",
+    "version": "570.0.0",
+    "updatedAt": "2026-07-22T06:12:08.000Z"
+  },
+  {
+    "actorName": "app-release-category-review-benchmark-report",
+    "sourceName": "public-app-storefronts",
+    "sourceMethod": "public_store_metadata_and_review_samples",
+    "authorizationBasis": "public_storefront_metadata",
+    "limitations": [
+      "Apple data uses public iTunes Lookup and customer-review RSS endpoints.",
+      "Google Play data is best-effort from public listing HTML and can expose fewer review samples.",
+      "Regression classifications are deterministic review-sample signals, not product, medical, legal, or financial advice."
+    ],
+    "prohibitedInterpretations": [
+      "Do not target individual reviewers or generate fake reviews.",
+      "Do not treat a sample-based regression signal as a guarantee."
+    ],
+    "warnings": [],
+    "retrievedAt": "2026-07-23T12:04:14.654Z",
+    "fetchedAt": "2026-07-23T12:04:14.654Z",
+    "rowType": "app_review_sample",
+    "billingEventName": "app-benchmarked",
+    "stableKey": "review:app-store:us:284882215:14333175933",
+    "sourceUrl": "https://apps.apple.com/us/app/facebook/id284882215?uo=4",
+    "productKey": "app-store:us:284882215",
+    "platform": "appStore",
+    "appId": "284882215",
+    "appName": "Facebook",
+    "reviewId": "14333175933",
+    "rating": 1,
+    "reviewTitle": "Messenger Error",
+    "reviewText": "Messenger Bugs/ keep logout",
+    "version": "570.0.0",
+    "updatedAt": "2026-07-22T06:00:39.000Z"
+  },
+  {
+    "actorName": "app-release-category-review-benchmark-report",
+    "sourceName": "public-app-storefronts",
+    "sourceMethod": "public_store_metadata_and_review_samples",
+    "authorizationBasis": "public_storefront_metadata",
+    "limitations": [
+      "Apple data uses public iTunes Lookup and customer-review RSS endpoints.",
+      "Google Play data is best-effort from public listing HTML and can expose fewer review samples.",
+      "Regression classifications are deterministic review-sample signals, not product, medical, legal, or financial advice."
+    ],
+    "prohibitedInterpretations": [
+      "Do not target individual reviewers or generate fake reviews.",
+      "Do not treat a sample-based regression signal as a guarantee."
+    ],
+    "warnings": [],
+    "retrievedAt": "2026-07-23T12:04:14.654Z",
+    "fetchedAt": "2026-07-23T12:04:14.654Z",
+    "rowType": "app_review_regression_alert",
+    "billingEventName": "app-review-regression",
+    "stableKey": "alert:app-store:us:284882215:40f3bff329360eaaaafe6913fd2210e528c5526fe3b579a21494166a8b7e0452",
+    "sourceUrl": "https://apps.apple.com/us/app/facebook/id284882215?uo=4",
+    "productKey": "app-store:us:284882215",
+    "productName": "Facebook",
+    "status": "urgent",
+    "summary": "Facebook has a likely post-release review regression on App Store.",
+    "releaseRegression": {
+      "status": "urgent",
+      "regressionPlatforms": [
+        "appStore"
+      ],
+      "watchPlatforms": [],
+      "stablePlatforms": [],
+      "platformStatuses": [
+        "regression"
+      ],
+      "failedSources": 0
+    },
+    "recommendedActions": [
+      "Prioritize App Store release triage: post-release reviews show a negative rating shift and elevated one- or two-star share."
+    ]
   }
 ]

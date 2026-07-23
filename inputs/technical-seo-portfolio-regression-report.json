@@ -9,12 +9,13 @@
   "maxPages": 3,
   "checkRobotsTxt": true,
   "checkLlmsTxt": true,
-  "authorizedUseConfirmed": true,
-  "emitPageRows": true,
-  "generateReport": false,
+  "authorizedUseConfirmed": false,
+  "emitPageRows": false,
+  "emitRawRows": false,
+  "generateReport": true,
   "emitExport": false,
   "emitUnchanged": false,
-  "initialRunMode": "emit_backfill",
-  "maxChargeUsd": 0.5,
-  "dryRun": false
+  "initialRunMode": "baseline_only",
+  "maxChargeUsd": 0,
+  "dryRun": true
 }

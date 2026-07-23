@@ -3,7 +3,7 @@
 <link rel="canonical" href="https://luxslime.github.io/apify-paid-report-starter-kits/biomedical-trial-literature-evidence-report/"><link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Clinical Trials &amp; PubMed Evidence Gap Report"><meta property="og:description" content="Compare trial records and publications to surface source-linked evidence gaps."><meta property="og:type" content="website"><meta property="og:url" content="https://luxslime.github.io/apify-paid-report-starter-kits/biomedical-trial-literature-evidence-report/"><meta property="og:image" content="https://luxslime.github.io/apify-paid-report-starter-kits/assets/biomedical-trial-literature-evidence-report.png"><meta name="twitter:card" content="summary"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Clinical Trials & PubMed Evidence Gap Report","applicationCategory":"BusinessApplication","operatingSystem":"Web","url":"https://apify.com/taroyamada/biomedical-trial-literature-evidence-report","description":"Compare trial records and publications to surface source-linked evidence gaps. Sources: ClinicalTrials.gov and PubMed APIs."},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much can the starter run charge?","acceptedAnswer":{"@type":"Answer","text":"The maintained starter input caps total event charges at $0.50."}},{"@type":"Question","name":"Are zero-row runs charged?","acceptedAnswer":{"@type":"Answer","text":"No actor-start charge is configured, and a zero-row or unchanged monitor run has zero event charge."}},{"@type":"Question","name":"What are the data limitations?","acceptedAnswer":{"@type":"Answer","text":"Registry and citation metadata are research inputs, not clinical conclusions, causality findings, or medical advice."}}]}]}</script></head>
 <body class="detail-page"><header class="detail-header"><div class="header-inner"><a class="back" href="../">All starter kits</a><p class="eyebrow">Research operations</p><h1>Clinical Trials &amp; PubMed Evidence Gap Report</h1><p class="intro">Compare trial records and publications to surface source-linked evidence gaps.</p></div></header>
-<main><section class="detail-summary"><img src="../assets/biomedical-trial-literature-evidence-report.png" alt="" width="240" height="240"><div><p class="buyer">For Biomedical research and diligence teams</p><p><strong>Public sources:</strong> ClinicalTrials.gov and PubMed APIs</p><dl><div><dt>Starter cap</dt><dd>$0.50</dd></div><div><dt>Expected starter</dt><dd>$0.158</dd></div><div><dt>Full report</dt><dd>$5.00</dd></div></dl><p><strong>Starter outcome:</strong> biomedical-evidence-row + evidence-gap-alert</p><div class="actions"><a class="primary" href="https://apify.com/taroyamada/biomedical-trial-literature-evidence-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=biomedical-trial-literature-evidence-report__detail" rel="noopener">Open on Apify</a><a class="icon-link" href="https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/biomedical-trial-literature-evidence-report.json">View maintained JSON</a></div></div></section>
+<main><section class="detail-summary"><img src="../assets/biomedical-trial-literature-evidence-report.png" alt="" width="240" height="240"><div><p class="buyer">For Biomedical research and diligence teams</p><p><strong>Public sources:</strong> ClinicalTrials.gov and PubMed APIs</p><dl><div><dt>Starter cap</dt><dd>$0.50</dd></div><div><dt>Expected starter</dt><dd>$0.158</dd></div><div><dt>Full report</dt><dd>$5.00</dd></div></dl><p><strong>Starter outcome:</strong> biomedical-evidence-row + evidence-gap-alert</p><div class="actions"><a class="primary" href="https://apify.com/taroyamada/biomedical-trial-literature-evidence-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=biomedical-trial-literature-evidence-report__detail" rel="noopener">Open on Apify</a><a class="icon-link" href="https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/biomedical-trial-literature-evidence-report.json">Starter JSON</a><a class="icon-link" href="https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/report-inputs/biomedical-trial-literature-evidence-report.json">Full-report JSON</a></div></div></section>
 <section class="decision-section"><h2>Decisions this report supports</h2><ul><li>Find registered trials with missing or unclear publication links</li><li>Compare trial status and literature evidence across a watchlist</li><li>Prepare a source-linked evidence review queue</li></ul><p><strong>Data limitation:</strong> Registry and citation metadata are research inputs, not clinical conclusions, causality findings, or medical advice.</p></section>
 <section class="code-section"><h2>Buyer-capped starter input</h2><p>The maintained starter is expected to deliver one `biomedical-evidence-row` event at $0.008 and one `evidence-gap-alert` event at $0.15 when the sample evidence still matches. The buyer-controlled cap remains $0.50.</p><pre><code>{
   &quot;searchTerms&quot;: [],
@@ -33,36 +33,100 @@
   &quot;dryRun&quot;: false
 }</code></pre></section>
 <section class="code-section"><h2>Run with the Apify CLI</h2><p>After cloning the starter repository and signing in with the Apify CLI, run the maintained capped input directly:</p><pre><code>apify actors call taroyamada/biomedical-trial-literature-evidence-report --input-file inputs/biomedical-trial-literature-evidence-report.json --output-dataset</code></pre></section>
-<section class="code-section"><h2>Sample output</h2><p>Inspect the source-linked output shape before enabling the full report event.</p><pre><code>[
+<section class="code-section"><h2>Verified starter output</h2><p>This output was captured from the qualifying Cloud starter run identified by the operational audit. It is runtime proof, not external buyer revenue.</p><pre><code>[
   {
     &quot;actorName&quot;: &quot;biomedical-trial-literature-evidence-report&quot;,
-    &quot;rowType&quot;: &quot;new_publication_alert&quot;,
-    &quot;billingEventName&quot;: &quot;evidence-gap-alert&quot;,
-    &quot;stableKey&quot;: &quot;alert:39763750&quot;,
-    &quot;pmid&quot;: &quot;39763750&quot;,
-    &quot;title&quot;: &quot;Example biomedical publication&quot;,
-    &quot;publicationDate&quot;: &quot;2026&quot;,
-    &quot;sourceUrl&quot;: &quot;https://pubmed.ncbi.nlm.nih.gov/39763750/&quot;,
-    &quot;fetchedAt&quot;: &quot;2026-07-15T00:00:00.000Z&quot;
+    &quot;sourceName&quot;: &quot;NCBI PubMed E-utilities&quot;,
+    &quot;sourceMethod&quot;: &quot;ClinicalTrials.gov API v2&quot;,
+    &quot;authorizationBasis&quot;: &quot;public_ncbi_eutilities&quot;,
+    &quot;limitations&quot;: [
+      &quot;Metadata comes from NCBI ESearch and ESummary JSON; this Actor does not reproduce article full text or abstracts.&quot;,
+      &quot;A saved-query alert means a PMID newly observed by this monitor, not a clinical, medical, or causal conclusion.&quot;,
+      &quot;Very recent records can be incomplete or updated later by NCBI.&quot;
+    ],
+    &quot;prohibitedInterpretations&quot;: [
+      &quot;No medical advice.&quot;,
+      &quot;No causal or clinical efficacy claim.&quot;,
+      &quot;No reproduction of article full text.&quot;
+    ],
+    &quot;warnings&quot;: [],
+    &quot;retrievedAt&quot;: &quot;2026-07-23T12:04:07.107Z&quot;,
+    &quot;fetchedAt&quot;: &quot;2026-07-23T12:04:07.107Z&quot;,
+    &quot;rowType&quot;: &quot;clinical_trial_evidence&quot;,
+    &quot;billingEventName&quot;: &quot;biomedical-evidence-row&quot;,
+    &quot;stableKey&quot;: &quot;trial:NCT04280705:88292245869c694b8308b24d7ca38a109442776f7231ab1c6a03abe7063b4e8d&quot;,
+    &quot;sourceUrl&quot;: &quot;https://clinicaltrials.gov/study/NCT04280705&quot;,
+    &quot;nctId&quot;: &quot;NCT04280705&quot;,
+    &quot;briefTitle&quot;: &quot;Adaptive COVID-19 Treatment Trial (ACTT)&quot;,
+    &quot;officialTitle&quot;: &quot;A Multicenter, Adaptive, Randomized Blinded Controlled Trial of the Safety and Efficacy of Investigational Therapeutics for the Treatment of COVID-19 in Hospitalized Adults&quot;,
+    &quot;acronym&quot;: &quot;&quot;,
+    &quot;overallStatus&quot;: &quot;COMPLETED&quot;,
+    &quot;statusVerifiedDate&quot;: &quot;&quot;,
+    &quot;lastUpdatePostDate&quot;: &quot;2022-03-14&quot;,
+    &quot;studyFirstPostDate&quot;: &quot;2020-02-21&quot;,
+    &quot;resultsFirstPostDate&quot;: &quot;2020-09-25&quot;,
+    &quot;startDate&quot;: &quot;2020-02-21&quot;,
+    &quot;primaryCompletionDate&quot;: &quot;2020-05-21&quot;,
+    &quot;completionDate&quot;: &quot;2020-05-21&quot;,
+    &quot;studyType&quot;: &quot;INTERVENTIONAL&quot;,
+    &quot;phases&quot;: [
+      &quot;PHASE3&quot;
+    ],
+    &quot;enrollmentCount&quot;: 1062,
+    &quot;enrollmentType&quot;: &quot;ACTUAL&quot;,
+    &quot;allocation&quot;: &quot;RANDOMIZED&quot;,
+    &quot;interventionModel&quot;: &quot;PARALLEL&quot;,
+    &quot;primaryPurpose&quot;: &quot;TREATMENT&quot;,
+    &quot;masking&quot;: &quot;DOUBLE&quot;,
+    &quot;conditions&quot;: [
+      &quot;COVID-19&quot;
+    ],
+    &quot;interventions&quot;: [
+      {
+        &quot;type&quot;: &quot;OTHER&quot;,
+        &quot;name&quot;: &quot;Placebo&quot;
+      },
+      {
+        &quot;type&quot;: &quot;DRUG&quot;,
+        &quot;name&quot;: &quot;Remdesivir&quot;
+      }
+    ],
+    &quot;leadSponsor&quot;: &quot;National Institute of Allergy and Infectious Diseases (NIAID)&quot;,
+    &quot;collaborators&quot;: []
   },
   {
     &quot;actorName&quot;: &quot;biomedical-trial-literature-evidence-report&quot;,
-    &quot;rowType&quot;: &quot;literature_update_report&quot;,
-    &quot;billingEventName&quot;: &quot;biomedical-evidence-report&quot;,
-    &quot;stableKey&quot;: &quot;report:sample&quot;,
-    &quot;articleCount&quot;: 12,
-    &quot;pmids&quot;: [
-      &quot;39763750&quot;,
-      &quot;39763800&quot;
+    &quot;sourceName&quot;: &quot;NCBI PubMed E-utilities&quot;,
+    &quot;sourceMethod&quot;: &quot;official_ncbi_eutils_json&quot;,
+    &quot;authorizationBasis&quot;: &quot;public_ncbi_eutilities&quot;,
+    &quot;limitations&quot;: [
+      &quot;Metadata comes from NCBI ESearch and ESummary JSON; this Actor does not reproduce article full text or abstracts.&quot;,
+      &quot;A saved-query alert means a PMID newly observed by this monitor, not a clinical, medical, or causal conclusion.&quot;,
+      &quot;Very recent records can be incomplete or updated later by NCBI.&quot;
     ],
-    &quot;topJournals&quot;: [
-      {
-        &quot;value&quot;: &quot;Cancer Research&quot;,
-        &quot;count&quot;: 3
-      }
+    &quot;prohibitedInterpretations&quot;: [
+      &quot;No medical advice.&quot;,
+      &quot;No causal or clinical efficacy claim.&quot;,
+      &quot;No reproduction of article full text.&quot;
     ],
-    &quot;sourceUrl&quot;: &quot;https://pubmed.ncbi.nlm.nih.gov/&quot;,
-    &quot;fetchedAt&quot;: &quot;2026-07-15T00:00:00.000Z&quot;
+    &quot;warnings&quot;: [],
+    &quot;retrievedAt&quot;: &quot;2026-07-23T12:04:07.107Z&quot;,
+    &quot;fetchedAt&quot;: &quot;2026-07-23T12:04:07.107Z&quot;,
+    &quot;rowType&quot;: &quot;trial_literature_evidence_gap&quot;,
+    &quot;billingEventName&quot;: &quot;evidence-gap-alert&quot;,
+    &quot;stableKey&quot;: &quot;gap:NCT04280705:88292245869c694b8308b24d7ca38a109442776f7231ab1c6a03abe7063b4e8d&quot;,
+    &quot;sourceUrl&quot;: &quot;https://clinicaltrials.gov/study/NCT04280705&quot;,
+    &quot;nctId&quot;: &quot;NCT04280705&quot;,
+    &quot;title&quot;: &quot;Adaptive COVID-19 Treatment Trial (ACTT)&quot;,
+    &quot;status&quot;: &quot;COMPLETED&quot;,
+    &quot;conditions&quot;: [
+      &quot;COVID-19&quot;
+    ],
+    &quot;sponsor&quot;: &quot;National Institute of Allergy and Infectious Diseases (NIAID)&quot;,
+    &quot;watchlists&quot;: [
+      &quot;starter-study&quot;
+    ],
+    &quot;summary&quot;: &quot;A watched trial changed without a publication matched in this run. Verify the linked sources before drawing conclusions.&quot;
   }
-]</code></pre><a class="icon-link" href="sample-output.json">Open sample output JSON</a></section>
+]</code></pre><a class="icon-link" href="sample-output.json">Open verified starter output JSON</a></section>
 <section class="how"><h2>Billing and use guardrails</h2><ul><li>No actor-start charge.</li><li>Zero-row and unchanged monitor runs have zero event charge.</li><li><code>maxChargeUsd</code> is checked before delivery.</li><li>Review the live Store pricing before every paid run.</li></ul><p>Outputs are source-linked research and workflow inputs, not legal, medical, investment, procurement, safety-certification, ranking, or business-outcome advice.</p></section></main><footer><a href="../">Compare all seven workflows</a><a href="https://github.com/luxslime/apify-paid-report-starter-kits">Source repository</a></footer></body></html>

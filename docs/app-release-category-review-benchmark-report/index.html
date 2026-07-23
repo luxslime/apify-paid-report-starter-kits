@@ -3,7 +3,7 @@
 <link rel="canonical" href="https://luxslime.github.io/apify-paid-report-starter-kits/app-release-category-review-benchmark-report/"><link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="App Store Release &amp; Review Benchmark"><meta property="og:description" content="Compare releases, ratings, and review samples around app release windows."><meta property="og:type" content="website"><meta property="og:url" content="https://luxslime.github.io/apify-paid-report-starter-kits/app-release-category-review-benchmark-report/"><meta property="og:image" content="https://luxslime.github.io/apify-paid-report-starter-kits/assets/app-release-category-review-benchmark-report.png"><meta name="twitter:card" content="summary"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"App Store Release & Review Benchmark","applicationCategory":"BusinessApplication","operatingSystem":"Web","url":"https://apify.com/taroyamada/app-release-category-review-benchmark-report","description":"Compare releases, ratings, and review samples around app release windows. Sources: Public Apple App Store and Google Play metadata."},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much can the starter run charge?","acceptedAnswer":{"@type":"Answer","text":"The maintained starter input caps total event charges at $0.50."}},{"@type":"Question","name":"Are zero-row runs charged?","acceptedAnswer":{"@type":"Answer","text":"No actor-start charge is configured, and a zero-row or unchanged monitor run has zero event charge."}},{"@type":"Question","name":"What are the data limitations?","acceptedAnswer":{"@type":"Answer","text":"Storefront ratings and review availability vary by country and time and are not a complete measure of product quality."}}]}]}</script></head>
 <body class="detail-page"><header class="detail-header"><div class="header-inner"><a class="back" href="../">All starter kits</a><p class="eyebrow">Product intelligence</p><h1>App Store Release &amp; Review Benchmark</h1><p class="intro">Compare releases, ratings, and review samples around app release windows.</p></div></header>
-<main><section class="detail-summary"><img src="../assets/app-release-category-review-benchmark-report.png" alt="" width="240" height="240"><div><p class="buyer">For Mobile product and ASO teams</p><p><strong>Public sources:</strong> Public Apple App Store and Google Play metadata</p><dl><div><dt>Starter cap</dt><dd>$0.50</dd></div><div><dt>Expected starter</dt><dd>$0.115</dd></div><div><dt>Full report</dt><dd>$3.00</dd></div></dl><p><strong>Starter outcome:</strong> app-benchmarked + app-review-regression</p><div class="actions"><a class="primary" href="https://apify.com/taroyamada/app-release-category-review-benchmark-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=app-release-category-review-benchmark-report__detail" rel="noopener">Open on Apify</a><a class="icon-link" href="https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/app-release-category-review-benchmark-report.json">View maintained JSON</a></div></div></section>
+<main><section class="detail-summary"><img src="../assets/app-release-category-review-benchmark-report.png" alt="" width="240" height="240"><div><p class="buyer">For Mobile product and ASO teams</p><p><strong>Public sources:</strong> Public Apple App Store and Google Play metadata</p><dl><div><dt>Starter cap</dt><dd>$0.50</dd></div><div><dt>Expected starter</dt><dd>$0.115</dd></div><div><dt>Full report</dt><dd>$3.00</dd></div></dl><p><strong>Starter outcome:</strong> app-benchmarked + app-review-regression</p><div class="actions"><a class="primary" href="https://apify.com/taroyamada/app-release-category-review-benchmark-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=app-release-category-review-benchmark-report__detail" rel="noopener">Open on Apify</a><a class="icon-link" href="https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/app-release-category-review-benchmark-report.json">Starter JSON</a><a class="icon-link" href="https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/report-inputs/app-release-category-review-benchmark-report.json">Full-report JSON</a></div></div></section>
 <section class="decision-section"><h2>Decisions this report supports</h2><ul><li>Compare rating and review signals around release windows</li><li>Identify post-release regressions that need product review</li><li>Benchmark a small app set before generating a category report</li></ul><p><strong>Data limitation:</strong> Storefront ratings and review availability vary by country and time and are not a complete measure of product quality.</p></section>
 <section class="code-section"><h2>Buyer-capped starter input</h2><p>The maintained starter is expected to deliver one `app-benchmarked` event at $0.015 and one `app-review-regression` event at $0.10 when the sample evidence still matches. The buyer-controlled cap remains $0.50.</p><pre><code>{
   &quot;appleAppIds&quot;: [
@@ -27,33 +27,207 @@
   &quot;dryRun&quot;: false
 }</code></pre></section>
 <section class="code-section"><h2>Run with the Apify CLI</h2><p>After cloning the starter repository and signing in with the Apify CLI, run the maintained capped input directly:</p><pre><code>apify actors call taroyamada/app-release-category-review-benchmark-report --input-file inputs/app-release-category-review-benchmark-report.json --output-dataset</code></pre></section>
-<section class="code-section"><h2>Sample output</h2><p>Inspect the source-linked output shape before enabling the full report event.</p><pre><code>[
+<section class="code-section"><h2>Verified starter output</h2><p>This output was captured from the qualifying Cloud starter run identified by the operational audit. It is runtime proof, not external buyer revenue.</p><pre><code>[
   {
     &quot;actorName&quot;: &quot;app-release-category-review-benchmark-report&quot;,
-    &quot;rowType&quot;: &quot;app_review_regression_alert&quot;,
-    &quot;billingEventName&quot;: &quot;app-review-regression&quot;,
-    &quot;stableKey&quot;: &quot;alert:app-store:us:284882215:sample&quot;,
+    &quot;sourceName&quot;: &quot;public-app-storefronts&quot;,
+    &quot;sourceMethod&quot;: &quot;public_store_metadata_and_review_samples&quot;,
+    &quot;authorizationBasis&quot;: &quot;public_storefront_metadata&quot;,
+    &quot;limitations&quot;: [
+      &quot;Apple data uses public iTunes Lookup and customer-review RSS endpoints.&quot;,
+      &quot;Google Play data is best-effort from public listing HTML and can expose fewer review samples.&quot;,
+      &quot;Regression classifications are deterministic review-sample signals, not product, medical, legal, or financial advice.&quot;
+    ],
+    &quot;prohibitedInterpretations&quot;: [
+      &quot;Do not target individual reviewers or generate fake reviews.&quot;,
+      &quot;Do not treat a sample-based regression signal as a guarantee.&quot;
+    ],
+    &quot;warnings&quot;: [],
+    &quot;retrievedAt&quot;: &quot;2026-07-23T12:04:14.654Z&quot;,
+    &quot;fetchedAt&quot;: &quot;2026-07-23T12:04:14.654Z&quot;,
+    &quot;rowType&quot;: &quot;app_review_sample&quot;,
+    &quot;billingEventName&quot;: &quot;app-benchmarked&quot;,
+    &quot;stableKey&quot;: &quot;review:app-store:us:284882215:14333292811&quot;,
+    &quot;sourceUrl&quot;: &quot;https://apps.apple.com/us/app/facebook/id284882215?uo=4&quot;,
     &quot;productKey&quot;: &quot;app-store:us:284882215&quot;,
-    &quot;productName&quot;: &quot;Sample App&quot;,
-    &quot;status&quot;: &quot;urgent&quot;,
-    &quot;summary&quot;: &quot;A likely post-release review regression was detected.&quot;,
-    &quot;sourceUrl&quot;: &quot;https://apps.apple.com/us/app/id284882215&quot;,
-    &quot;fetchedAt&quot;: &quot;2026-07-15T00:00:00.000Z&quot;
+    &quot;platform&quot;: &quot;appStore&quot;,
+    &quot;appId&quot;: &quot;284882215&quot;,
+    &quot;appName&quot;: &quot;Facebook&quot;,
+    &quot;reviewId&quot;: &quot;14333292811&quot;,
+    &quot;rating&quot;: 3,
+    &quot;reviewTitle&quot;: &quot;About vpn&quot;,
+    &quot;reviewText&quot;: &quot;Sometimes it may be difficult to fb user&quot;,
+    &quot;version&quot;: &quot;570.0.0&quot;,
+    &quot;updatedAt&quot;: &quot;2026-07-22T06:50:51.000Z&quot;
   },
   {
     &quot;actorName&quot;: &quot;app-release-category-review-benchmark-report&quot;,
-    &quot;rowType&quot;: &quot;app_release_review_report&quot;,
-    &quot;billingEventName&quot;: &quot;app-category-benchmark-report&quot;,
-    &quot;stableKey&quot;: &quot;report:app-store:us:284882215:sample&quot;,
-    &quot;productKey&quot;: &quot;app-store:us:284882215&quot;,
-    &quot;productName&quot;: &quot;Sample App&quot;,
-    &quot;status&quot;: &quot;urgent&quot;,
-    &quot;reviewsAnalyzed&quot;: 30,
-    &quot;recommendedActions&quot;: [
-      &quot;Inspect crash complaints introduced after the latest release.&quot;
+    &quot;sourceName&quot;: &quot;public-app-storefronts&quot;,
+    &quot;sourceMethod&quot;: &quot;public_store_metadata_and_review_samples&quot;,
+    &quot;authorizationBasis&quot;: &quot;public_storefront_metadata&quot;,
+    &quot;limitations&quot;: [
+      &quot;Apple data uses public iTunes Lookup and customer-review RSS endpoints.&quot;,
+      &quot;Google Play data is best-effort from public listing HTML and can expose fewer review samples.&quot;,
+      &quot;Regression classifications are deterministic review-sample signals, not product, medical, legal, or financial advice.&quot;
     ],
-    &quot;sourceUrl&quot;: &quot;https://apps.apple.com/us/app/id284882215&quot;,
-    &quot;fetchedAt&quot;: &quot;2026-07-15T00:00:00.000Z&quot;
+    &quot;prohibitedInterpretations&quot;: [
+      &quot;Do not target individual reviewers or generate fake reviews.&quot;,
+      &quot;Do not treat a sample-based regression signal as a guarantee.&quot;
+    ],
+    &quot;warnings&quot;: [],
+    &quot;retrievedAt&quot;: &quot;2026-07-23T12:04:14.654Z&quot;,
+    &quot;fetchedAt&quot;: &quot;2026-07-23T12:04:14.654Z&quot;,
+    &quot;rowType&quot;: &quot;app_review_sample&quot;,
+    &quot;billingEventName&quot;: &quot;app-benchmarked&quot;,
+    &quot;stableKey&quot;: &quot;review:app-store:us:284882215:14333230528&quot;,
+    &quot;sourceUrl&quot;: &quot;https://apps.apple.com/us/app/facebook/id284882215?uo=4&quot;,
+    &quot;productKey&quot;: &quot;app-store:us:284882215&quot;,
+    &quot;platform&quot;: &quot;appStore&quot;,
+    &quot;appId&quot;: &quot;284882215&quot;,
+    &quot;appName&quot;: &quot;Facebook&quot;,
+    &quot;reviewId&quot;: &quot;14333230528&quot;,
+    &quot;rating&quot;: 2,
+    &quot;reviewTitle&quot;: &quot;Ito&quot;,
+    &quot;reviewText&quot;: &quot;Diana11&quot;,
+    &quot;version&quot;: &quot;570.0.0&quot;,
+    &quot;updatedAt&quot;: &quot;2026-07-22T06:24:09.000Z&quot;
+  },
+  {
+    &quot;actorName&quot;: &quot;app-release-category-review-benchmark-report&quot;,
+    &quot;sourceName&quot;: &quot;public-app-storefronts&quot;,
+    &quot;sourceMethod&quot;: &quot;public_store_metadata_and_review_samples&quot;,
+    &quot;authorizationBasis&quot;: &quot;public_storefront_metadata&quot;,
+    &quot;limitations&quot;: [
+      &quot;Apple data uses public iTunes Lookup and customer-review RSS endpoints.&quot;,
+      &quot;Google Play data is best-effort from public listing HTML and can expose fewer review samples.&quot;,
+      &quot;Regression classifications are deterministic review-sample signals, not product, medical, legal, or financial advice.&quot;
+    ],
+    &quot;prohibitedInterpretations&quot;: [
+      &quot;Do not target individual reviewers or generate fake reviews.&quot;,
+      &quot;Do not treat a sample-based regression signal as a guarantee.&quot;
+    ],
+    &quot;warnings&quot;: [],
+    &quot;retrievedAt&quot;: &quot;2026-07-23T12:04:14.654Z&quot;,
+    &quot;fetchedAt&quot;: &quot;2026-07-23T12:04:14.654Z&quot;,
+    &quot;rowType&quot;: &quot;app_review_sample&quot;,
+    &quot;billingEventName&quot;: &quot;app-benchmarked&quot;,
+    &quot;stableKey&quot;: &quot;review:app-store:us:284882215:14333211399&quot;,
+    &quot;sourceUrl&quot;: &quot;https://apps.apple.com/us/app/facebook/id284882215?uo=4&quot;,
+    &quot;productKey&quot;: &quot;app-store:us:284882215&quot;,
+    &quot;platform&quot;: &quot;appStore&quot;,
+    &quot;appId&quot;: &quot;284882215&quot;,
+    &quot;appName&quot;: &quot;Facebook&quot;,
+    &quot;reviewId&quot;: &quot;14333211399&quot;,
+    &quot;rating&quot;: 5,
+    &quot;reviewTitle&quot;: &quot;Good apps&quot;,
+    &quot;reviewText&quot;: &quot;I like this app, rrly help me to keep up my live with my friends&quot;,
+    &quot;version&quot;: &quot;570.0.0&quot;,
+    &quot;updatedAt&quot;: &quot;2026-07-22T06:15:51.000Z&quot;
+  },
+  {
+    &quot;actorName&quot;: &quot;app-release-category-review-benchmark-report&quot;,
+    &quot;sourceName&quot;: &quot;public-app-storefronts&quot;,
+    &quot;sourceMethod&quot;: &quot;public_store_metadata_and_review_samples&quot;,
+    &quot;authorizationBasis&quot;: &quot;public_storefront_metadata&quot;,
+    &quot;limitations&quot;: [
+      &quot;Apple data uses public iTunes Lookup and customer-review RSS endpoints.&quot;,
+      &quot;Google Play data is best-effort from public listing HTML and can expose fewer review samples.&quot;,
+      &quot;Regression classifications are deterministic review-sample signals, not product, medical, legal, or financial advice.&quot;
+    ],
+    &quot;prohibitedInterpretations&quot;: [
+      &quot;Do not target individual reviewers or generate fake reviews.&quot;,
+      &quot;Do not treat a sample-based regression signal as a guarantee.&quot;
+    ],
+    &quot;warnings&quot;: [],
+    &quot;retrievedAt&quot;: &quot;2026-07-23T12:04:14.654Z&quot;,
+    &quot;fetchedAt&quot;: &quot;2026-07-23T12:04:14.654Z&quot;,
+    &quot;rowType&quot;: &quot;app_review_sample&quot;,
+    &quot;billingEventName&quot;: &quot;app-benchmarked&quot;,
+    &quot;stableKey&quot;: &quot;review:app-store:us:284882215:14333202661&quot;,
+    &quot;sourceUrl&quot;: &quot;https://apps.apple.com/us/app/facebook/id284882215?uo=4&quot;,
+    &quot;productKey&quot;: &quot;app-store:us:284882215&quot;,
+    &quot;platform&quot;: &quot;appStore&quot;,
+    &quot;appId&quot;: &quot;284882215&quot;,
+    &quot;appName&quot;: &quot;Facebook&quot;,
+    &quot;reviewId&quot;: &quot;14333202661&quot;,
+    &quot;rating&quot;: 5,
+    &quot;reviewTitle&quot;: &quot;anden&quot;,
+    &quot;reviewText&quot;: &quot;Algo bello&quot;,
+    &quot;version&quot;: &quot;570.0.0&quot;,
+    &quot;updatedAt&quot;: &quot;2026-07-22T06:12:08.000Z&quot;
+  },
+  {
+    &quot;actorName&quot;: &quot;app-release-category-review-benchmark-report&quot;,
+    &quot;sourceName&quot;: &quot;public-app-storefronts&quot;,
+    &quot;sourceMethod&quot;: &quot;public_store_metadata_and_review_samples&quot;,
+    &quot;authorizationBasis&quot;: &quot;public_storefront_metadata&quot;,
+    &quot;limitations&quot;: [
+      &quot;Apple data uses public iTunes Lookup and customer-review RSS endpoints.&quot;,
+      &quot;Google Play data is best-effort from public listing HTML and can expose fewer review samples.&quot;,
+      &quot;Regression classifications are deterministic review-sample signals, not product, medical, legal, or financial advice.&quot;
+    ],
+    &quot;prohibitedInterpretations&quot;: [
+      &quot;Do not target individual reviewers or generate fake reviews.&quot;,
+      &quot;Do not treat a sample-based regression signal as a guarantee.&quot;
+    ],
+    &quot;warnings&quot;: [],
+    &quot;retrievedAt&quot;: &quot;2026-07-23T12:04:14.654Z&quot;,
+    &quot;fetchedAt&quot;: &quot;2026-07-23T12:04:14.654Z&quot;,
+    &quot;rowType&quot;: &quot;app_review_sample&quot;,
+    &quot;billingEventName&quot;: &quot;app-benchmarked&quot;,
+    &quot;stableKey&quot;: &quot;review:app-store:us:284882215:14333175933&quot;,
+    &quot;sourceUrl&quot;: &quot;https://apps.apple.com/us/app/facebook/id284882215?uo=4&quot;,
+    &quot;productKey&quot;: &quot;app-store:us:284882215&quot;,
+    &quot;platform&quot;: &quot;appStore&quot;,
+    &quot;appId&quot;: &quot;284882215&quot;,
+    &quot;appName&quot;: &quot;Facebook&quot;,
+    &quot;reviewId&quot;: &quot;14333175933&quot;,
+    &quot;rating&quot;: 1,
+    &quot;reviewTitle&quot;: &quot;Messenger Error&quot;,
+    &quot;reviewText&quot;: &quot;Messenger Bugs/ keep logout&quot;,
+    &quot;version&quot;: &quot;570.0.0&quot;,
+    &quot;updatedAt&quot;: &quot;2026-07-22T06:00:39.000Z&quot;
+  },
+  {
+    &quot;actorName&quot;: &quot;app-release-category-review-benchmark-report&quot;,
+    &quot;sourceName&quot;: &quot;public-app-storefronts&quot;,
+    &quot;sourceMethod&quot;: &quot;public_store_metadata_and_review_samples&quot;,
+    &quot;authorizationBasis&quot;: &quot;public_storefront_metadata&quot;,
+    &quot;limitations&quot;: [
+      &quot;Apple data uses public iTunes Lookup and customer-review RSS endpoints.&quot;,
+      &quot;Google Play data is best-effort from public listing HTML and can expose fewer review samples.&quot;,
+      &quot;Regression classifications are deterministic review-sample signals, not product, medical, legal, or financial advice.&quot;
+    ],
+    &quot;prohibitedInterpretations&quot;: [
+      &quot;Do not target individual reviewers or generate fake reviews.&quot;,
+      &quot;Do not treat a sample-based regression signal as a guarantee.&quot;
+    ],
+    &quot;warnings&quot;: [],
+    &quot;retrievedAt&quot;: &quot;2026-07-23T12:04:14.654Z&quot;,
+    &quot;fetchedAt&quot;: &quot;2026-07-23T12:04:14.654Z&quot;,
+    &quot;rowType&quot;: &quot;app_review_regression_alert&quot;,
+    &quot;billingEventName&quot;: &quot;app-review-regression&quot;,
+    &quot;stableKey&quot;: &quot;alert:app-store:us:284882215:40f3bff329360eaaaafe6913fd2210e528c5526fe3b579a21494166a8b7e0452&quot;,
+    &quot;sourceUrl&quot;: &quot;https://apps.apple.com/us/app/facebook/id284882215?uo=4&quot;,
+    &quot;productKey&quot;: &quot;app-store:us:284882215&quot;,
+    &quot;productName&quot;: &quot;Facebook&quot;,
+    &quot;status&quot;: &quot;urgent&quot;,
+    &quot;summary&quot;: &quot;Facebook has a likely post-release review regression on App Store.&quot;,
+    &quot;releaseRegression&quot;: {
+      &quot;status&quot;: &quot;urgent&quot;,
+      &quot;regressionPlatforms&quot;: [
+        &quot;appStore&quot;
+      ],
+      &quot;watchPlatforms&quot;: [],
+      &quot;stablePlatforms&quot;: [],
+      &quot;platformStatuses&quot;: [
+        &quot;regression&quot;
+      ],
+      &quot;failedSources&quot;: 0
+    },
+    &quot;recommendedActions&quot;: [
+      &quot;Prioritize App Store release triage: post-release reviews show a negative rating shift and elevated one- or two-star share.&quot;
+    ]
   }
-]</code></pre><a class="icon-link" href="sample-output.json">Open sample output JSON</a></section>
+]</code></pre><a class="icon-link" href="sample-output.json">Open verified starter output JSON</a></section>
 <section class="how"><h2>Billing and use guardrails</h2><ul><li>No actor-start charge.</li><li>Zero-row and unchanged monitor runs have zero event charge.</li><li><code>maxChargeUsd</code> is checked before delivery.</li><li>Review the live Store pricing before every paid run.</li></ul><p>Outputs are source-linked research and workflow inputs, not legal, medical, investment, procurement, safety-certification, ranking, or business-outcome advice.</p></section></main><footer><a href="../">Compare all seven workflows</a><a href="https://github.com/luxslime/apify-paid-report-starter-kits">Source repository</a></footer></body></html>

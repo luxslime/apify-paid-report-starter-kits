@@ -1,89 +1,212 @@
-{
-  "meta": {
+[
+  {
     "actorName": "package-portfolio-upgrade-risk-report",
-    "officialSourceFamilies": [
-      "npm",
-      "PyPI",
-      "OSV"
+    "sourceMethod": "official_public_api_fetch",
+    "authorizationBasis": "public_official_source_or_user_supplied_package_name",
+    "limitations": [
+      "Registry metadata and OSV advisories are point-in-time public API observations.",
+      "Upgrade risk is a triage signal, not a compatibility test or a software bill of materials.",
+      "A package version is only assessed when the supplied version is exact; an omitted version is reported as unresolved."
     ],
-    "githubOptional": true,
-    "rowCount": 3
+    "prohibitedInterpretations": [
+      "Do not treat this report as proof that an upgrade is safe, exploitable, licensed, or production-ready.",
+      "Do not infer private repository ownership, maintainer intent, or legal compliance from public metadata."
+    ],
+    "retrievedAt": "2026-07-23T11:08:19.714Z",
+    "fetchedAt": "2026-07-23T11:08:19.714Z",
+    "warnings": [],
+    "rowType": "package_risk",
+    "billingEventName": "package-risk-row",
+    "stableKey": "package-risk:npm:lodash:ba7175e594c608ac",
+    "idempotencyKey": "package-risk:npm:lodash:ba7175e594c608ac",
+    "sourceName": "npm-registry-and-osv",
+    "sourceUrls": [
+      "https://registry.npmjs.org/lodash",
+      "https://api.osv.dev/v1/query"
+    ],
+    "sources": [
+      {
+        "source": "npm-registry",
+        "url": "https://registry.npmjs.org/lodash",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:08:19.785Z"
+      },
+      {
+        "source": "osv",
+        "url": "https://api.osv.dev/v1/query",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:08:19.785Z"
+      }
+    ],
+    "packageName": "lodash",
+    "ecosystem": "npm",
+    "currentVersion": "4.17.20",
+    "latestVersion": "4.18.1",
+    "upgradeKind": "none",
+    "riskLevel": "high",
+    "vulnerabilityCount": 5,
+    "vulnerabilities": [
+      {
+        "id": "GHSA-29mw-wpgm-hmr9",
+        "summary": "Regular Expression Denial of Service (ReDoS) in lodash",
+        "aliases": [
+          "CVE-2020-28500"
+        ],
+        "severity": "moderate",
+        "modified": "2025-09-29T21:12:31.102523Z",
+        "published": "2022-01-06T20:30:46Z",
+        "references": [
+          "https://nvd.nist.gov/vuln/detail/CVE-2020-28500",
+          "https://github.com/github/advisory-database/pull/6139",
+          "https://github.com/lodash/lodash/pull/5065",
+          "https://github.com/lodash/lodash/pull/5065/commits/02906b8191d3c100c193fe6f7b27d1c40f200bb7",
+          "https://github.com/lodash/lodash/commit/c4847ebe7d14540bb28a8b932a9ce1b9ecbfee1a",
+          "https://www.oracle.com/security-alerts/cpuoct2021.html",
+          "https://www.oracle.com/security-alerts/cpujul2022.html",
+          "https://www.oracle.com/security-alerts/cpujan2022.html",
+          "https://www.oracle.com//security-alerts/cpujul2021.html",
+          "https://snyk.io/vuln/SNYK-JS-LODASH-1018905"
+        ]
+      },
+      {
+        "id": "GHSA-35jh-r3h4-6jhm",
+        "summary": "Command Injection in lodash",
+        "aliases": [
+          "CVE-2021-23337",
+          "CVE-2026-4800",
+          "GHSA-r5fr-rjxr-66jc"
+        ],
+        "severity": "high",
+        "modified": "2026-07-08T18:29:36.682352320Z",
+        "published": "2021-05-06T16:05:51Z",
+        "references": [
+          "https://nvd.nist.gov/vuln/detail/CVE-2021-23337",
+          "https://github.com/lodash/lodash/commit/3469357cff396a26c363f8c1b5a91dde28ba4b1c",
+          "https://www.oracle.com/security-alerts/cpuoct2021.html",
+          "https://www.oracle.com/security-alerts/cpujul2022.html",
+          "https://www.oracle.com/security-alerts/cpujan2022.html",
+          "https://www.oracle.com//security-alerts/cpujul2021.html",
+          "https://snyk.io/vuln/SNYK-JS-LODASH-1040724",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1074929",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBLODASH-1074931",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-1074928"
+        ]
+      },
+      {
+        "id": "GHSA-f23m-r3pf-42rh",
+        "summary": "lodash vulnerable to Prototype Pollution via array path bypass in `_.unset` and `_.omit`",
+        "aliases": [
+          "CVE-2025-13465",
+          "CVE-2026-2950",
+          "GHSA-xxjr-mmjv-4gpg"
+        ],
+        "severity": "moderate",
+        "modified": "2026-07-08T07:10:26.957853710Z",
+        "published": "2026-04-01T23:50:27Z",
+        "references": [
+          "https://github.com/lodash/lodash/security/advisories/GHSA-f23m-r3pf-42rh",
+          "https://github.com/lodash/lodash/security/advisories/GHSA-xxjr-mmjv-4gpg",
+          "https://nvd.nist.gov/vuln/detail/CVE-2026-2950",
+          "https://github.com/lodash/lodash"
+        ]
+      },
+      {
+        "id": "GHSA-r5fr-rjxr-66jc",
+        "summary": "lodash vulnerable to Code Injection via `_.template` imports key names",
+        "aliases": [
+          "CVE-2021-23337",
+          "CVE-2026-4800",
+          "GHSA-35jh-r3h4-6jhm"
+        ],
+        "severity": "high",
+        "modified": "2026-07-08T08:11:11.759560102Z",
+        "published": "2026-04-01T23:51:12Z",
+        "references": [
+          "https://github.com/lodash/lodash/security/advisories/GHSA-r5fr-rjxr-66jc",
+          "https://nvd.nist.gov/vuln/detail/CVE-2026-4800",
+          "https://github.com/lodash/lodash/commit/3469357cff396a26c363f8c1b5a91dde28ba4b1c",
+          "https://cna.openjsf.org/security-advisories.html",
+          "https://github.com/advisories/GHSA-35jh-r3h4-6jhm",
+          "https://github.com/lodash/lodash"
+        ]
+      },
+      {
+        "id": "GHSA-xxjr-mmjv-4gpg",
+        "summary": "Lodash has Prototype Pollution Vulnerability in `_.unset` and `_.omit` functions",
+        "aliases": [
+          "CVE-2025-13465",
+          "CVE-2026-2950",
+          "GHSA-f23m-r3pf-42rh"
+        ],
+        "severity": "moderate",
+        "modified": "2026-07-08T07:10:26.957853710Z",
+        "published": "2026-01-21T23:01:22Z",
+        "references": [
+          "https://github.com/lodash/lodash/security/advisories/GHSA-xxjr-mmjv-4gpg",
+          "https://nvd.nist.gov/vuln/detail/CVE-2025-13465",
+          "https://github.com/lodash/lodash/commit/edadd452146f7e4bad4ea684e955708931d84d81",
+          "https://cert-portal.siemens.com/productcert/html/ssa-253495.html",
+          "https://github.com/lodash/lodash"
+        ]
+      }
+    ],
+    "license": "MIT",
+    "repository": "git+https://github.com/lodash/lodash.git",
+    "github": {
+      "status": "not_requested",
+      "repository": null,
+      "source": null
+    },
+    "checkedAt": "2026-07-23T11:08:19.714Z"
   },
-  "rows": [
-    {
-      "rowType": "package_portfolio_risk_report",
-      "billingEventName": "package-portfolio-risk-report",
-      "stableKey": "package-report-sample-change",
-      "idempotencyKey": "package-report-sample-change",
-      "reportFirst": true,
-      "packageCount": 2,
-      "changedPackageCount": 1,
-      "highRiskPackageCount": 1,
-      "advisoryCount": 1,
-      "sourceUrls": [
-        "https://registry.npmjs.org/lodash",
-        "https://api.osv.dev/v1/query"
-      ],
-      "limitations": [
-        "Illustrative sample; source observations are point-in-time."
-      ],
-      "prohibitedInterpretations": [
-        "Do not treat this as compatibility or exploitability proof."
-      ]
-    },
-    {
-      "rowType": "package_risk",
-      "billingEventName": "package-risk-row",
-      "stableKey": "package-risk-npm-lodash-sample",
-      "idempotencyKey": "package-risk-npm-lodash-sample",
-      "packageName": "lodash",
-      "ecosystem": "npm",
-      "currentVersion": "4.17.20",
-      "latestVersion": "4.17.21",
-      "upgradeKind": "patch",
-      "riskLevel": "high",
-      "vulnerabilityCount": 1,
-      "vulnerabilities": [
-        {
-          "id": "SAMPLE-OSV-ADVISORY",
-          "severity": "high",
-          "summary": "Illustrative dry-run advisory row; not live evidence."
-        }
-      ],
-      "sources": [
-        {
-          "source": "npm-registry",
-          "url": "https://registry.npmjs.org/lodash",
-          "official": true
-        },
-        {
-          "source": "osv",
-          "url": "https://api.osv.dev/v1/query",
-          "official": true
-        }
-      ]
-    },
-    {
-      "rowType": "package_upgrade_risk_alert",
-      "billingEventName": "package-upgrade-risk-alert",
-      "stableKey": "package-alert-npm-lodash-sample",
-      "idempotencyKey": "package-alert-npm-lodash-sample",
-      "packageName": "lodash",
-      "ecosystem": "npm",
-      "alertReason": "known_vulnerability",
-      "recommendedAction": "Review OSV advisories and prioritize an upgrade or compensating control."
-    }
-  ],
-  "deliveryAudit": {
-    "deliveryStatus": "skipped",
-    "dryRun": true,
-    "rowCount": 3,
-    "chargedCountTotal": 0,
-    "chargedAmountUsd": 0,
-    "maxChargeUsd": 25,
-    "idempotency": {
-      "skippedIdempotencyKeys": [],
-      "deliveredIdempotencyKeys": []
-    }
+  {
+    "actorName": "package-portfolio-upgrade-risk-report",
+    "sourceMethod": "official_public_api_fetch",
+    "authorizationBasis": "public_official_source_or_user_supplied_package_name",
+    "limitations": [
+      "Registry metadata and OSV advisories are point-in-time public API observations.",
+      "Upgrade risk is a triage signal, not a compatibility test or a software bill of materials.",
+      "A package version is only assessed when the supplied version is exact; an omitted version is reported as unresolved."
+    ],
+    "prohibitedInterpretations": [
+      "Do not treat this report as proof that an upgrade is safe, exploitable, licensed, or production-ready.",
+      "Do not infer private repository ownership, maintainer intent, or legal compliance from public metadata."
+    ],
+    "retrievedAt": "2026-07-23T11:08:19.714Z",
+    "fetchedAt": "2026-07-23T11:08:19.714Z",
+    "warnings": [],
+    "rowType": "package_upgrade_risk_alert",
+    "billingEventName": "package-upgrade-risk-alert",
+    "stableKey": "package-alert:npm:lodash:ba7175e594c608ac",
+    "idempotencyKey": "package-alert:npm:lodash:ba7175e594c608ac",
+    "sourceName": "npm-registry-and-osv",
+    "sourceUrls": [
+      "https://registry.npmjs.org/lodash",
+      "https://api.osv.dev/v1/query"
+    ],
+    "sources": [
+      {
+        "source": "npm-registry",
+        "url": "https://registry.npmjs.org/lodash",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:08:19.785Z"
+      },
+      {
+        "source": "osv",
+        "url": "https://api.osv.dev/v1/query",
+        "official": true,
+        "retrievedAt": "2026-07-23T11:08:19.785Z"
+      }
+    ],
+    "packageName": "lodash",
+    "ecosystem": "npm",
+    "currentVersion": "4.17.20",
+    "latestVersion": "4.18.1",
+    "upgradeKind": "none",
+    "riskLevel": "high",
+    "vulnerabilityCount": 5,
+    "alertReason": "known_vulnerability",
+    "recommendedAction": "Review OSV advisories and prioritize an upgrade or compensating control.",
+    "checkedAt": "2026-07-23T11:08:19.714Z"
   }
-}
+]
