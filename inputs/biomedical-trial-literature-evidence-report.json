@@ -1,12 +1,23 @@
 {
-  "searchTerms": [
-    "GLP-1 obesity clinical trial"
+  "searchTerms": [],
+  "watchlists": [
+    {
+      "id": "starter-study",
+      "nctIds": [
+        "NCT04280705"
+      ],
+      "maxStudies": 1
+    }
   ],
   "fromDate": "2025",
   "sort": "most_recent",
   "maxResultsPerQuery": 1,
   "maxArticles": 1,
-  "runMode": "extract",
+  "maxStudiesPerWatchlist": 1,
+  "maxPagesPerWatchlist": 1,
+  "runMode": "monitor",
+  "monitorKey": "starter-nct04280705-v2",
+  "initialRunMode": "emit_backfill",
   "emitRawRows": true,
   "generateReport": false,
   "generateExport": false,

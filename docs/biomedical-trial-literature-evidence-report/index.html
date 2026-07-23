@@ -6,14 +6,25 @@
 <main><section class="detail-summary"><img src="../assets/biomedical-trial-literature-evidence-report.png" alt="" width="240" height="240"><div><p class="buyer">For Biomedical research and diligence teams</p><p><strong>Public sources:</strong> ClinicalTrials.gov and PubMed APIs</p><dl><div><dt>Starter cap</dt><dd>$0.50</dd></div><div><dt>Entry row</dt><dd>$0.008</dd></div><div><dt>Full report</dt><dd>$5.00</dd></div></dl><div class="actions"><a class="primary" href="https://apify.com/taroyamada/biomedical-trial-literature-evidence-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=biomedical-trial-literature-evidence-report__detail" rel="noopener">Open on Apify</a><a class="icon-link" href="https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/biomedical-trial-literature-evidence-report.json">View maintained JSON</a></div></div></section>
 <section class="decision-section"><h2>Decisions this report supports</h2><ul><li>Find registered trials with missing or unclear publication links</li><li>Compare trial status and literature evidence across a watchlist</li><li>Prepare a source-linked evidence review queue</li></ul><p><strong>Data limitation:</strong> Registry and citation metadata are research inputs, not clinical conclusions, causality findings, or medical advice.</p></section>
 <section class="code-section"><h2>Buyer-capped starter input</h2><p>This is a real paid source check, not a dry run. Report and export events remain disabled until you opt in.</p><pre><code>{
-  &quot;searchTerms&quot;: [
-    &quot;GLP-1 obesity clinical trial&quot;
+  &quot;searchTerms&quot;: [],
+  &quot;watchlists&quot;: [
+    {
+      &quot;id&quot;: &quot;starter-study&quot;,
+      &quot;nctIds&quot;: [
+        &quot;NCT04280705&quot;
+      ],
+      &quot;maxStudies&quot;: 1
+    }
   ],
   &quot;fromDate&quot;: &quot;2025&quot;,
   &quot;sort&quot;: &quot;most_recent&quot;,
   &quot;maxResultsPerQuery&quot;: 1,
   &quot;maxArticles&quot;: 1,
-  &quot;runMode&quot;: &quot;extract&quot;,
+  &quot;maxStudiesPerWatchlist&quot;: 1,
+  &quot;maxPagesPerWatchlist&quot;: 1,
+  &quot;runMode&quot;: &quot;monitor&quot;,
+  &quot;monitorKey&quot;: &quot;starter-nct04280705-v2&quot;,
+  &quot;initialRunMode&quot;: &quot;emit_backfill&quot;,
   &quot;emitRawRows&quot;: true,
   &quot;generateReport&quot;: false,
   &quot;generateExport&quot;: false,

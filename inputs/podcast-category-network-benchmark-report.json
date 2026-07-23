@@ -5,8 +5,9 @@
   "showUrls": [],
   "searchTerms": [],
   "targetKeywords": [
+    "economics",
     "business",
-    "technology"
+    "money"
   ],
   "maxEpisodesPerFeed": 3,
   "initialRunMode": "emit_backfill",
