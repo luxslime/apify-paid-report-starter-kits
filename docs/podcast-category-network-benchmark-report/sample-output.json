@@ -3,8 +3,8 @@
     "actorName": "podcast-category-network-benchmark-report",
     "sourceName": "apple-podcasts-public-metadata-and-rss",
     "sourceUrl": "https://feeds.npr.org/510289/podcast.xml",
-    "retrievedAt": "2026-07-23T11:57:29.746Z",
-    "fetchedAt": "2026-07-23T11:57:29.746Z",
+    "retrievedAt": "2026-07-25T00:58:39.295Z",
+    "fetchedAt": "2026-07-25T00:58:39.295Z",
     "warnings": [],
     "sourceMethod": "public_rss_or_show_page",
     "authorizationBasis": "public_rss_or_show_page",
@@ -17,26 +17,27 @@
     ],
     "rowType": "podcast_show_candidate",
     "billingEventName": "podcast-show-benchmarked",
-    "stableKey": "7dd9ce0eaad1ddab5479197c",
+    "stableKey": "c684d577397d2fbbce6890a4",
     "showTitle": "Planet Money",
     "publisher": "NPR",
     "episodeCountScanned": 3,
     "matchedKeywords": [
+      "economics",
       "money"
     ],
     "mediaBuyerFitScore": 72,
     "recentEpisodeTitles": [
+      "Piles of cash and a town of solutions in Kenya, Nigeria (Summer School)",
       "Big Lettuce meets Small Intestine",
-      "New NPR Series: \"We Keep Us Safe\" from the Embedded podcast",
-      "Can World Cup mania grow MLS in the U.S.?"
+      "New NPR Series: \"We Keep Us Safe\" from the Embedded podcast"
     ]
   },
   {
     "actorName": "podcast-category-network-benchmark-report",
     "sourceName": "apple-podcasts-public-metadata-and-rss",
     "sourceUrl": "https://feeds.npr.org/510289/podcast.xml",
-    "retrievedAt": "2026-07-23T11:57:29.746Z",
-    "fetchedAt": "2026-07-23T11:57:29.746Z",
+    "retrievedAt": "2026-07-25T00:58:39.295Z",
+    "fetchedAt": "2026-07-25T00:58:39.295Z",
     "warnings": [],
     "sourceMethod": "public_rss_or_show_page",
     "authorizationBasis": "public_rss_or_show_page",
@@ -49,12 +50,54 @@
     ],
     "rowType": "podcast_fit_evidence",
     "billingEventName": "podcast-network-signal",
-    "stableKey": "484bc18763b18d22e21f3b7d",
+    "stableKey": "61d7e789a1142eb31112b5b3",
     "showTitle": "Planet Money",
     "publisher": "NPR",
     "fitEvidence": [
       {
-        "phrase": "Planet Money NPR Big Lettuce meets Small Intestine The cyclospora outbreak that’s sickening thousands of Americans got us interested",
+        "phrase": "In Kenya and Nigeria, economics isn’t just theory, it’s real life",
+        "matchedKeywords": [
+          "economics"
+        ],
+        "evidenceType": "public_text"
+      },
+      {
+        "phrase": "in economic research that netted some researchers the most prestigious prize in economics",
+        "matchedKeywords": [
+          "economics"
+        ],
+        "evidenceType": "public_text"
+      },
+      {
+        "phrase": "Featured Episodes: How randomized trials and the town of Busia, Kenya changed economics (2023) Nigeria, You Win! (2016) Featured Terms: Randomized controlled trial Human capital Missing middle Support: Plane",
+        "matchedKeywords": [
+          "economics"
+        ],
+        "evidenceType": "public_text"
+      },
+      {
+        "phrase": "Planet Money NPR Piles of cash and a town of solutions in Kenya, Nigeria (Summer School) Let’s head to a small town in Kenya that’s",
+        "matchedKeywords": [
+          "money"
+        ],
+        "evidenceType": "public_text"
+      },
+      {
+        "phrase": "Terms: Randomized controlled trial Human capital Missing middle Support: Planet Money+ Read: Our book: Planet Money: A Guide to the Economic Forces That Shape Your Life ( Audiobook here ) Our weekly longfo",
+        "matchedKeywords": [
+          "money"
+        ],
+        "evidenceType": "public_text"
+      },
+      {
+        "phrase": "rm Planet Money newsletter Our weekly Indicator link round-up newsletter Follow: Instagram TikTok YouTube Facebook The series is hosted",
+        "matchedKeywords": [
+          "money"
+        ],
+        "evidenceType": "public_text"
+      },
+      {
+        "phrase": "This episode was edited by Planet Money Executive Producer Alex Goldmark",
         "matchedKeywords": [
           "money"
         ],
@@ -69,27 +112,6 @@
       },
       {
         "phrase": "Alex Goldmark is Planet Money ’s executive producer",
-        "matchedKeywords": [
-          "money"
-        ],
-        "evidenceType": "public_text"
-      },
-      {
-        "phrase": "strategies are teams using? And does it stand a chance to work? Support: Planet Money+ Read: Our book: Planet Money: A Guide to the Economic Forces That Shape Your Life Our weekly longform Planet Money new",
-        "matchedKeywords": [
-          "money"
-        ],
-        "evidenceType": "public_text"
-      },
-      {
-        "phrase": "-up newsletter Follow: Instagram TikTok YouTube Facebook This episode of Planet Money was hosted by Becky Sullivan and Kenny Malone",
-        "matchedKeywords": [
-          "money"
-        ],
-        "evidenceType": "public_text"
-      },
-      {
-        "phrase": "Alex Goldmark is Planet Money’s executive producer",
         "matchedKeywords": [
           "money"
         ],
