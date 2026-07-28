@@ -7,6 +7,16 @@
         "battery"
       ],
       "lookbackDays": 30
+    },
+    {
+      "id": "fda-drug-watch",
+      "name": "FDA drug enforcement watch",
+      "agency": "FDA",
+      "productTypes": ["drug"],
+      "keywords": ["contamination"],
+      "classifications": ["Class II"],
+      "lookbackDays": 180,
+      "maxResults": 25
     }
   ],
   "monitorKey": "starter-battery-recalls",

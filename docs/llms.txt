@@ -15,8 +15,9 @@ Buyer-capped starter inputs for seven source-linked Apify report Actors. Six sta
 ## Buyer workflows
 
 - [Podcast Media Planning Workflow](https://luxslime.github.io/apify-paid-report-starter-kits/bundles/podcast-media-planning/): Benchmark public podcast metadata first, then move from a category signal to a source-linked planning report.
-- [Research & Regulatory Evidence Workflow](https://luxslime.github.io/apify-paid-report-starter-kits/bundles/research-regulatory-evidence/): Use official public sources to triage evidence gaps, recall actions, and regulatory changes without treating the output as advice.
+- [Biomedical Research Evidence Workflow](https://luxslime.github.io/apify-paid-report-starter-kits/bundles/research-regulatory-evidence/): Use official trial and literature sources to triage evidence gaps without treating registry or citation metadata as clinical conclusions.
 - [Engineering & Product Operations Workflow](https://luxslime.github.io/apify-paid-report-starter-kits/bundles/engineering-product-operations/): Start with bounded audits for authorized sites, app reviews, and dependency risk before enabling portfolio reports.
+- [Regulatory & Product Safety Workflow](https://luxslime.github.io/apify-paid-report-starter-kits/bundles/regulatory-safety-operations/): Monitor official recall records and regulatory changes, then route source-linked evidence into human review without presenting the output as advice.
 
 ## Usage and billing
 
