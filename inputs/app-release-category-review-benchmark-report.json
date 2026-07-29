@@ -9,7 +9,7 @@
   "reviewLimit": 5,
   "lookbackDays": 60,
   "releaseWindowDays": 21,
-  "runMode": "audit",
+  "runMode": "monitor",
   "initialRunMode": "emit_backfill",
   "emitRawReviews": false,
   "emitRawRows": true,

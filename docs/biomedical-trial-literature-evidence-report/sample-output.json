@@ -15,8 +15,8 @@
       "No reproduction of article full text."
     ],
     "warnings": [],
-    "retrievedAt": "2026-07-23T12:04:07.107Z",
-    "fetchedAt": "2026-07-23T12:04:07.107Z",
+    "retrievedAt": "2026-07-29T19:17:17.793Z",
+    "fetchedAt": "2026-07-29T19:17:17.793Z",
     "rowType": "clinical_trial_evidence",
     "billingEventName": "biomedical-evidence-row",
     "stableKey": "trial:NCT04280705:88292245869c694b8308b24d7ca38a109442776f7231ab1c6a03abe7063b4e8d",
@@ -75,8 +75,8 @@
       "No reproduction of article full text."
     ],
     "warnings": [],
-    "retrievedAt": "2026-07-23T12:04:07.107Z",
-    "fetchedAt": "2026-07-23T12:04:07.107Z",
+    "retrievedAt": "2026-07-29T19:17:17.793Z",
+    "fetchedAt": "2026-07-29T19:17:17.793Z",
     "rowType": "trial_literature_evidence_gap",
     "billingEventName": "evidence-gap-alert",
     "stableKey": "gap:NCT04280705:88292245869c694b8308b24d7ca38a109442776f7231ab1c6a03abe7063b4e8d",

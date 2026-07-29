@@ -3,8 +3,8 @@
     "actorName": "podcast-category-network-benchmark-report",
     "sourceName": "apple-podcasts-public-metadata-and-rss",
     "sourceUrl": "https://feeds.npr.org/510289/podcast.xml",
-    "retrievedAt": "2026-07-25T00:58:39.295Z",
-    "fetchedAt": "2026-07-25T00:58:39.295Z",
+    "retrievedAt": "2026-07-29T19:16:58.239Z",
+    "fetchedAt": "2026-07-29T19:16:58.239Z",
     "warnings": [],
     "sourceMethod": "public_rss_or_show_page",
     "authorizationBasis": "public_rss_or_show_page",
@@ -17,7 +17,7 @@
     ],
     "rowType": "podcast_show_candidate",
     "billingEventName": "podcast-show-benchmarked",
-    "stableKey": "c684d577397d2fbbce6890a4",
+    "stableKey": "48b9c0dc3365c39a1a9fdfb1",
     "showTitle": "Planet Money",
     "publisher": "NPR",
     "episodeCountScanned": 3,
@@ -27,17 +27,17 @@
     ],
     "mediaBuyerFitScore": 72,
     "recentEpisodeTitles": [
+      "How to beat the resource curse in Norway (Summer School)",
       "Piles of cash and a town of solutions in Kenya, Nigeria (Summer School)",
-      "Big Lettuce meets Small Intestine",
-      "New NPR Series: \"We Keep Us Safe\" from the Embedded podcast"
+      "Big Lettuce meets Small Intestine"
     ]
   },
   {
     "actorName": "podcast-category-network-benchmark-report",
     "sourceName": "apple-podcasts-public-metadata-and-rss",
     "sourceUrl": "https://feeds.npr.org/510289/podcast.xml",
-    "retrievedAt": "2026-07-25T00:58:39.295Z",
-    "fetchedAt": "2026-07-25T00:58:39.295Z",
+    "retrievedAt": "2026-07-29T19:16:58.239Z",
+    "fetchedAt": "2026-07-29T19:16:58.239Z",
     "warnings": [],
     "sourceMethod": "public_rss_or_show_page",
     "authorizationBasis": "public_rss_or_show_page",
@@ -50,7 +50,7 @@
     ],
     "rowType": "podcast_fit_evidence",
     "billingEventName": "podcast-network-signal",
-    "stableKey": "61d7e789a1142eb31112b5b3",
+    "stableKey": "8fe5ac43647f9bcbb986cc50",
     "showTitle": "Planet Money",
     "publisher": "NPR",
     "fitEvidence": [
@@ -76,7 +76,28 @@
         "evidenceType": "public_text"
       },
       {
-        "phrase": "Planet Money NPR Piles of cash and a town of solutions in Kenya, Nigeria (Summer School) Let’s head to a small town in Kenya that’s",
+        "phrase": "Planet Money NPR How to beat the resource curse in Norway (Summer School) Let’s call it the luxury of restraint",
+        "matchedKeywords": [
+          "money"
+        ],
+        "evidenceType": "public_text"
+      },
+      {
+        "phrase": "ty Coordination problem Free-rider problem Support: NPR+ Read: Our book: Planet Money: A Guide to the Economic Forces That Shape Your Life ( Audiobook here ) Our weekly longform Planet Money newsletter Our",
+        "matchedKeywords": [
+          "money"
+        ],
+        "evidenceType": "public_text"
+      },
+      {
+        "phrase": "-up newsletter Follow: Instagram TikTok YouTube Facebook This episode of Planet Money Summer School is hosted by Robert Smith",
+        "matchedKeywords": [
+          "money"
+        ],
+        "evidenceType": "public_text"
+      },
+      {
+        "phrase": "It was produced by Sophia Paliza-Carre and edited by Planet Money Executive Producer Alex Goldmark",
         "matchedKeywords": [
           "money"
         ],

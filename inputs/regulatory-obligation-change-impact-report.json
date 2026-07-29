@@ -1,15 +1,18 @@
 {
   "watchlists": [
     {
-      "id": "electronic-records",
-      "cfrTitle": 21,
-      "part": "11",
+      "id": "benzene-exposure",
+      "cfrTitle": 29,
+      "part": "1910",
       "keywords": [
-        "electronic record"
+        "benzene"
+      ],
+      "federalRegisterTerms": [
+        "benzene"
       ]
     }
   ],
-  "monitorKey": "starter-electronic-records",
+  "monitorKey": "starter-benzene-exposure",
   "initialRunMode": "emit_backfill",
   "generateReport": false,
   "emitRawRows": true,

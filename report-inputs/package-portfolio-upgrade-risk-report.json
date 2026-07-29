@@ -7,6 +7,7 @@
     }
   ],
   "includeGitHub": false,
+  "monitorKey": "dependency-portfolio-main",
   "initialRunMode": "emit_backfill",
   "generateReport": true,
   "emitRawRows": false,

@@ -15,7 +15,7 @@
   "emitRawRows": true,
   "emitUnchanged": false,
   "emitExport": false,
-  "maxChangedRecords": 3,
+  "maxChangedRecords": 1,
   "maxChargeUsd": 1,
   "dryRun": false
 }

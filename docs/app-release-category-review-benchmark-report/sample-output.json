@@ -14,150 +14,22 @@
       "Do not treat a sample-based regression signal as a guarantee."
     ],
     "warnings": [],
-    "retrievedAt": "2026-07-23T12:04:14.654Z",
-    "fetchedAt": "2026-07-23T12:04:14.654Z",
+    "retrievedAt": "2026-07-29T19:22:14.458Z",
+    "fetchedAt": "2026-07-29T19:22:14.458Z",
     "rowType": "app_review_sample",
     "billingEventName": "app-benchmarked",
-    "stableKey": "review:app-store:us:284882215:14333292811",
+    "stableKey": "review:app-store:us:284882215:14358212342",
     "sourceUrl": "https://apps.apple.com/us/app/facebook/id284882215?uo=4",
     "productKey": "app-store:us:284882215",
     "platform": "appStore",
     "appId": "284882215",
     "appName": "Facebook",
-    "reviewId": "14333292811",
-    "rating": 3,
-    "reviewTitle": "About vpn",
-    "reviewText": "Sometimes it may be difficult to fb user",
-    "version": "570.0.0",
-    "updatedAt": "2026-07-22T06:50:51.000Z"
-  },
-  {
-    "actorName": "app-release-category-review-benchmark-report",
-    "sourceName": "public-app-storefronts",
-    "sourceMethod": "public_store_metadata_and_review_samples",
-    "authorizationBasis": "public_storefront_metadata",
-    "limitations": [
-      "Apple data uses public iTunes Lookup and customer-review RSS endpoints.",
-      "Google Play data is best-effort from public listing HTML and can expose fewer review samples.",
-      "Regression classifications are deterministic review-sample signals, not product, medical, legal, or financial advice."
-    ],
-    "prohibitedInterpretations": [
-      "Do not target individual reviewers or generate fake reviews.",
-      "Do not treat a sample-based regression signal as a guarantee."
-    ],
-    "warnings": [],
-    "retrievedAt": "2026-07-23T12:04:14.654Z",
-    "fetchedAt": "2026-07-23T12:04:14.654Z",
-    "rowType": "app_review_sample",
-    "billingEventName": "app-benchmarked",
-    "stableKey": "review:app-store:us:284882215:14333230528",
-    "sourceUrl": "https://apps.apple.com/us/app/facebook/id284882215?uo=4",
-    "productKey": "app-store:us:284882215",
-    "platform": "appStore",
-    "appId": "284882215",
-    "appName": "Facebook",
-    "reviewId": "14333230528",
-    "rating": 2,
-    "reviewTitle": "Ito",
-    "reviewText": "Diana11",
-    "version": "570.0.0",
-    "updatedAt": "2026-07-22T06:24:09.000Z"
-  },
-  {
-    "actorName": "app-release-category-review-benchmark-report",
-    "sourceName": "public-app-storefronts",
-    "sourceMethod": "public_store_metadata_and_review_samples",
-    "authorizationBasis": "public_storefront_metadata",
-    "limitations": [
-      "Apple data uses public iTunes Lookup and customer-review RSS endpoints.",
-      "Google Play data is best-effort from public listing HTML and can expose fewer review samples.",
-      "Regression classifications are deterministic review-sample signals, not product, medical, legal, or financial advice."
-    ],
-    "prohibitedInterpretations": [
-      "Do not target individual reviewers or generate fake reviews.",
-      "Do not treat a sample-based regression signal as a guarantee."
-    ],
-    "warnings": [],
-    "retrievedAt": "2026-07-23T12:04:14.654Z",
-    "fetchedAt": "2026-07-23T12:04:14.654Z",
-    "rowType": "app_review_sample",
-    "billingEventName": "app-benchmarked",
-    "stableKey": "review:app-store:us:284882215:14333211399",
-    "sourceUrl": "https://apps.apple.com/us/app/facebook/id284882215?uo=4",
-    "productKey": "app-store:us:284882215",
-    "platform": "appStore",
-    "appId": "284882215",
-    "appName": "Facebook",
-    "reviewId": "14333211399",
-    "rating": 5,
-    "reviewTitle": "Good apps",
-    "reviewText": "I like this app, rrly help me to keep up my live with my friends",
-    "version": "570.0.0",
-    "updatedAt": "2026-07-22T06:15:51.000Z"
-  },
-  {
-    "actorName": "app-release-category-review-benchmark-report",
-    "sourceName": "public-app-storefronts",
-    "sourceMethod": "public_store_metadata_and_review_samples",
-    "authorizationBasis": "public_storefront_metadata",
-    "limitations": [
-      "Apple data uses public iTunes Lookup and customer-review RSS endpoints.",
-      "Google Play data is best-effort from public listing HTML and can expose fewer review samples.",
-      "Regression classifications are deterministic review-sample signals, not product, medical, legal, or financial advice."
-    ],
-    "prohibitedInterpretations": [
-      "Do not target individual reviewers or generate fake reviews.",
-      "Do not treat a sample-based regression signal as a guarantee."
-    ],
-    "warnings": [],
-    "retrievedAt": "2026-07-23T12:04:14.654Z",
-    "fetchedAt": "2026-07-23T12:04:14.654Z",
-    "rowType": "app_review_sample",
-    "billingEventName": "app-benchmarked",
-    "stableKey": "review:app-store:us:284882215:14333202661",
-    "sourceUrl": "https://apps.apple.com/us/app/facebook/id284882215?uo=4",
-    "productKey": "app-store:us:284882215",
-    "platform": "appStore",
-    "appId": "284882215",
-    "appName": "Facebook",
-    "reviewId": "14333202661",
-    "rating": 5,
-    "reviewTitle": "anden",
-    "reviewText": "Algo bello",
-    "version": "570.0.0",
-    "updatedAt": "2026-07-22T06:12:08.000Z"
-  },
-  {
-    "actorName": "app-release-category-review-benchmark-report",
-    "sourceName": "public-app-storefronts",
-    "sourceMethod": "public_store_metadata_and_review_samples",
-    "authorizationBasis": "public_storefront_metadata",
-    "limitations": [
-      "Apple data uses public iTunes Lookup and customer-review RSS endpoints.",
-      "Google Play data is best-effort from public listing HTML and can expose fewer review samples.",
-      "Regression classifications are deterministic review-sample signals, not product, medical, legal, or financial advice."
-    ],
-    "prohibitedInterpretations": [
-      "Do not target individual reviewers or generate fake reviews.",
-      "Do not treat a sample-based regression signal as a guarantee."
-    ],
-    "warnings": [],
-    "retrievedAt": "2026-07-23T12:04:14.654Z",
-    "fetchedAt": "2026-07-23T12:04:14.654Z",
-    "rowType": "app_review_sample",
-    "billingEventName": "app-benchmarked",
-    "stableKey": "review:app-store:us:284882215:14333175933",
-    "sourceUrl": "https://apps.apple.com/us/app/facebook/id284882215?uo=4",
-    "productKey": "app-store:us:284882215",
-    "platform": "appStore",
-    "appId": "284882215",
-    "appName": "Facebook",
-    "reviewId": "14333175933",
+    "reviewId": "14358212342",
     "rating": 1,
-    "reviewTitle": "Messenger Error",
-    "reviewText": "Messenger Bugs/ keep logout",
-    "version": "570.0.0",
-    "updatedAt": "2026-07-22T06:00:39.000Z"
+    "reviewTitle": "Rage Bait Platform",
+    "reviewText": "Facebook is the ideal platform for posting rage bait. Every article comes hateful comments in the replies. It’s easy enough to block the commenter, but you still have to see their bile. Too many bots. Too many haters.",
+    "version": "572.0.0",
+    "updatedAt": "2026-07-28T12:31:06.000Z"
   },
   {
     "actorName": "app-release-category-review-benchmark-report",
@@ -174,8 +46,136 @@
       "Do not treat a sample-based regression signal as a guarantee."
     ],
     "warnings": [],
-    "retrievedAt": "2026-07-23T12:04:14.654Z",
-    "fetchedAt": "2026-07-23T12:04:14.654Z",
+    "retrievedAt": "2026-07-29T19:22:14.458Z",
+    "fetchedAt": "2026-07-29T19:22:14.458Z",
+    "rowType": "app_review_sample",
+    "billingEventName": "app-benchmarked",
+    "stableKey": "review:app-store:us:284882215:14358184714",
+    "sourceUrl": "https://apps.apple.com/us/app/facebook/id284882215?uo=4",
+    "productKey": "app-store:us:284882215",
+    "platform": "appStore",
+    "appId": "284882215",
+    "appName": "Facebook",
+    "reviewId": "14358184714",
+    "rating": 1,
+    "reviewTitle": "Refresh",
+    "reviewText": "This app doesn’t allow me to refresh fb messages and that is super frustrating.",
+    "version": "572.0.0",
+    "updatedAt": "2026-07-28T12:22:33.000Z"
+  },
+  {
+    "actorName": "app-release-category-review-benchmark-report",
+    "sourceName": "public-app-storefronts",
+    "sourceMethod": "public_store_metadata_and_review_samples",
+    "authorizationBasis": "public_storefront_metadata",
+    "limitations": [
+      "Apple data uses public iTunes Lookup and customer-review RSS endpoints.",
+      "Google Play data is best-effort from public listing HTML and can expose fewer review samples.",
+      "Regression classifications are deterministic review-sample signals, not product, medical, legal, or financial advice."
+    ],
+    "prohibitedInterpretations": [
+      "Do not target individual reviewers or generate fake reviews.",
+      "Do not treat a sample-based regression signal as a guarantee."
+    ],
+    "warnings": [],
+    "retrievedAt": "2026-07-29T19:22:14.458Z",
+    "fetchedAt": "2026-07-29T19:22:14.458Z",
+    "rowType": "app_review_sample",
+    "billingEventName": "app-benchmarked",
+    "stableKey": "review:app-store:us:284882215:14358158179",
+    "sourceUrl": "https://apps.apple.com/us/app/facebook/id284882215?uo=4",
+    "productKey": "app-store:us:284882215",
+    "platform": "appStore",
+    "appId": "284882215",
+    "appName": "Facebook",
+    "reviewId": "14358158179",
+    "rating": 5,
+    "reviewTitle": "Thankful",
+    "reviewText": "I’m grateful to use fb to communicate to the masses of people to share my faith in God and to provide feedback to others good bad or indifferent , I really try not to hurt anyone’s feelings . Thanks for allowing me to share",
+    "version": "572.0.0",
+    "updatedAt": "2026-07-28T12:14:18.000Z"
+  },
+  {
+    "actorName": "app-release-category-review-benchmark-report",
+    "sourceName": "public-app-storefronts",
+    "sourceMethod": "public_store_metadata_and_review_samples",
+    "authorizationBasis": "public_storefront_metadata",
+    "limitations": [
+      "Apple data uses public iTunes Lookup and customer-review RSS endpoints.",
+      "Google Play data is best-effort from public listing HTML and can expose fewer review samples.",
+      "Regression classifications are deterministic review-sample signals, not product, medical, legal, or financial advice."
+    ],
+    "prohibitedInterpretations": [
+      "Do not target individual reviewers or generate fake reviews.",
+      "Do not treat a sample-based regression signal as a guarantee."
+    ],
+    "warnings": [],
+    "retrievedAt": "2026-07-29T19:22:14.458Z",
+    "fetchedAt": "2026-07-29T19:22:14.458Z",
+    "rowType": "app_review_sample",
+    "billingEventName": "app-benchmarked",
+    "stableKey": "review:app-store:us:284882215:14358144899",
+    "sourceUrl": "https://apps.apple.com/us/app/facebook/id284882215?uo=4",
+    "productKey": "app-store:us:284882215",
+    "platform": "appStore",
+    "appId": "284882215",
+    "appName": "Facebook",
+    "reviewId": "14358144899",
+    "rating": 1,
+    "reviewTitle": "Oh my previous review was erased",
+    "reviewText": "BBB complaint filed since meta/facebook support refuses to cooperate and chooses to non respond a complaint via email. \nHyper personalized content seems to be going rampant now \nMeta is now using data obtained from “research” through a job I applied for to continue the retaliatory behavior and has completely removed any actual training, boundaries, and restrictions set by pelting me with racist and content targeting my disability. \n\nThis has escalated into app retaliation lockouts from multiple social media accounts. \n\nAnd now I can’t reset my account password even though I’ve been logged in for weeks. Strange because this function doesn’t affect anyone else I know. Wild the amount of retaliation is just blatantly obvious at this point. \n\n\nMore algorithmic abuse and manipulation. Including race rage baiting, targeting, blacks, Hispanics, Asians and Pacific Islanders. Targeting and antagonizing users on the platform. As well as use of dark patterns to falsely generate ad revenue. Not a good look for shareholders.\n\nAh now in retaliation to my recent update I’m just being spammed with thirst traps and irrelevant interests. \n\nI highly recommend the company review who they have in leadership that is pushing this behavior on to end users. \n\nThe abuse continues as I recently made another concern about missing photos from my profile along with the strange shadow banning of accounts and removal of posts without notice. \n\nThe issue persists where retaliatory behaviors in app continue to happen when leaving reviews like this. \n\nMeta is using shell access to retaliate against end users for raising these concerns, including cyber attacks against personal devices without app installation or web access. \n\nWas blasted with over ten minutes of cop reels when training the algorithm to not show this content due to past trauma. Facebooks platform retaliated against this and showed excessive reels back to back.\n\nAnnnnnd now I’m being harassed through hyper personalized content again. As well as deleted one of my accounts, again… seriously? This is outright abusive.\n\nSo again i recommend contacting your senator and encouraging them to hold companies accountable to these forms of abuse/manipulation.\n\nIt’s crazy to me the narrative this company tries to spin on people.  Not to mention the targeting of people who have disabilities and antagonizing them with hyper personalized abuse content. \n\nThis abuse of tech is disgusting.\n\nAs more retaliation from the app continues, dark patterns and phantom clicks, continue as well. \n\nShortly after my account was deleted without my input nor consent and I am being forced to do biometric verification.",
+    "version": "572.0.0",
+    "updatedAt": "2026-07-28T12:10:02.000Z"
+  },
+  {
+    "actorName": "app-release-category-review-benchmark-report",
+    "sourceName": "public-app-storefronts",
+    "sourceMethod": "public_store_metadata_and_review_samples",
+    "authorizationBasis": "public_storefront_metadata",
+    "limitations": [
+      "Apple data uses public iTunes Lookup and customer-review RSS endpoints.",
+      "Google Play data is best-effort from public listing HTML and can expose fewer review samples.",
+      "Regression classifications are deterministic review-sample signals, not product, medical, legal, or financial advice."
+    ],
+    "prohibitedInterpretations": [
+      "Do not target individual reviewers or generate fake reviews.",
+      "Do not treat a sample-based regression signal as a guarantee."
+    ],
+    "warnings": [],
+    "retrievedAt": "2026-07-29T19:22:14.458Z",
+    "fetchedAt": "2026-07-29T19:22:14.458Z",
+    "rowType": "app_review_sample",
+    "billingEventName": "app-benchmarked",
+    "stableKey": "review:app-store:us:284882215:14358108410",
+    "sourceUrl": "https://apps.apple.com/us/app/facebook/id284882215?uo=4",
+    "productKey": "app-store:us:284882215",
+    "platform": "appStore",
+    "appId": "284882215",
+    "appName": "Facebook",
+    "reviewId": "14358108410",
+    "rating": 5,
+    "reviewTitle": "FB review",
+    "reviewText": "I just wish they would show much more of my friends posts.  \nSo many non personal posts is not what I like.  \nAllow no cursing or bad language.\n\nLove how FB keeps friends closer.\nLove memories.\nI love the true information that keeps us up to date with news health and happenings in the world.  \n\nThank you for this.  \nPlease filter out lies bad ads,  and bad language.  I’m sure you can do better.  \n\nOverall, it has been such a positive intellectual experience for me.",
+    "version": "572.0.0",
+    "updatedAt": "2026-07-28T11:58:22.000Z"
+  },
+  {
+    "actorName": "app-release-category-review-benchmark-report",
+    "sourceName": "public-app-storefronts",
+    "sourceMethod": "public_store_metadata_and_review_samples",
+    "authorizationBasis": "public_storefront_metadata",
+    "limitations": [
+      "Apple data uses public iTunes Lookup and customer-review RSS endpoints.",
+      "Google Play data is best-effort from public listing HTML and can expose fewer review samples.",
+      "Regression classifications are deterministic review-sample signals, not product, medical, legal, or financial advice."
+    ],
+    "prohibitedInterpretations": [
+      "Do not target individual reviewers or generate fake reviews.",
+      "Do not treat a sample-based regression signal as a guarantee."
+    ],
+    "warnings": [],
+    "retrievedAt": "2026-07-29T19:22:14.458Z",
+    "fetchedAt": "2026-07-29T19:22:14.458Z",
     "rowType": "app_review_regression_alert",
     "billingEventName": "app-review-regression",
     "stableKey": "alert:app-store:us:284882215:40f3bff329360eaaaafe6913fd2210e528c5526fe3b579a21494166a8b7e0452",
@@ -197,7 +197,8 @@
       "failedSources": 0
     },
     "recommendedActions": [
-      "Prioritize App Store release triage: post-release reviews show a negative rating shift and elevated one- or two-star share."
+      "Prioritize App Store release triage: post-release reviews show a negative rating shift and elevated one- or two-star share.",
+      "Inspect App Store complaints around ads and interruptions."
     ]
   }
 ]

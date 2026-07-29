@@ -12,8 +12,8 @@
       "Do not treat this report as proof that an upgrade is safe, exploitable, licensed, or production-ready.",
       "Do not infer private repository ownership, maintainer intent, or legal compliance from public metadata."
     ],
-    "retrievedAt": "2026-07-23T11:08:19.714Z",
-    "fetchedAt": "2026-07-23T11:08:19.714Z",
+    "retrievedAt": "2026-07-29T19:17:45.949Z",
+    "fetchedAt": "2026-07-29T19:17:45.949Z",
     "warnings": [],
     "rowType": "package_risk",
     "billingEventName": "package-risk-row",
@@ -29,13 +29,13 @@
         "source": "npm-registry",
         "url": "https://registry.npmjs.org/lodash",
         "official": true,
-        "retrievedAt": "2026-07-23T11:08:19.785Z"
+        "retrievedAt": "2026-07-29T19:17:46.023Z"
       },
       {
         "source": "osv",
         "url": "https://api.osv.dev/v1/query",
         "official": true,
-        "retrievedAt": "2026-07-23T11:08:19.785Z"
+        "retrievedAt": "2026-07-29T19:17:46.023Z"
       }
     ],
     "packageName": "lodash",
@@ -157,7 +157,7 @@
       "repository": null,
       "source": null
     },
-    "checkedAt": "2026-07-23T11:08:19.714Z"
+    "checkedAt": "2026-07-29T19:17:45.949Z"
   },
   {
     "actorName": "package-portfolio-upgrade-risk-report",
@@ -172,8 +172,8 @@
       "Do not treat this report as proof that an upgrade is safe, exploitable, licensed, or production-ready.",
       "Do not infer private repository ownership, maintainer intent, or legal compliance from public metadata."
     ],
-    "retrievedAt": "2026-07-23T11:08:19.714Z",
-    "fetchedAt": "2026-07-23T11:08:19.714Z",
+    "retrievedAt": "2026-07-29T19:17:45.949Z",
+    "fetchedAt": "2026-07-29T19:17:45.949Z",
     "warnings": [],
     "rowType": "package_upgrade_risk_alert",
     "billingEventName": "package-upgrade-risk-alert",
@@ -189,13 +189,13 @@
         "source": "npm-registry",
         "url": "https://registry.npmjs.org/lodash",
         "official": true,
-        "retrievedAt": "2026-07-23T11:08:19.785Z"
+        "retrievedAt": "2026-07-29T19:17:46.023Z"
       },
       {
         "source": "osv",
         "url": "https://api.osv.dev/v1/query",
         "official": true,
-        "retrievedAt": "2026-07-23T11:08:19.785Z"
+        "retrievedAt": "2026-07-29T19:17:46.023Z"
       }
     ],
     "packageName": "lodash",
@@ -207,6 +207,6 @@
     "vulnerabilityCount": 5,
     "alertReason": "known_vulnerability",
     "recommendedAction": "Review OSV advisories and prioritize an upgrade or compensating control.",
-    "checkedAt": "2026-07-23T11:08:19.714Z"
+    "checkedAt": "2026-07-29T19:17:45.949Z"
   }
 ]
