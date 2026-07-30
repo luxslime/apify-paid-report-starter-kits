@@ -1,6 +1,6 @@
 # Apify Paid Report Starter Kits
 
-Buyer-capped starter inputs for seven source-linked Apify report Actors. Six starters exercise public sources and deliver a buyer-facing signal; the authorized-site SEO starter is a free safe demo until the buyer confirms authorization. Every input caps event charges at $1 or less.
+Buyer-capped starter inputs for 8 source-linked Apify report Actors. Seven starters exercise public sources and deliver a buyer-facing signal; the authorized-site SEO starter is a free safe demo until the buyer confirms authorization. Every input caps event charges at $1 or less.
 
 ## Catalog
 
@@ -11,6 +11,7 @@ Buyer-capped starter inputs for seven source-linked Apify report Actors. Six sta
 - [npm & PyPI Dependency Risk Report](https://luxslime.github.io/apify-paid-report-starter-kits/package-portfolio-upgrade-risk-report/): Check package versions and vulnerability evidence before a portfolio report. Sources: npm, PyPI, and OSV public APIs.
 - [CPSC & NHTSA Recall Portfolio Watch](https://luxslime.github.io/apify-paid-report-starter-kits/product-safety-market-action-portfolio-report/): Monitor official recall records across product and vehicle watchlists. Sources: CPSC and NHTSA public records.
 - [eCFR & Federal Register Change Report](https://luxslime.github.io/apify-paid-report-starter-kits/regulatory-obligation-change-impact-report/): Track source-linked CFR sections and Federal Register notices by watchlist. Sources: eCFR and Federal Register public APIs.
+- [PubMed Literature Watch & Research Report](https://luxslime.github.io/apify-paid-report-starter-kits/pubmed-research-intelligence/): Monitor official PubMed citation metadata and generate source-linked literature reports and screening exports. Sources: NCBI PubMed E-utilities.
 
 ## Buyer workflows
 

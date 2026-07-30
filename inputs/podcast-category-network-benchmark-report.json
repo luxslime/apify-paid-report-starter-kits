@@ -11,6 +11,7 @@
   ],
   "maxEpisodesPerFeed": 3,
   "initialRunMode": "emit_backfill",
+  "monitorKey": "starter-podcast-category-benchmark",
   "generateReport": false,
   "emitRawRows": true,
   "emitShortlistExport": false,

@@ -11,10 +11,11 @@
   ],
   "maxEpisodesPerFeed": 3,
   "initialRunMode": "emit_backfill",
+  "monitorKey": "starter-podcast-category-benchmark-full-report-v1",
   "generateReport": true,
   "emitRawRows": false,
-  "emitShortlistExport": false,
+  "emitShortlistExport": true,
   "emitUnchanged": false,
-  "maxChargeUsd": 4,
+  "maxChargeUsd": 4.84,
   "dryRun": false
 }

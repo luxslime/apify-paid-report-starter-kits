@@ -13,9 +13,9 @@
   "emitPageRows": false,
   "emitRawRows": false,
   "generateReport": true,
-  "emitExport": false,
+  "emitExport": true,
   "emitUnchanged": false,
   "initialRunMode": "emit_backfill",
-  "maxChargeUsd": 4.5,
+  "maxChargeUsd": 5.27,
   "dryRun": false
 }

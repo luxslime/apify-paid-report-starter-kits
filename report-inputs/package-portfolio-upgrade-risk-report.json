@@ -7,12 +7,12 @@
     }
   ],
   "includeGitHub": false,
-  "monitorKey": "dependency-portfolio-main",
+  "monitorKey": "starter-package-upgrade-risk-full-report-v1",
   "initialRunMode": "emit_backfill",
   "generateReport": true,
   "emitRawRows": false,
   "emitUnchanged": false,
-  "emitExport": false,
-  "maxChargeUsd": 10.5,
+  "emitExport": true,
+  "maxChargeUsd": 14.51,
   "dryRun": false
 }

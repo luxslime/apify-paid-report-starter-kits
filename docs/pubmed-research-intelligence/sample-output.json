@@ -1,0 +1,42 @@
+[
+  {
+    "actorName": "pubmed-research-intelligence",
+    "sourceName": "NCBI PubMed E-utilities",
+    "sourceMethod": "official_ncbi_eutils_json",
+    "authorizationBasis": "public_ncbi_eutilities",
+    "rowType": "new_publication_alert",
+    "billingEventName": "new-publication-alert",
+    "stableKey": "alert:39763750",
+    "pmid": "39763750",
+    "title": "Illustrative biomedical publication",
+    "publicationDate": "2026",
+    "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/39763750/",
+    "summary": "New PubMed record 39763750 matched the saved literature watch.",
+    "prohibitedInterpretations": [
+      "No medical advice.",
+      "No causal or clinical efficacy claim.",
+      "No reproduction of article full text."
+    ],
+    "fetchedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "actorName": "pubmed-research-intelligence",
+    "sourceName": "NCBI PubMed E-utilities",
+    "sourceMethod": "official_ncbi_eutils_json",
+    "authorizationBasis": "public_ncbi_eutilities",
+    "rowType": "new_publication_alert",
+    "billingEventName": "new-publication-alert",
+    "stableKey": "alert:39763800",
+    "pmid": "39763800",
+    "title": "Illustrative follow-up publication",
+    "publicationDate": "2026",
+    "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/39763800/",
+    "summary": "New PubMed record 39763800 matched the saved literature watch.",
+    "prohibitedInterpretations": [
+      "No medical advice.",
+      "No causal or clinical efficacy claim.",
+      "No reproduction of article full text."
+    ],
+    "fetchedAt": "2026-07-30T00:00:00.000Z"
+  }
+]

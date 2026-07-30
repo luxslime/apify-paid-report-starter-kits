@@ -9,13 +9,14 @@
   "reviewLimit": 5,
   "lookbackDays": 60,
   "releaseWindowDays": 21,
-  "runMode": "audit",
+  "runMode": "monitor",
   "initialRunMode": "emit_backfill",
+  "monitorKey": "starter-app-release-benchmark-full-report-v1",
   "emitRawReviews": false,
   "emitRawRows": false,
   "generateReport": true,
-  "generateExport": false,
+  "generateExport": true,
   "emitUnchanged": false,
-  "maxChargeUsd": 4.5,
+  "maxChargeUsd": 5.37,
   "dryRun": false
 }

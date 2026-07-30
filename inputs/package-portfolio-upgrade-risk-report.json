@@ -7,6 +7,7 @@
     }
   ],
   "includeGitHub": false,
+  "monitorKey": "starter-package-upgrade-risk",
   "initialRunMode": "emit_backfill",
   "generateReport": false,
   "emitRawRows": true,

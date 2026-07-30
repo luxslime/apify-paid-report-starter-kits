@@ -1,0 +1,17 @@
+{
+  "searchTerms": [
+    "CRISPR sickle cell"
+  ],
+  "pmids": [],
+  "sort": "most_recent",
+  "maxResultsPerQuery": 1,
+  "maxArticles": 1,
+  "runMode": "monitor",
+  "monitorKey": "starter-pubmed-crispr-sickle-cell-v1",
+  "initialRunMode": "emit_backfill",
+  "emitRawRows": false,
+  "generateReport": false,
+  "generateExport": false,
+  "maxChargeUsd": 0.25,
+  "dryRun": false
+}

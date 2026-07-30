@@ -16,12 +16,12 @@
   "maxStudiesPerWatchlist": 1,
   "maxPagesPerWatchlist": 1,
   "runMode": "monitor",
-  "monitorKey": "starter-nct04280705-v2",
+  "monitorKey": "starter-nct04280705-v2-full-report-v1",
   "initialRunMode": "emit_backfill",
   "emitRawRows": false,
   "generateReport": true,
-  "generateExport": false,
+  "generateExport": true,
   "emitUnchanged": false,
-  "maxChargeUsd": 6.5,
+  "maxChargeUsd": 8.41,
   "dryRun": false
 }

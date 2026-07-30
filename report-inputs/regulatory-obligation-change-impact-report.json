@@ -1,22 +1,25 @@
 {
   "watchlists": [
     {
-      "id": "electronic-records",
-      "cfrTitle": 21,
-      "part": "11",
+      "id": "benzene-exposure",
+      "cfrTitle": 29,
+      "part": "1910",
       "keywords": [
-        "electronic record"
+        "benzene"
+      ],
+      "federalRegisterTerms": [
+        "benzene"
       ]
     }
   ],
-  "monitorKey": "starter-electronic-records",
+  "monitorKey": "starter-benzene-exposure-full-report-v1",
   "initialRunMode": "emit_backfill",
   "generateReport": true,
   "emitRawRows": false,
   "emitUnchanged": false,
-  "emitExport": false,
+  "emitExport": true,
   "maxFederalRegisterDocuments": 1,
   "lookbackDays": 30,
-  "maxChargeUsd": 13.5,
+  "maxChargeUsd": 19.56,
   "dryRun": false
 }

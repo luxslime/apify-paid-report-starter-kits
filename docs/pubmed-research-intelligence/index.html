@@ -1,0 +1,68 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PubMed Literature Watch &amp; Research Report | Apify Starter Input</title><meta name="description" content="Monitor official PubMed citation metadata and generate source-linked literature reports and screening exports. Start with a buyer-controlled paid run capped at $0.25.">
+<link rel="canonical" href="https://luxslime.github.io/apify-paid-report-starter-kits/pubmed-research-intelligence/"><link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="PubMed Literature Watch &amp; Research Report"><meta property="og:description" content="Monitor official PubMed citation metadata and generate source-linked literature reports and screening exports."><meta property="og:type" content="website"><meta property="og:url" content="https://luxslime.github.io/apify-paid-report-starter-kits/pubmed-research-intelligence/"><meta property="og:image" content="https://luxslime.github.io/apify-paid-report-starter-kits/assets/pubmed-research-intelligence.png"><meta name="twitter:card" content="summary"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"PubMed Literature Watch & Research Report","applicationCategory":"BusinessApplication","operatingSystem":"Web","url":"https://apify.com/taroyamada/pubmed-research-intelligence","description":"Monitor official PubMed citation metadata and generate source-linked literature reports and screening exports. Sources: NCBI PubMed E-utilities."},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much can the starter run charge?","acceptedAnswer":{"@type":"Answer","text":"The maintained starter input caps total event charges at $0.25."}},{"@type":"Question","name":"Are zero-row runs charged?","acceptedAnswer":{"@type":"Answer","text":"No actor-start charge is configured, and a zero-row or unchanged monitor run has zero event charge."}},{"@type":"Question","name":"What are the data limitations?","acceptedAnswer":{"@type":"Answer","text":"PubMed citation metadata can be updated and does not reproduce article full text, establish evidence quality, or provide medical conclusions."}}]}]}</script></head>
+<body class="detail-page"><header class="detail-header"><div class="header-inner"><a class="back" href="../">All starter kits</a><p class="eyebrow">Research operations</p><h1>PubMed Literature Watch &amp; Research Report</h1><p class="intro">Monitor official PubMed citation metadata and generate source-linked literature reports and screening exports.</p></div></header>
+<main><section class="detail-summary"><img src="../assets/pubmed-research-intelligence.png" alt="" width="240" height="240"><div><p class="buyer">For Biomedical research, medical affairs, and diligence teams</p><p><strong>Public sources:</strong> NCBI PubMed E-utilities</p><dl><div><dt>Starter cap</dt><dd>$0.25</dd></div><div><dt>Expected starter</dt><dd>$0.000</dd></div><div><dt>Full report</dt><dd>$2.00</dd></div></dl><p><strong>Starter outcome:</strong> Free authorization-safe demo</p><div class="actions"><a class="primary" href="https://apify.com/taroyamada/pubmed-research-intelligence?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=pubmed-research-intelligence__detail" rel="noopener">Open on Apify</a><a class="icon-link" href="https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/pubmed-research-intelligence.json">Starter JSON</a><a class="icon-link" href="https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/report-inputs/pubmed-research-intelligence.json">Full-report JSON</a></div></div></section>
+<section class="decision-section"><h2>Decisions this report supports</h2><ul><li>Detect new publications matching a saved research query</li><li>Review journal and publication-type coverage in a literature update</li><li>Export citation metadata into a human-reviewed screening workflow</li></ul><p><strong>Data limitation:</strong> PubMed citation metadata can be updated and does not reproduce article full text, establish evidence quality, or provide medical conclusions.</p></section>
+<section class="code-section"><h2>Buyer-capped starter input</h2><p>This authorization-safe starter is a free dry run with zero delivered rows and zero event charge. Replace the scope, confirm authorization, and select a paid output before a live audit.</p><pre><code>{
+  &quot;searchTerms&quot;: [
+    &quot;CRISPR sickle cell&quot;
+  ],
+  &quot;pmids&quot;: [],
+  &quot;sort&quot;: &quot;most_recent&quot;,
+  &quot;maxResultsPerQuery&quot;: 1,
+  &quot;maxArticles&quot;: 1,
+  &quot;runMode&quot;: &quot;monitor&quot;,
+  &quot;monitorKey&quot;: &quot;starter-pubmed-crispr-sickle-cell-v1&quot;,
+  &quot;initialRunMode&quot;: &quot;emit_backfill&quot;,
+  &quot;emitRawRows&quot;: false,
+  &quot;generateReport&quot;: false,
+  &quot;generateExport&quot;: false,
+  &quot;maxChargeUsd&quot;: 0.25,
+  &quot;dryRun&quot;: false
+}</code></pre></section>
+<section class="code-section"><h2>Run with the Apify CLI</h2><p>After cloning the starter repository and signing in with the Apify CLI, run the maintained capped input directly:</p><pre><code>apify actors call taroyamada/pubmed-research-intelligence --input-file inputs/pubmed-research-intelligence.json --output-dataset</code></pre></section>
+<section class="code-section"><h2>Verified starter output</h2><p>This output was captured from the qualifying Cloud starter run identified by the operational audit. It is runtime proof, not external buyer revenue.</p><pre><code>[
+  {
+    &quot;actorName&quot;: &quot;pubmed-research-intelligence&quot;,
+    &quot;sourceName&quot;: &quot;NCBI PubMed E-utilities&quot;,
+    &quot;sourceMethod&quot;: &quot;official_ncbi_eutils_json&quot;,
+    &quot;authorizationBasis&quot;: &quot;public_ncbi_eutilities&quot;,
+    &quot;rowType&quot;: &quot;new_publication_alert&quot;,
+    &quot;billingEventName&quot;: &quot;new-publication-alert&quot;,
+    &quot;stableKey&quot;: &quot;alert:39763750&quot;,
+    &quot;pmid&quot;: &quot;39763750&quot;,
+    &quot;title&quot;: &quot;Illustrative biomedical publication&quot;,
+    &quot;publicationDate&quot;: &quot;2026&quot;,
+    &quot;sourceUrl&quot;: &quot;https://pubmed.ncbi.nlm.nih.gov/39763750/&quot;,
+    &quot;summary&quot;: &quot;New PubMed record 39763750 matched the saved literature watch.&quot;,
+    &quot;prohibitedInterpretations&quot;: [
+      &quot;No medical advice.&quot;,
+      &quot;No causal or clinical efficacy claim.&quot;,
+      &quot;No reproduction of article full text.&quot;
+    ],
+    &quot;fetchedAt&quot;: &quot;2026-07-30T00:00:00.000Z&quot;
+  },
+  {
+    &quot;actorName&quot;: &quot;pubmed-research-intelligence&quot;,
+    &quot;sourceName&quot;: &quot;NCBI PubMed E-utilities&quot;,
+    &quot;sourceMethod&quot;: &quot;official_ncbi_eutils_json&quot;,
+    &quot;authorizationBasis&quot;: &quot;public_ncbi_eutilities&quot;,
+    &quot;rowType&quot;: &quot;new_publication_alert&quot;,
+    &quot;billingEventName&quot;: &quot;new-publication-alert&quot;,
+    &quot;stableKey&quot;: &quot;alert:39763800&quot;,
+    &quot;pmid&quot;: &quot;39763800&quot;,
+    &quot;title&quot;: &quot;Illustrative follow-up publication&quot;,
+    &quot;publicationDate&quot;: &quot;2026&quot;,
+    &quot;sourceUrl&quot;: &quot;https://pubmed.ncbi.nlm.nih.gov/39763800/&quot;,
+    &quot;summary&quot;: &quot;New PubMed record 39763800 matched the saved literature watch.&quot;,
+    &quot;prohibitedInterpretations&quot;: [
+      &quot;No medical advice.&quot;,
+      &quot;No causal or clinical efficacy claim.&quot;,
+      &quot;No reproduction of article full text.&quot;
+    ],
+    &quot;fetchedAt&quot;: &quot;2026-07-30T00:00:00.000Z&quot;
+  }
+]</code></pre><a class="icon-link" href="sample-output.json">Open verified starter output JSON</a></section>
+<section class="how"><h2>Billing and use guardrails</h2><ul><li>No actor-start charge.</li><li>Zero-row and unchanged monitor runs have zero event charge.</li><li><code>maxChargeUsd</code> is checked before delivery.</li><li>Review the live Store pricing before every paid run.</li></ul><p>Outputs are source-linked research and workflow inputs, not legal, medical, investment, procurement, safety-certification, ranking, or business-outcome advice.</p></section></main><footer><a href="../">Compare all 8 workflows</a><a href="https://github.com/luxslime/apify-paid-report-starter-kits">Source repository</a></footer></body></html>

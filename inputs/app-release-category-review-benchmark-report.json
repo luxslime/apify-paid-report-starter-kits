@@ -11,6 +11,7 @@
   "releaseWindowDays": 21,
   "runMode": "monitor",
   "initialRunMode": "emit_backfill",
+  "monitorKey": "starter-app-release-benchmark",
   "emitRawReviews": false,
   "emitRawRows": true,
   "generateReport": false,

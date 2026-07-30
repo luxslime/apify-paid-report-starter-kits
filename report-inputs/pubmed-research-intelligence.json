@@ -1,0 +1,23 @@
+{
+  "searchTerms": ["machine learning healthcare"],
+  "pmids": [],
+  "fromDate": "2025",
+  "toDate": "",
+  "sort": "most_recent",
+  "maxResultsPerQuery": 25,
+  "maxArticles": 25,
+  "runMode": "audit",
+  "monitorKey": "",
+  "initialRunMode": "baseline_only",
+  "emitRawRows": false,
+  "generateReport": true,
+  "generateExport": true,
+  "email": "",
+  "apiKey": "",
+  "tool": "pubmed-research-intelligence",
+  "timeoutMs": 20000,
+  "delivery": "dataset",
+  "webhookUrl": "",
+  "maxChargeUsd": 10,
+  "dryRun": false
+}
