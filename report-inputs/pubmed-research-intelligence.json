@@ -18,6 +18,6 @@
   "timeoutMs": 20000,
   "delivery": "dataset",
   "webhookUrl": "",
-  "maxChargeUsd": 10,
+  "maxChargeUsd": 7,
   "dryRun": false
 }
