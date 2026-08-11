@@ -13,6 +13,6 @@
   "emitRawRows": true,
   "emitUnchanged": false,
   "emitExport": false,
-  "maxChargeUsd": 0,
-  "dryRun": true
+  "maxChargeUsd": 0.25,
+  "dryRun": false
 }

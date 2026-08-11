@@ -1,35 +1,36 @@
 # Apify Paid Report Starter Kits
 
-Small, capped inputs for testing 8 public-data and authorized-site Apify Actors before enabling their full report events.
+Free sample, paid preview, and full-report inputs for 8 public-data and authorized-site Apify Actors.
 
-Seven examples exercise the real public source and bill only delivered source and buyer-facing signal rows. The authorized-site SEO example remains a free safe demo until you confirm authorization and choose a paid output. Every input has `maxChargeUsd <= 1`. Full reports remain opt-in and use the prices shown on each Actor's live Apify Store page.
+The seven deployment actors expose a source-linked static sample with `sample=true`, `dryRun=true`, and `maxChargeUsd=0`; the sample is not live data. Each has a separate paid preview with `dryRun=false` and `maxChargeUsd=0.25`. Full reports remain opt-in and use the prices shown on each Actor's live Apify Store page.
 
 [Download the stable v1.0.0 starter-kit release](https://github.com/luxslime/apify-paid-report-starter-kits/releases/tag/v1.0.0).
 
-| Actor | Expected starter outcome | Expected charge | Run cap | Starter input |
+| Actor | Sample | Sample cap | Paid preview cap | Inputs |
 | --- | --- | ---: | ---: | --- |
-| [Technical SEO & AI Crawler Audit](https://apify.com/taroyamada/technical-seo-portfolio-regression-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=technical-seo-portfolio-regression-report__github_readme) | Free authorization-safe demo | $0.000 | $0.00 | [starter](inputs/technical-seo-portfolio-regression-report.json) / [report](report-inputs/technical-seo-portfolio-regression-report.json) |
-| [Apple Podcasts Category Benchmark](https://apify.com/taroyamada/podcast-category-network-benchmark-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=podcast-category-network-benchmark-report__github_readme) | `podcast-show-benchmarked + podcast-network-signal` | $0.088 | $0.50 | [starter](inputs/podcast-category-network-benchmark-report.json) / [report](report-inputs/podcast-category-network-benchmark-report.json) |
-| [Clinical Trials & PubMed Evidence Gap Report](https://apify.com/taroyamada/biomedical-trial-literature-evidence-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=biomedical-trial-literature-evidence-report__github_readme) | `biomedical-evidence-row + evidence-gap-alert` | $0.158 | $0.50 | [starter](inputs/biomedical-trial-literature-evidence-report.json) / [report](report-inputs/biomedical-trial-literature-evidence-report.json) |
-| [App Store Release & Review Benchmark](https://apify.com/taroyamada/app-release-category-review-benchmark-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=app-release-category-review-benchmark-report__github_readme) | `app-benchmarked + app-benchmarked` | $0.030 | $0.50 | [starter](inputs/app-release-category-review-benchmark-report.json) / [report](report-inputs/app-release-category-review-benchmark-report.json) |
-| [npm & PyPI Dependency Risk Report](https://apify.com/taroyamada/package-portfolio-upgrade-risk-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=package-portfolio-upgrade-risk-report__github_readme) | `package-risk-row + package-upgrade-risk-alert` | $0.260 | $0.50 | [starter](inputs/package-portfolio-upgrade-risk-report.json) / [report](report-inputs/package-portfolio-upgrade-risk-report.json) |
-| [CPSC & NHTSA Recall Portfolio Watch](https://apify.com/taroyamada/product-safety-market-action-portfolio-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=product-safety-market-action-portfolio-report__github_readme) | `safety-record-row + market-action-alert` | $0.206 | $1.00 | [starter](inputs/product-safety-market-action-portfolio-report.json) / [report](report-inputs/product-safety-market-action-portfolio-report.json) |
-| [eCFR & Federal Register Change Report](https://apify.com/taroyamada/regulatory-obligation-change-impact-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=regulatory-obligation-change-impact-report__github_readme) | `regulatory-change-row + obligation-impact-alert` | $0.308 | $1.00 | [starter](inputs/regulatory-obligation-change-impact-report.json) / [report](report-inputs/regulatory-obligation-change-impact-report.json) |
-| [PubMed Literature Watch & Research Report](https://apify.com/taroyamada/pubmed-research-intelligence?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=pubmed-research-intelligence__github_readme) | `new-publication-alert` | $0.030 | $0.25 | [starter](inputs/pubmed-research-intelligence.json) / [report](report-inputs/pubmed-research-intelligence.json) |
+| [Technical SEO & AI Crawler Audit](https://apify.com/taroyamada/technical-seo-portfolio-regression-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=technical-seo-portfolio-regression-report__github_readme) | Free static sample (not live data) | $0.00 | $0.25 | [sample](inputs/technical-seo-portfolio-regression-report.json) / [paid preview](preview-inputs/technical-seo-portfolio-regression-report.json) / [full report](report-inputs/technical-seo-portfolio-regression-report.json) |
+| [Apple Podcasts Category Benchmark](https://apify.com/taroyamada/podcast-category-network-benchmark-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=podcast-category-network-benchmark-report__github_readme) | Free static sample (not live data) | $0.00 | $0.25 | [sample](inputs/podcast-category-network-benchmark-report.json) / [paid preview](preview-inputs/podcast-category-network-benchmark-report.json) / [full report](report-inputs/podcast-category-network-benchmark-report.json) |
+| [Clinical Trials & PubMed Evidence Gap Report](https://apify.com/taroyamada/biomedical-trial-literature-evidence-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=biomedical-trial-literature-evidence-report__github_readme) | Free static sample (not live data) | $0.00 | $0.25 | [sample](inputs/biomedical-trial-literature-evidence-report.json) / [paid preview](preview-inputs/biomedical-trial-literature-evidence-report.json) / [full report](report-inputs/biomedical-trial-literature-evidence-report.json) |
+| [App Store Release & Review Benchmark](https://apify.com/taroyamada/app-release-category-review-benchmark-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=app-release-category-review-benchmark-report__github_readme) | Free static sample (not live data) | $0.00 | $0.25 | [sample](inputs/app-release-category-review-benchmark-report.json) / [paid preview](preview-inputs/app-release-category-review-benchmark-report.json) / [full report](report-inputs/app-release-category-review-benchmark-report.json) |
+| [npm & PyPI Dependency Risk Report](https://apify.com/taroyamada/package-portfolio-upgrade-risk-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=package-portfolio-upgrade-risk-report__github_readme) | Free static sample (not live data) | $0.00 | $0.25 | [sample](inputs/package-portfolio-upgrade-risk-report.json) / [paid preview](preview-inputs/package-portfolio-upgrade-risk-report.json) / [full report](report-inputs/package-portfolio-upgrade-risk-report.json) |
+| [CPSC & NHTSA Recall Portfolio Watch](https://apify.com/taroyamada/product-safety-market-action-portfolio-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=product-safety-market-action-portfolio-report__github_readme) | Free static sample (not live data) | $0.00 | $0.25 | [sample](inputs/product-safety-market-action-portfolio-report.json) / [paid preview](preview-inputs/product-safety-market-action-portfolio-report.json) / [full report](report-inputs/product-safety-market-action-portfolio-report.json) |
+| [eCFR & Federal Register Change Report](https://apify.com/taroyamada/regulatory-obligation-change-impact-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=regulatory-obligation-change-impact-report__github_readme) | Free static sample (not live data) | $0.00 | $0.25 | [sample](inputs/regulatory-obligation-change-impact-report.json) / [paid preview](preview-inputs/regulatory-obligation-change-impact-report.json) / [full report](report-inputs/regulatory-obligation-change-impact-report.json) |
+| [PubMed Literature Watch & Research Report](https://apify.com/taroyamada/pubmed-research-intelligence?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=pubmed-research-intelligence__github_readme) | `new-publication-alert` | $0.25 | $0.25 | [sample](inputs/pubmed-research-intelligence.json) / [paid preview](preview-inputs/pubmed-research-intelligence.json) / [full report](report-inputs/pubmed-research-intelligence.json) |
 
 ## Use
 
 1. Clone this repository and sign in with the [Apify CLI](https://docs.apify.com/cli).
-2. Replace sample watch terms or URLs with your own authorized scope.
-3. Confirm the live Store pricing and run cap.
-4. Run `apify actors call taroyamada/<actor-slug> --input-file inputs/<actor-slug>.json --output-dataset`.
-5. Enable the report/export option only after the entry result fits your workflow.
+2. Treat the checked-in sample output as illustrative, not current live data.
+3. Replace sample watch terms or URLs with your own authorized scope.
+4. Confirm the live Store pricing and run cap.
+5. Run the free sample input, then the separate paid preview input.
+6. Enable the report/export option only after the preview fits your workflow.
 
 ## Billing behavior
 
 - No start charge is configured for these 8 Actors.
 - Zero-row and unchanged monitor runs have zero event charge.
-- `maxChargeUsd` is a hard buyer-controlled cap checked before delivery.
+- `maxChargeUsd` is a hard buyer-controlled cap checked before delivery; deployment paid previews use $0.25.
 - These starter inputs keep report and export events disabled.
 
 ## Data and use guardrails

@@ -16,6 +16,6 @@
   "emitExport": false,
   "emitUnchanged": false,
   "initialRunMode": "baseline_only",
-  "maxChargeUsd": 0,
-  "dryRun": true
+  "maxChargeUsd": 0.25,
+  "dryRun": false
 }
