@@ -3,8 +3,8 @@
     "actorName": "podcast-category-network-benchmark-report",
     "sourceName": "apple-podcasts-public-metadata-and-rss",
     "sourceUrl": "https://feeds.npr.org/510289/podcast.xml",
-    "retrievedAt": "2026-07-29T19:16:58.239Z",
-    "fetchedAt": "2026-07-29T19:16:58.239Z",
+    "retrievedAt": "2026-08-11T06:23:56.769Z",
+    "fetchedAt": "2026-08-11T06:23:56.769Z",
     "warnings": [],
     "sourceMethod": "public_rss_or_show_page",
     "authorizationBasis": "public_rss_or_show_page",
@@ -17,27 +17,26 @@
     ],
     "rowType": "podcast_show_candidate",
     "billingEventName": "podcast-show-benchmarked",
-    "stableKey": "48b9c0dc3365c39a1a9fdfb1",
+    "stableKey": "ccc880b3730f5b246d3ae30f",
     "showTitle": "Planet Money",
     "publisher": "NPR",
     "episodeCountScanned": 3,
     "matchedKeywords": [
-      "economics",
       "money"
     ],
     "mediaBuyerFitScore": 72,
     "recentEpisodeTitles": [
-      "How to beat the resource curse in Norway (Summer School)",
-      "Piles of cash and a town of solutions in Kenya, Nigeria (Summer School)",
-      "Big Lettuce meets Small Intestine"
+      "Older workers aren’t retiring. Should they be forced to?",
+      "Sand heists and property rights in the Caribbean (Summer School)",
+      "What makes a toy go viral"
     ]
   },
   {
     "actorName": "podcast-category-network-benchmark-report",
     "sourceName": "apple-podcasts-public-metadata-and-rss",
     "sourceUrl": "https://feeds.npr.org/510289/podcast.xml",
-    "retrievedAt": "2026-07-29T19:16:58.239Z",
-    "fetchedAt": "2026-07-29T19:16:58.239Z",
+    "retrievedAt": "2026-08-11T06:23:56.769Z",
+    "fetchedAt": "2026-08-11T06:23:56.769Z",
     "warnings": [],
     "sourceMethod": "public_rss_or_show_page",
     "authorizationBasis": "public_rss_or_show_page",
@@ -50,40 +49,47 @@
     ],
     "rowType": "podcast_fit_evidence",
     "billingEventName": "podcast-network-signal",
-    "stableKey": "8fe5ac43647f9bcbb986cc50",
+    "stableKey": "f0d7bed1d392e830300ba6fd",
     "showTitle": "Planet Money",
     "publisher": "NPR",
     "fitEvidence": [
       {
-        "phrase": "In Kenya and Nigeria, economics isn’t just theory, it’s real life",
-        "matchedKeywords": [
-          "economics"
-        ],
-        "evidenceType": "public_text"
-      },
-      {
-        "phrase": "in economic research that netted some researchers the most prestigious prize in economics",
-        "matchedKeywords": [
-          "economics"
-        ],
-        "evidenceType": "public_text"
-      },
-      {
-        "phrase": "Featured Episodes: How randomized trials and the town of Busia, Kenya changed economics (2023) Nigeria, You Win! (2016) Featured Terms: Randomized controlled trial Human capital Missing middle Support: Plane",
-        "matchedKeywords": [
-          "economics"
-        ],
-        "evidenceType": "public_text"
-      },
-      {
-        "phrase": "Planet Money NPR How to beat the resource curse in Norway (Summer School) Let’s call it the luxury of restraint",
+        "phrase": "Planet Money NPR Older workers aren’t retiring",
         "matchedKeywords": [
           "money"
         ],
         "evidenceType": "public_text"
       },
       {
-        "phrase": "ty Coordination problem Free-rider problem Support: NPR+ Read: Our book: Planet Money: A Guide to the Economic Forces That Shape Your Life ( Audiobook here ) Our weekly longform Planet Money newsletter Our",
+        "phrase": "On the latest Planet Money , a law professor who says retirement should be mandatory at age 70",
+        "matchedKeywords": [
+          "money"
+        ],
+        "evidenceType": "public_text"
+      },
+      {
+        "phrase": "Show notes: More of Planet Money’s coverage of the lump of labor fallacy Samuel Moyn: Gerontocracy in America: How the Old Are Hoarding Power and Wealth",
+        "matchedKeywords": [
+          "money"
+        ],
+        "evidenceType": "public_text"
+      },
+      {
+        "phrase": "sper and Saunders Mac Lane: “ Older Doesn’t Mean Wiser ” Read: Our book: Planet Money: A Guide to the Economic Forces That Shape Your Life Our weekly long-form Planet Money newsletter Our weekly Indicator",
+        "matchedKeywords": [
+          "money"
+        ],
+        "evidenceType": "public_text"
+      },
+      {
+        "phrase": "y infinite resource and the challenges of protecting public spaces when there’s money to be made",
+        "matchedKeywords": [
+          "money"
+        ],
+        "evidenceType": "public_text"
+      },
+      {
+        "phrase": "Read: Our book: Planet Money: A Guide to the Economic Forces That Shape Your Life ( Audiobook here ) Our weekly longform Planet Money newsletter Our",
         "matchedKeywords": [
           "money"
         ],
@@ -104,35 +110,28 @@
         "evidenceType": "public_text"
       },
       {
-        "phrase": "Terms: Randomized controlled trial Human capital Missing middle Support: Planet Money+ Read: Our book: Planet Money: A Guide to the Economic Forces That Shape Your Life ( Audiobook here ) Our weekly longfo",
+        "phrase": "Read: Our book: Planet Money: A Guide to the Economic Forces That Shape Your Life Our weekly longform Planet Money newsletter Our weekly Indicator r",
         "matchedKeywords": [
           "money"
         ],
         "evidenceType": "public_text"
       },
       {
-        "phrase": "rm Planet Money newsletter Our weekly Indicator link round-up newsletter Follow: Instagram TikTok YouTube Facebook The series is hosted",
+        "phrase": "25 NPR podcasts, including bonus episodes and sponsor-free listening for Planet Money",
         "matchedKeywords": [
           "money"
         ],
         "evidenceType": "public_text"
       },
       {
-        "phrase": "This episode was edited by Planet Money Executive Producer Alex Goldmark",
+        "phrase": "This episode of Planet Money was produced by Emma Peaslee",
         "matchedKeywords": [
           "money"
         ],
         "evidenceType": "public_text"
       },
       {
-        "phrase": "pisodes: Food Scare Squad How refrigeration took over the world Support: Planet Money+ Read: Our book: Planet Money: A Guide to the Economic Forces That Shape Your Life Our weekly longform Planet Money new",
-        "matchedKeywords": [
-          "money"
-        ],
-        "evidenceType": "public_text"
-      },
-      {
-        "phrase": "Alex Goldmark is Planet Money ’s executive producer",
+        "phrase": "Alex Goldmark is Planet Money’s executive producer",
         "matchedKeywords": [
           "money"
         ],

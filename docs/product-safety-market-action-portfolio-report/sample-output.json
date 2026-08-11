@@ -16,40 +16,40 @@
       "Do not use this report as a substitute for the official agency notice or professional legal, safety, medical, or regulatory review.",
       "The actor is not affiliated with or endorsed by CPSC, NHTSA, FDA, or HHS."
     ],
-    "retrievedAt": "2026-07-29T19:17:57.242Z",
-    "fetchedAt": "2026-07-29T19:17:57.242Z",
+    "retrievedAt": "2026-08-11T06:25:04.820Z",
+    "fetchedAt": "2026-08-11T06:25:04.820Z",
     "warnings": [],
     "rowType": "safety_record",
     "billingEventName": "safety-record-row",
-    "stableKey": "safety-record:battery-recalls:CPSC:recall:26610:60ab8b8ce84ce8a4",
-    "idempotencyKey": "safety-record:battery-recalls:CPSC:recall:26610:60ab8b8ce84ce8a4",
+    "stableKey": "safety-record:battery-recalls:CPSC:recall:26670:6ac509737969a9d2",
+    "idempotencyKey": "safety-record:battery-recalls:CPSC:recall:26670:6ac509737969a9d2",
     "sourceName": "cpsc-recall-api",
     "sourceUrls": [
       "https://www.saferproducts.gov/RestWebServices/Recall?format=json&ProductName=battery",
-      "https://www.cpsc.gov/Recalls/2026/Flaunt-Recalls-Magsafe-Battery-Chargers-Due-to-Risk-of-Serious-Injury-or-Death-from-Fire-and-Burn-Hazards"
+      "https://www.cpsc.gov/Recalls/2026/A2batt-Recalls-EEMB-Lithium-Coin-Battery-Chargers-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Mandatory-Standard-for-Consumer-Products-with-Coin-Batteries"
     ],
     "sources": [
       {
         "source": "cpsc-recall-api",
         "url": "https://www.saferproducts.gov/RestWebServices/Recall?format=json&ProductName=battery",
         "official": true,
-        "retrievedAt": "2026-07-29T19:17:57.316Z"
+        "retrievedAt": "2026-08-11T06:25:04.923Z"
       },
       {
         "source": "cpsc-record",
-        "url": "https://www.cpsc.gov/Recalls/2026/Flaunt-Recalls-Magsafe-Battery-Chargers-Due-to-Risk-of-Serious-Injury-or-Death-from-Fire-and-Burn-Hazards",
+        "url": "https://www.cpsc.gov/Recalls/2026/A2batt-Recalls-EEMB-Lithium-Coin-Battery-Chargers-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Mandatory-Standard-for-Consumer-Products-with-Coin-Batteries",
         "official": true,
-        "retrievedAt": "2026-07-29T19:17:57.316Z"
+        "retrievedAt": "2026-08-11T06:25:04.923Z"
       }
     ],
     "watchlistId": "battery-recalls",
     "agency": "CPSC",
     "recordType": "recall",
-    "recordId": "26610",
-    "title": "Flaunt Recalls Magsafe Battery Chargers Due to Risk of Serious Injury or Death from Fire and Burn Hazards",
-    "description": "This recall involves the Flaunt MagSafe Battery Charger power banks with model number E33A. \"FLAUNT\" is engraved on the front right side of the power bank and there is a small circular button in the bottom center of the front side of the power bank. The back label of the unit is marked \"FLAUNT\" and \"Model: E33A\". The power banks were sold in melon, black, lavender and white. The chargers measure 3 by 2 by 0.25 inches and weigh around 3.2 ounces.",
-    "publicationDate": "2026-07-09T00:00:00",
-    "lastUpdated": "2026-07-10T00:00:00",
+    "recordId": "26670",
+    "title": "A2batt Recalls EEMB Lithium Coin Battery Chargers Due to Risk of Serious Injury or Death from Battery Ingestion; Violate Mandatory Standard for Consumer Products with Coin Batteries",
+    "description": "This recall involves EEMB Lithium-ion Coin Battery Chargers with Rechargeable 2032 Batteries, model SKLC-0420-0040. The product includes the charger, four rechargeable 2032 lithium-ion batteries, and a USB cable. The brand name \"EEMB\" is on the front of the product and the model number \"SKLC-0420-0040\" is printed on the back.",
+    "publicationDate": "2026-08-06T00:00:00",
+    "lastUpdated": "2026-08-07T00:00:00",
     "productName": null,
     "manufacturer": null,
     "category": null,
@@ -63,14 +63,14 @@
     "status": null,
     "distributionPattern": null,
     "injuries": [
-      "The firm has received five reports of the power banks overheating and catching fire, including one report of a burn to a consumer's hand, one report of a burn to a consumer's arm and four reports of minor property damage."
+      "None reported"
     ],
     "crashes": null,
     "watchTermHits": [
       "battery"
     ],
-    "contentFingerprint": "60ab8b8ce84ce8a4",
-    "checkedAt": "2026-07-29T19:17:57.242Z"
+    "contentFingerprint": "6ac509737969a9d2",
+    "checkedAt": "2026-08-11T06:25:04.820Z"
   },
   {
     "actorName": "product-safety-market-action-portfolio-report",
@@ -89,43 +89,43 @@
       "Do not use this report as a substitute for the official agency notice or professional legal, safety, medical, or regulatory review.",
       "The actor is not affiliated with or endorsed by CPSC, NHTSA, FDA, or HHS."
     ],
-    "retrievedAt": "2026-07-29T19:17:57.242Z",
-    "fetchedAt": "2026-07-29T19:17:57.242Z",
+    "retrievedAt": "2026-08-11T06:25:04.820Z",
+    "fetchedAt": "2026-08-11T06:25:04.820Z",
     "warnings": [],
     "rowType": "market_action_alert",
     "billingEventName": "market-action-alert",
-    "stableKey": "market-action-alert:battery-recalls:CPSC:recall:26610:60ab8b8ce84ce8a4",
-    "idempotencyKey": "market-action-alert:battery-recalls:CPSC:recall:26610:60ab8b8ce84ce8a4",
+    "stableKey": "market-action-alert:battery-recalls:CPSC:recall:26670:6ac509737969a9d2",
+    "idempotencyKey": "market-action-alert:battery-recalls:CPSC:recall:26670:6ac509737969a9d2",
     "sourceName": "cpsc-recall-api",
     "sourceUrls": [
       "https://www.saferproducts.gov/RestWebServices/Recall?format=json&ProductName=battery",
-      "https://www.cpsc.gov/Recalls/2026/Flaunt-Recalls-Magsafe-Battery-Chargers-Due-to-Risk-of-Serious-Injury-or-Death-from-Fire-and-Burn-Hazards"
+      "https://www.cpsc.gov/Recalls/2026/A2batt-Recalls-EEMB-Lithium-Coin-Battery-Chargers-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Mandatory-Standard-for-Consumer-Products-with-Coin-Batteries"
     ],
     "sources": [
       {
         "source": "cpsc-recall-api",
         "url": "https://www.saferproducts.gov/RestWebServices/Recall?format=json&ProductName=battery",
         "official": true,
-        "retrievedAt": "2026-07-29T19:17:57.316Z"
+        "retrievedAt": "2026-08-11T06:25:04.923Z"
       },
       {
         "source": "cpsc-record",
-        "url": "https://www.cpsc.gov/Recalls/2026/Flaunt-Recalls-Magsafe-Battery-Chargers-Due-to-Risk-of-Serious-Injury-or-Death-from-Fire-and-Burn-Hazards",
+        "url": "https://www.cpsc.gov/Recalls/2026/A2batt-Recalls-EEMB-Lithium-Coin-Battery-Chargers-Due-to-Risk-of-Serious-Injury-or-Death-from-Battery-Ingestion-Violate-Mandatory-Standard-for-Consumer-Products-with-Coin-Batteries",
         "official": true,
-        "retrievedAt": "2026-07-29T19:17:57.316Z"
+        "retrievedAt": "2026-08-11T06:25:04.923Z"
       }
     ],
     "watchlistId": "battery-recalls",
     "agency": "CPSC",
     "recordType": "recall",
-    "recordId": "26610",
-    "title": "Flaunt Recalls Magsafe Battery Chargers Due to Risk of Serious Injury or Death from Fire and Burn Hazards",
+    "recordId": "26670",
+    "title": "A2batt Recalls EEMB Lithium Coin Battery Chargers Due to Risk of Serious Injury or Death from Battery Ingestion; Violate Mandatory Standard for Consumer Products with Coin Batteries",
     "alertReason": "new_or_changed_recall_record",
     "signalOnly": false,
     "watchTermHits": [
       "battery"
     ],
     "recommendedAction": "Review the official agency record, affected scope, remedy information, and internal response owner.",
-    "checkedAt": "2026-07-29T19:17:57.242Z"
+    "checkedAt": "2026-08-11T06:25:04.820Z"
   }
 ]

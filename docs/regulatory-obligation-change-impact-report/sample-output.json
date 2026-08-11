@@ -14,18 +14,18 @@
       "Do not treat a changed row or alert as proof of a legal obligation, breach, compliance status, effective date, or required business action.",
       "Do not imply endorsement, approval, sponsorship, or an official determination by eCFR, the Office of the Federal Register, or any agency."
     ],
-    "retrievedAt": "2026-07-29T19:18:07.505Z",
-    "fetchedAt": "2026-07-29T19:18:07.505Z",
+    "retrievedAt": "2026-08-11T06:25:18.748Z",
+    "fetchedAt": "2026-08-11T06:25:18.748Z",
     "warnings": [],
     "rowType": "obligation_impact_alert",
     "billingEventName": "obligation-impact-alert",
-    "stableKey": "obligation-alert:benzene-exposure:253c72e53890cbfc9699",
-    "idempotencyKey": "obligation-alert:benzene-exposure:253c72e53890cbfc9699",
+    "stableKey": "obligation-alert:benzene-exposure:c7eb8b338bc7ed0492fa",
+    "idempotencyKey": "obligation-alert:benzene-exposure:c7eb8b338bc7ed0492fa",
     "sourceName": "ecfr-and-federal-register",
     "sourceUrls": [
       "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-29?part=1910",
       "https://www.ecfr.gov/api/versioner/v1/versions/title-29.json",
-      "https://www.federalregister.gov/api/v1/documents.json?per_page=1&order=newest&conditions%5Bcfr%5D%5Btitle%5D=29&conditions%5Bcfr%5D%5Bpart%5D=1910&conditions%5Bpublication_date%5D%5Bgte%5D=2026-06-29&conditions%5Bterm%5D=benzene",
+      "https://www.federalregister.gov/api/v1/documents.json?per_page=1&order=newest&conditions%5Bcfr%5D%5Btitle%5D=29&conditions%5Bcfr%5D%5Bpart%5D=1910&conditions%5Bpublication_date%5D%5Bgte%5D=2026-07-12&conditions%5Bterm%5D=benzene",
       "https://www.federalregister.gov/documents/2026/07/28/2026-15227/benzene"
     ],
     "sources": [
@@ -33,25 +33,25 @@
         "source": "ecfr-renderer",
         "url": "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-29?part=1910",
         "official": true,
-        "retrievedAt": "2026-07-29T19:18:07.566Z"
+        "retrievedAt": "2026-08-11T06:25:18.830Z"
       },
       {
         "source": "ecfr-versioner",
         "url": "https://www.ecfr.gov/api/versioner/v1/versions/title-29.json",
         "official": true,
-        "retrievedAt": "2026-07-29T19:18:07.566Z"
+        "retrievedAt": "2026-08-11T06:25:18.830Z"
       },
       {
         "source": "federal-register-api",
-        "url": "https://www.federalregister.gov/api/v1/documents.json?per_page=1&order=newest&conditions%5Bcfr%5D%5Btitle%5D=29&conditions%5Bcfr%5D%5Bpart%5D=1910&conditions%5Bpublication_date%5D%5Bgte%5D=2026-06-29&conditions%5Bterm%5D=benzene",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?per_page=1&order=newest&conditions%5Bcfr%5D%5Btitle%5D=29&conditions%5Bcfr%5D%5Bpart%5D=1910&conditions%5Bpublication_date%5D%5Bgte%5D=2026-07-12&conditions%5Bterm%5D=benzene",
         "official": true,
-        "retrievedAt": "2026-07-29T19:18:07.566Z"
+        "retrievedAt": "2026-08-11T06:25:18.830Z"
       },
       {
         "source": "federal-register-document",
         "url": "https://www.federalregister.gov/documents/2026/07/28/2026-15227/benzene",
         "official": true,
-        "retrievedAt": "2026-07-29T19:18:07.566Z"
+        "retrievedAt": "2026-08-11T06:25:18.830Z"
       }
     ],
     "watchlistId": "benzene-exposure",
@@ -72,7 +72,7 @@
     "federalRegisterDocumentCount": 1,
     "recommendedReviewAction": "Assign an owner to review the linked eCFR text and Federal Register documents, then determine whether the change affects the monitored obligation.",
     "legalEffectDetermined": false,
-    "checkedAt": "2026-07-29T19:18:07.505Z"
+    "checkedAt": "2026-08-11T06:25:18.748Z"
   },
   {
     "actorName": "regulatory-obligation-change-impact-report",
@@ -89,18 +89,18 @@
       "Do not treat a changed row or alert as proof of a legal obligation, breach, compliance status, effective date, or required business action.",
       "Do not imply endorsement, approval, sponsorship, or an official determination by eCFR, the Office of the Federal Register, or any agency."
     ],
-    "retrievedAt": "2026-07-29T19:18:07.505Z",
-    "fetchedAt": "2026-07-29T19:18:07.505Z",
+    "retrievedAt": "2026-08-11T06:25:18.748Z",
+    "fetchedAt": "2026-08-11T06:25:18.748Z",
     "warnings": [],
     "rowType": "regulatory_change_row",
     "billingEventName": "regulatory-change-row",
-    "stableKey": "regulatory-change:benzene-exposure:253c72e53890cbfc9699",
-    "idempotencyKey": "regulatory-change:benzene-exposure:253c72e53890cbfc9699",
+    "stableKey": "regulatory-change:benzene-exposure:c7eb8b338bc7ed0492fa",
+    "idempotencyKey": "regulatory-change:benzene-exposure:c7eb8b338bc7ed0492fa",
     "sourceName": "ecfr-and-federal-register",
     "sourceUrls": [
       "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-29?part=1910",
       "https://www.ecfr.gov/api/versioner/v1/versions/title-29.json",
-      "https://www.federalregister.gov/api/v1/documents.json?per_page=1&order=newest&conditions%5Bcfr%5D%5Btitle%5D=29&conditions%5Bcfr%5D%5Bpart%5D=1910&conditions%5Bpublication_date%5D%5Bgte%5D=2026-06-29&conditions%5Bterm%5D=benzene",
+      "https://www.federalregister.gov/api/v1/documents.json?per_page=1&order=newest&conditions%5Bcfr%5D%5Btitle%5D=29&conditions%5Bcfr%5D%5Bpart%5D=1910&conditions%5Bpublication_date%5D%5Bgte%5D=2026-07-12&conditions%5Bterm%5D=benzene",
       "https://www.federalregister.gov/documents/2026/07/28/2026-15227/benzene"
     ],
     "sources": [
@@ -108,25 +108,25 @@
         "source": "ecfr-renderer",
         "url": "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-29?part=1910",
         "official": true,
-        "retrievedAt": "2026-07-29T19:18:07.566Z"
+        "retrievedAt": "2026-08-11T06:25:18.830Z"
       },
       {
         "source": "ecfr-versioner",
         "url": "https://www.ecfr.gov/api/versioner/v1/versions/title-29.json",
         "official": true,
-        "retrievedAt": "2026-07-29T19:18:07.566Z"
+        "retrievedAt": "2026-08-11T06:25:18.830Z"
       },
       {
         "source": "federal-register-api",
-        "url": "https://www.federalregister.gov/api/v1/documents.json?per_page=1&order=newest&conditions%5Bcfr%5D%5Btitle%5D=29&conditions%5Bcfr%5D%5Bpart%5D=1910&conditions%5Bpublication_date%5D%5Bgte%5D=2026-06-29&conditions%5Bterm%5D=benzene",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?per_page=1&order=newest&conditions%5Bcfr%5D%5Btitle%5D=29&conditions%5Bcfr%5D%5Bpart%5D=1910&conditions%5Bpublication_date%5D%5Bgte%5D=2026-07-12&conditions%5Bterm%5D=benzene",
         "official": true,
-        "retrievedAt": "2026-07-29T19:18:07.566Z"
+        "retrievedAt": "2026-08-11T06:25:18.830Z"
       },
       {
         "source": "federal-register-document",
         "url": "https://www.federalregister.gov/documents/2026/07/28/2026-15227/benzene",
         "official": true,
-        "retrievedAt": "2026-07-29T19:18:07.566Z"
+        "retrievedAt": "2026-08-11T06:25:18.830Z"
       }
     ],
     "watchlistId": "benzene-exposure",
@@ -143,7 +143,7 @@
       "sourceUrl": "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-29?part=1910",
       "versionsUrl": "https://www.ecfr.gov/api/versioner/v1/versions/title-29.json",
       "citation": "29 CFR Part 1910",
-      "currentAsOf": "2026-07-24",
+      "currentAsOf": "2026-08-04",
       "headings": [
         "PART 1910—OCCUPATIONAL SAFETY AND HEALTH STANDARDS",
         "Editorial Note",
@@ -187,7 +187,7 @@
         "§ 1910.22 General requirements."
       ],
       "textPreview": "PART 1910—OCCUPATIONAL SAFETY AND HEALTH STANDARDS Editorial Note Editorial Note: Nomenclature changes to part 1910 appear at 84 FR 21597 , May 14, 2019. Authority: 33 U.S.C. 941 ; 29 U.S.C. 653 , 655 , 657 ; Secretary of Labor's Order No. 12-71 ( 36 FR 8754 ); 8-76 ( 41 FR 25059 ), 9-83 ( 48 FR 35736 ), 1-90 ( 55 FR 9033 ), 6-96 ( 62 FR 111 ), 3-2000 ( 65 FR 50017 ), 5-2002 ( 67 FR 65008 ), 5-2007 ( 72 FR 31160 ), 4-2010 ( 75 FR 55355 ), 1-2012 ( 77 FR 3912 ), 08-2020 ( 85 FR 58393 ), or 07-2025 ( 90 FR 27878 ); 29 CFR part 1911 ; and 5 U.S.C. 553 , as applicable. Source: 39 FR 23502 , June 27, 1974, unless otherwise noted. Source: 39 FR 23502 , June 27, 1974, unless otherwise noted. Redesignated at 40 FR 23072 , May 28, 1975. Subpart A—General Authority: 29 U.S.C. 653 , 655 , 657 ; Secretary of Labor's Order Numbers 12-71 ( 36 FR 8754 ), 8-76 ( 41 FR 25059 ), 9-83 ( 48 FR 35736 ),1-90 ( 55 FR 9033 ), 6-96 ( 62 FR 111 ), 3-2000 ( 65 FR 50017 ), 5-2002 ( 67 FR 65008 ), 5-2007 ( 72 FR 31159 ), 4-2010 ( 75 FR 55355 ), or 1-2012 ( 77 FR 3912 ), as applicable. Sections 1910.6, 1910.7, 1910.8 and 1910.9 also issued under 29 CFR 1911 . Section 1910.7(f) also issued under 31 U.S.C. 9701 ; 29 U.S.C. 9a ; 5 U.S.C. 553 ; Public Law 106-113 (113 Stat. 1501A-222); Public Law 11-8 and 111-317; and OMB Circular A-25 (dated July 8, 1993) ( 58 FR 38142 , July 15, 1993). § 1910.1 Purpose and scope. ( a ) Section 6(a) of the Williams-Steiger Occupational Safety and Health Act of 1970 (84 Stat. 1593) provides that “without regard to chapter 5 of title 5, United States Code , or to the other subsections of this section, the Secretary shall, as soon as practicable during the period beginning with the effective date of this Act and ending 2 years after such date, by rule promulgate as an occupational safety or health standard any national concensus standard, and any established Federal standard, unless he determines that the promulgation of such a standard would not result in improved safety or health for specifically designated employees.” The legislative purpose of this provision is to establish, as rapidly as possible and without regard to the rule-making provisions of the Administrative Procedure Act, standards with which industries are generally familiar, and on whose adoption interested and affected persons have already had an opportunity to express their views. Such standa",
-      "contentHash": "54775052fecd09673922",
+      "contentHash": "5fa4d2b32b7087212435",
       "federalRegisterCitations": [
         "84 FR 21597",
         "36 FR 8754",
@@ -237,7 +237,7 @@
         ],
         "htmlUrl": "https://www.federalregister.gov/documents/2026/07/28/2026-15227/benzene",
         "sourceUrl": "https://www.federalregister.gov/documents/2026/07/28/2026-15227/benzene",
-        "retrievedAt": "2026-07-29T19:18:07.566Z",
+        "retrievedAt": "2026-08-11T06:25:18.830Z",
         "officialSource": true
       }
     ],
@@ -246,6 +246,6 @@
       "benzene"
     ],
     "rawObservation": true,
-    "checkedAt": "2026-07-29T19:18:07.505Z"
+    "checkedAt": "2026-08-11T06:25:18.748Z"
   }
 ]
