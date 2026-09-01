@@ -19,7 +19,7 @@ The seven deployment actors expose a source-linked static sample with `sample=tr
 
 ## Related Apify Actors / Guides
 
-- [Apple Podcasts Scraper: Search, Charts, Episodes & Watchlists](https://apify.com/taroyamada/apple-podcast-scraper) — [discovery page](docs/apple-podcasts-scraper/index.html) — [Apple Podcasts scraper Apify notes (RSS vs Store)](docs/guides/apple-podcasts-scraper-apify.md) — [HTML tools docs](docs/tools/apple-podcasts-scraper/) ([search](docs/tools/apple-podcasts-scraper/search.html), [charts](docs/tools/apple-podcasts-scraper/charts.html), [watchlists](docs/tools/apple-podcasts-scraper/watchlists.html))
+- [Apple Podcasts Scraper: Search, Charts, Episodes & Watchlists](https://apify.com/taroyamada/apple-podcast-scraper) — [discovery page](docs/apple-podcasts-scraper/index.html) — [Apple Podcasts scraper Apify notes (RSS vs Store)](docs/guides/apple-podcasts-scraper-apify.md) — [HTML tools docs](docs/tools/apple-podcasts-scraper/) ([search](docs/tools/apple-podcasts-scraper/search.html), [charts](docs/tools/apple-podcasts-scraper/charts.html), [watchlists](docs/tools/apple-podcasts-scraper/watchlists.html), [webhooks](docs/tools/apple-podcasts-scraper/webhooks.html), [dataset fields](docs/tools/apple-podcasts-scraper/dataset-fields.html))
 - [Apple Podcasts charts](docs/guides/apple-podcasts-charts.md)
 - [Apple Podcasts watchlists](docs/guides/apple-podcasts-watchlists.md)
 - [Apple Podcasts search and discovery](docs/guides/apple-podcasts-search-discovery.md)
