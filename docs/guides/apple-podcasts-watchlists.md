@@ -6,7 +6,7 @@ Refresh known shows by Apple collection ID. Use this lane when you already have 
 
 **Price:** From $10 per 1,000 results. Confirm the live Store page before a paid run.
 
-Related: [overview](apple-podcasts-scraper-apify.md) · [search](apple-podcasts-search-discovery.md) · [charts](apple-podcasts-charts.md)
+Related: [overview](apple-podcasts-scraper-apify.md) · [search](apple-podcasts-search-discovery.md) · [charts](apple-podcasts-charts.md) · [HTML watchlists page](../tools/apple-podcasts-scraper/watchlists.html)
 
 ## Workflow
 

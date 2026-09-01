@@ -17,6 +17,16 @@ Catalog inputs for 8 source-linked Apify report Actors. The seven deployment act
 ## Guides
 
 - [Apple Podcasts scraper Apify: RSS vs Store notes](https://luxslime.github.io/apify-paid-report-starter-kits/guides/apple-podcasts-scraper-apify/): Factual comparison of RSS collection vs Store / iTunes API scrapers. Covers search, charts, episodes, and watchlists. Actor: https://apify.com/taroyamada/apple-podcast-scraper. Price: From $10 per 1,000 results.
+- [Apple Podcasts charts](https://luxslime.github.io/apify-paid-report-starter-kits/guides/apple-podcasts-charts.md)
+- [Apple Podcasts watchlists](https://luxslime.github.io/apify-paid-report-starter-kits/guides/apple-podcasts-watchlists.md)
+- [Apple Podcasts search and discovery](https://luxslime.github.io/apify-paid-report-starter-kits/guides/apple-podcasts-search-discovery.md)
+
+## Discovery tools
+
+- [Apple Podcasts Scraper](https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/): Search, charts, and watchlists via official Apple/iTunes endpoints. No proxy. Price: From $10 per 1,000 results. Store: https://apify.com/taroyamada/apple-podcast-scraper
+- [Search](https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/search.html): iTunes Search API via `searchTerm`
+- [Charts](https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/charts.html): storefront rankings via `chartRequests`
+- [Watchlists](https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/watchlists.html): collection ID refresh via `lookupIds`
 
 ## Buyer workflows
 

@@ -6,7 +6,7 @@ Find public shows by keyword in any Apple country storefront, then reuse the ret
 
 **Price:** From $10 per 1,000 results. Confirm the live Store page before a paid run.
 
-Related: [overview](apple-podcasts-scraper-apify.md) · [charts](apple-podcasts-charts.md) · [watchlists](apple-podcasts-watchlists.md)
+Related: [overview](apple-podcasts-scraper-apify.md) · [charts](apple-podcasts-charts.md) · [watchlists](apple-podcasts-watchlists.md) · [HTML search page](../tools/apple-podcasts-scraper/search.html)
 
 ## Workflow
 

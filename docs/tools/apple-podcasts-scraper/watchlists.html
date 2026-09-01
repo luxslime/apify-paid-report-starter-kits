@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Apple Podcasts Scraper watchlists | Lookup IDs</title>
+<meta name="description" content="Refresh Apple Podcasts show watchlists with lookupIds via the iTunes Lookup API. From $10 per 1,000 results. No proxy. Empty unchanged runs should avoid dataset writes.">
+<link rel="canonical" href="https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/watchlists.html">
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Apple Podcasts Scraper watchlists">
+<meta property="og:description" content="Refresh known Apple collection IDs via the iTunes Lookup API. From $10 per 1,000 results.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/watchlists.html">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"TechArticle","headline":"Apple Podcasts Scraper watchlists","description":"Refresh known Apple collection IDs via lookupIds and the iTunes Lookup API.","url":"https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/watchlists.html","about":{"@type":"SoftwareApplication","name":"Apple Podcasts Scraper: Search, Charts, Episodes & Watchlists","url":"https://apify.com/taroyamada/apple-podcast-scraper"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which input refreshes an Apple Podcasts watchlist?","acceptedAnswer":{"@type":"Answer","text":"lookupIds, an optional list of Apple Podcasts collection IDs resolved through the iTunes Lookup API."}},{"@type":"Question","name":"Are empty watchlist polls billed as result rows?","acceptedAnswer":{"@type":"Answer","text":"Store documentation says empty no-change watchlist runs should avoid dataset writes. Confirm live Store pricing before a paid run. From $10 per 1,000 results."}}]}]}</script>
+</head>
+<body class="detail-page"><header class="detail-header"><div class="header-inner"><a class="back" href="./">Apple Podcasts Scraper overview</a><p class="eyebrow">WATCHLISTS</p><h1>Apple Podcasts watchlists</h1><p class="intro">Refresh known Apple Podcasts collection IDs through the iTunes Lookup API. Use this lane when the show list is already known.</p></div></header>
+<main>
+<section class="decision-section">
+<p class="buyer">Related Actor, not one of the eight priced report starters</p>
+<p><strong>Price:</strong> From $10 per 1,000 results. Confirm the live Store page before a paid run.</p>
+<p><strong>Sources:</strong> Public Apple / iTunes endpoints (Store listing: no proxy)</p>
+<div class="actions">
+  <a class="primary" href="https://apify.com/taroyamada/apple-podcast-scraper" rel="noopener">Open Apple Podcasts Scraper</a>
+  <a class="icon-link" href="./">Overview</a>
+  <a class="icon-link" href="search.html">Search</a>
+  <a class="icon-link" href="charts.html">Charts</a>
+</div>
+</section>
+<section class="decision-section">
+<h2>Watchlist inputs</h2>
+<ul>
+<li><code>lookupIds</code> — optional list of Apple Podcasts collection IDs resolved through the iTunes Lookup API. At least one of <code>searchTerm</code>, <code>chartRequests</code>, or <code>lookupIds</code> is required for a run.</li>
+<li><code>country</code> — default ISO country code for lookup requests</li>
+<li><code>includeEpisodes</code> — also fetch recent episodes for each resolved podcast</li>
+<li><code>maxEpisodesPerShow</code> — used in the Store README watchlist example when episode rows are requested</li>
+<li><code>dryRun</code> — run without saving results or sending webhooks</li>
+</ul>
+<p>Collection IDs are the numeric segment in an Apple Podcasts URL. Search or chart rows that already include <code>collectionId</code> can seed this list.</p>
+</section>
+<section class="code-section">
+<h2>Store README watchlist example</h2>
+<p>Copied from the Actor Store README. Review live input schema on the Store page before running.</p>
+<pre><code>{
+  "lookupIds": [
+    "1535144780"
+  ],
+  "includeEpisodes": true,
+  "maxEpisodesPerShow": 3
+}</code></pre>
+</section>
+<section class="decision-section">
+<h2>Pricing and unchanged polls</h2>
+<p>Store listing: <strong>From $10 per 1,000 results</strong>. Store README: empty no-change watchlist runs should avoid dataset writes. The default dataset is the billable surface. Dry runs, validation-only runs, missing-key warnings, and unchanged recurring polls should not write payable default-dataset rows. Confirm live Store behavior before a paid schedule.</p>
+</section>
+<section class="how">
+<h2>Run watchlists on Apify</h2>
+<p><a class="primary" href="https://apify.com/taroyamada/apple-podcast-scraper" rel="noopener">Open Apple Podcasts Scraper</a></p>
+<p>From $10 per 1,000 results. No proxy. Official Apple/iTunes endpoints.</p>
+<p>Other lanes: <a href="search.html">search</a>, <a href="charts.html">charts</a>. Related: <a href="../../guides/apple-podcasts-scraper-apify/">RSS vs Store notes</a> and the <a href="../../podcast-category-network-benchmark-report/">Apple Podcasts Category Benchmark</a> starter.</p>
+</section>
+</main>
+<footer><a href="./">Apple Podcasts Scraper overview</a><a href="https://apify.com/taroyamada/apple-podcast-scraper" rel="noopener">Open Apple Podcasts Scraper</a></footer>
+</body></html>

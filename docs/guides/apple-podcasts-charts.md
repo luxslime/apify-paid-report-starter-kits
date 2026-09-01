@@ -6,7 +6,7 @@ Pull official Apple Podcasts rankings by country, then export ranked show or epi
 
 **Price:** From $10 per 1,000 results. Confirm the live Store page before a paid run.
 
-Related: [overview](apple-podcasts-scraper-apify.md) · [search](apple-podcasts-search-discovery.md) · [watchlists](apple-podcasts-watchlists.md)
+Related: [overview](apple-podcasts-scraper-apify.md) · [search](apple-podcasts-search-discovery.md) · [watchlists](apple-podcasts-watchlists.md) · [HTML charts page](../tools/apple-podcasts-scraper/charts.html)
 
 ## Workflow
 
