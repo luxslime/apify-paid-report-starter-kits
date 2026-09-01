@@ -9,7 +9,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/">
 <meta name="twitter:card" content="summary">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Apple Podcasts Scraper: Search, Charts, Episodes & Watchlists","applicationCategory":"BusinessApplication","operatingSystem":"Web","url":"https://apify.com/taroyamada/apple-podcast-scraper","description":"Search Apple Podcasts, read chart rankings, and refresh show watchlists for podcast market tracking. Official Apple/iTunes endpoints. No proxy.","offers":{"@type":"Offer","priceCurrency":"USD","availability":"https://schema.org/InStock","description":"From $10 per 1,000 results"}},{"@type":"ItemList","name":"Apple Podcasts Scraper discovery lanes","itemListElement":[{"@type":"ListItem","position":1,"name":"Search","url":"https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/search.html"},{"@type":"ListItem","position":2,"name":"Charts","url":"https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/charts.html"},{"@type":"ListItem","position":3,"name":"Watchlists","url":"https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/watchlists.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is Apple Podcasts Scraper priced?","acceptedAnswer":{"@type":"Answer","text":"From $10 per 1,000 results. Confirm live Store pricing before a paid run."}},{"@type":"Question","name":"Does the Actor require a proxy?","acceptedAnswer":{"@type":"Answer","text":"No. The Store listing states no proxy. It uses official Apple/iTunes endpoints."}},{"@type":"Question","name":"What input is required?","acceptedAnswer":{"@type":"Answer","text":"At least one of searchTerm, chartRequests, or lookupIds."}}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Apple Podcasts Scraper: Search, Charts, Episodes & Watchlists","applicationCategory":"BusinessApplication","operatingSystem":"Web","url":"https://apify.com/taroyamada/apple-podcast-scraper","description":"Search Apple Podcasts, read chart rankings, and refresh show watchlists for podcast market tracking. Official Apple/iTunes endpoints. No proxy.","offers":{"@type":"Offer","priceCurrency":"USD","availability":"https://schema.org/InStock","description":"From $10 per 1,000 results"}},{"@type":"ItemList","name":"Apple Podcasts Scraper discovery lanes","itemListElement":[{"@type":"ListItem","position":1,"name":"Search","url":"https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/search.html"},{"@type":"ListItem","position":2,"name":"Charts","url":"https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/charts.html"},{"@type":"ListItem","position":3,"name":"Watchlists","url":"https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/watchlists.html"},{"@type":"ListItem","position":4,"name":"Webhooks","url":"https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/webhooks.html"},{"@type":"ListItem","position":5,"name":"Dataset fields","url":"https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/dataset-fields.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is Apple Podcasts Scraper priced?","acceptedAnswer":{"@type":"Answer","text":"From $10 per 1,000 results. Confirm live Store pricing before a paid run."}},{"@type":"Question","name":"Does the Actor require a proxy?","acceptedAnswer":{"@type":"Answer","text":"No. The Store listing states no proxy. It uses official Apple/iTunes endpoints."}},{"@type":"Question","name":"What input is required?","acceptedAnswer":{"@type":"Answer","text":"At least one of searchTerm, chartRequests, or lookupIds."}}]}]}</script>
 </head>
 <body class="detail-page"><header class="detail-header"><div class="header-inner"><a class="back" href="../../">All starter kits</a><p class="eyebrow">DISCOVERY TOOL</p><h1>Apple Podcasts Scraper</h1><p class="intro">Search Apple Podcasts, read chart rankings, and refresh show watchlists for podcast market tracking. Official Apple/iTunes endpoints. No proxy.</p></div></header>
 <main>
@@ -23,6 +23,8 @@
   <a class="icon-link" href="search.html">Search</a>
   <a class="icon-link" href="charts.html">Charts</a>
   <a class="icon-link" href="watchlists.html">Watchlists</a>
+  <a class="icon-link" href="webhooks.html">Webhooks</a>
+  <a class="icon-link" href="dataset-fields.html">Dataset fields</a>
   <a class="icon-link" href="../../apple-podcasts-scraper/">Discovery page</a>
   <a class="icon-link" href="../../guides/apple-podcasts-scraper-apify/">RSS vs Store notes</a>
 </div>
@@ -46,6 +48,18 @@
 <p>Use <code>lookupIds</code> with the iTunes Lookup API to resolve known Apple Podcasts collection IDs.</p>
 <div class="actions"><a class="icon-link" href="watchlists.html">Watchlists lane</a></div>
 </article>
+<article class="workflow-step">
+<p class="category">Webhooks</p>
+<h2>HTTP delivery</h2>
+<p>Start with <code>delivery</code> <code>dataset</code>, then switch to <code>webhook</code> and set <code>webhookUrl</code> after the payload shape is approved.</p>
+<div class="actions"><a class="icon-link" href="webhooks.html">Webhooks lane</a></div>
+</article>
+<article class="workflow-step">
+<p class="category">Dataset fields</p>
+<h2>Default-dataset rows</h2>
+<p>Store-documented fields such as <code>rowType</code>, <code>collectionId</code>, <code>showName</code>, <code>rank</code>, and <code>sourceUrl</code>. The default dataset is the billable surface.</p>
+<div class="actions"><a class="icon-link" href="dataset-fields.html">Dataset fields</a></div>
+</article>
 </section>
 <section class="decision-section">
 <h2>What the Actor accepts</h2>
@@ -54,13 +68,14 @@
 <li><code>country</code> — default ISO country code for search and lookup (for example <code>us</code>, <code>gb</code>, <code>jp</code>). Chart items can override country.</li>
 <li><code>limit</code> — maximum shows for search, and the default chart limit when a chart item omits its own limit</li>
 <li><code>includeEpisodes</code> — also fetch recent episodes for each resolved podcast</li>
-<li><code>delivery</code> — <code>dataset</code> or <code>webhook</code></li>
+<li><code>delivery</code> — <code>dataset</code> or <code>webhook</code> (<a href="webhooks.html">webhooks</a>)</li>
 <li><code>webhookUrl</code> — used when delivery is <code>webhook</code></li>
 <li><code>dryRun</code> — run without saving results or sending webhooks</li>
 </ul>
 </section>
 <section class="decision-section">
 <h2>Output fields (Store documentation)</h2>
+<p>Full field notes: <a href="dataset-fields.html">dataset fields</a>.</p>
 <ul>
 <li><code>rowType</code></li>
 <li><code>collectionId</code></li>
@@ -114,7 +129,7 @@
 <li>Not affiliated with or endorsed by Apple or Apify</li>
 <li>Rows are source-linked observations, not audience size, ranking advice, or business-outcome claims</li>
 </ul>
-<p>Related in this repo: <a href="search.html">search</a>, <a href="charts.html">charts</a>, <a href="watchlists.html">watchlists</a>, <a href="../../guides/apple-podcasts-scraper-apify/">RSS vs Store notes</a>, the <a href="../../podcast-category-network-benchmark-report/">Apple Podcasts Category Benchmark</a> starter, and the <a href="../../bundles/podcast-media-planning/">Podcast Media Planning Workflow</a>.</p>
+<p>Related in this repo: <a href="search.html">search</a>, <a href="charts.html">charts</a>, <a href="watchlists.html">watchlists</a>, <a href="webhooks.html">webhooks</a>, <a href="dataset-fields.html">dataset fields</a>, <a href="../../guides/apple-podcasts-scraper-apify/">RSS vs Store notes</a>, the <a href="../../podcast-category-network-benchmark-report/">Apple Podcasts Category Benchmark</a> starter, and the <a href="../../bundles/podcast-media-planning/">Podcast Media Planning Workflow</a>.</p>
 </section>
 </main>
 <footer><a href="../../">Compare all 8 workflows</a><a href="https://apify.com/taroyamada/apple-podcast-scraper" rel="noopener">Open Apple Podcasts Scraper</a></footer>

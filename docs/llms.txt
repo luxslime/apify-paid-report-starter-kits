@@ -27,6 +27,8 @@ Catalog inputs for 8 source-linked Apify report Actors. The seven deployment act
 - [Search](https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/search.html): iTunes Search API via `searchTerm`
 - [Charts](https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/charts.html): storefront rankings via `chartRequests`
 - [Watchlists](https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/watchlists.html): collection ID refresh via `lookupIds`
+- [Webhooks](https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/webhooks.html): `delivery` `webhook` plus `webhookUrl`; `dryRun` does not send webhooks
+- [Dataset fields](https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/dataset-fields.html): Store-documented output fields; default dataset is the billable surface
 
 ## Buyer workflows
 
