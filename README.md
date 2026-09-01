@@ -19,7 +19,7 @@ The seven deployment actors expose a source-linked static sample with `sample=tr
 
 ## Related Apify Actors
 
-- [Apple Podcasts Scraper: Search, Charts, Episodes & Watchlists](https://apify.com/taroyamada/apple-podcast-scraper) — [Apple Podcasts scraper Apify notes (RSS vs Store)](docs/guides/apple-podcasts-scraper-apify.md)
+- [Apple Podcasts Scraper: Search, Charts, Episodes & Watchlists](https://apify.com/taroyamada/apple-podcast-scraper) — [discovery page](docs/apple-podcasts-scraper/index.html) — [Apple Podcasts scraper Apify notes (RSS vs Store)](docs/guides/apple-podcasts-scraper-apify.md)
 
 ## Use
 

@@ -69,4 +69,4 @@ Store listing: **From $10 per 1,000 results** (pay per event: result rows plus a
 
 **[Open Apple Podcasts Scraper](https://apify.com/taroyamada/apple-podcast-scraper)** — search, charts, episodes, and watchlists. From $10 per 1,000 results.
 
-Related in this repo: the [Apple Podcasts Category Benchmark](https://apify.com/taroyamada/podcast-category-network-benchmark-report) starter kit, which uses public Apple metadata and public RSS for a capped planning sample.
+Related in this repo: the [Apple Podcasts Scraper discovery page](../apple-podcasts-scraper/index.html) and the [Apple Podcasts Category Benchmark](https://apify.com/taroyamada/podcast-category-network-benchmark-report) starter kit, which uses public Apple metadata and public RSS for a capped planning sample.
