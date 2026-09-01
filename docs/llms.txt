@@ -30,6 +30,7 @@ Catalog inputs for 8 source-linked Apify report Actors. The seven deployment act
 
 ## Buyer workflows
 
+- [Podcast Discovery Workflow](https://luxslime.github.io/apify-paid-report-starter-kits/bundles/podcast-discovery/): Use Apple Podcasts Scraper as step-0 discovery, then move into the Apple Podcasts Category Benchmark report. Pricing: From $10 per 1,000 results. Store: [taroyamada/apple-podcast-scraper](https://apify.com/taroyamada/apple-podcast-scraper).
 - [Podcast Media Planning Workflow](https://luxslime.github.io/apify-paid-report-starter-kits/bundles/podcast-media-planning/): Benchmark public podcast metadata first, then move from a category signal to a source-linked planning report.
 - [Biomedical Research Evidence Workflow](https://luxslime.github.io/apify-paid-report-starter-kits/bundles/research-regulatory-evidence/): Use official trial and literature sources to triage evidence gaps without treating registry or citation metadata as clinical conclusions.
 - [Engineering & Product Operations Workflow](https://luxslime.github.io/apify-paid-report-starter-kits/bundles/engineering-product-operations/): Start with bounded audits for authorized sites, app reviews, and dependency risk before enabling portfolio reports.
