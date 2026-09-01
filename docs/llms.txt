@@ -13,6 +13,10 @@ Catalog inputs for 8 source-linked Apify report Actors. The seven deployment act
 - [eCFR & Federal Register Change Report](https://luxslime.github.io/apify-paid-report-starter-kits/regulatory-obligation-change-impact-report/): Track source-linked CFR sections and Federal Register notices by watchlist. Sources: eCFR and Federal Register public APIs.
 - [PubMed Literature Watch & Research Report](https://luxslime.github.io/apify-paid-report-starter-kits/pubmed-research-intelligence/): Monitor official PubMed citation metadata and generate source-linked literature reports and screening exports. Sources: NCBI PubMed E-utilities.
 
+## Guides
+
+- [Apple Podcasts scraper Apify: RSS vs Store notes](https://luxslime.github.io/apify-paid-report-starter-kits/guides/apple-podcasts-scraper-apify/): Factual comparison of RSS collection vs Store / iTunes API scrapers. Covers search, charts, episodes, and watchlists. Actor: https://apify.com/taroyamada/apple-podcast-scraper. Price: From $10 per 1,000 results.
+
 ## Buyer workflows
 
 - [Podcast Media Planning Workflow](https://luxslime.github.io/apify-paid-report-starter-kits/bundles/podcast-media-planning/): Benchmark public podcast metadata first, then move from a category signal to a source-linked planning report.
