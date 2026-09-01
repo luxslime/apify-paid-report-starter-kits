@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Apple Podcasts Scraper search | iTunes Search API</title>
+<meta name="description" content="Search Apple Podcasts with searchTerm via the iTunes Search API. Store quickstart for Apple Podcasts Scraper. From $10 per 1,000 results. No proxy.">
+<link rel="canonical" href="https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/search.html">
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Apple Podcasts Scraper search">
+<meta property="og:description" content="Keyword discovery via the iTunes Search API. From $10 per 1,000 results.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/search.html">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"TechArticle","headline":"Apple Podcasts Scraper search","description":"Keyword discovery via the iTunes Search API using searchTerm.","url":"https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/search.html","about":{"@type":"SoftwareApplication","name":"Apple Podcasts Scraper: Search, Charts, Episodes & Watchlists","url":"https://apify.com/taroyamada/apple-podcast-scraper"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which input runs Apple Podcasts search?","acceptedAnswer":{"@type":"Answer","text":"searchTerm. It is powered by the iTunes Search API. Pair it with country and a small limit for the first run."}},{"@type":"Question","name":"How is search priced?","acceptedAnswer":{"@type":"Answer","text":"From $10 per 1,000 results. Confirm live Store pricing before a paid run."}}]}]}</script>
+</head>
+<body class="detail-page"><header class="detail-header"><div class="header-inner"><a class="back" href="./">Apple Podcasts Scraper overview</a><p class="eyebrow">SEARCH</p><h1>Apple Podcasts search</h1><p class="intro">Keyword discovery through the iTunes Search API. The Store listing calls this the lowest-friction quickstart lane.</p></div></header>
+<main>
+<section class="decision-section">
+<p class="buyer">Related Actor, not one of the eight priced report starters</p>
+<p><strong>Price:</strong> From $10 per 1,000 results. Confirm the live Store page before a paid run.</p>
+<p><strong>Sources:</strong> Public Apple / iTunes endpoints (Store listing: no proxy)</p>
+<div class="actions">
+  <a class="primary" href="https://apify.com/taroyamada/apple-podcast-scraper" rel="noopener">Open Apple Podcasts Scraper</a>
+  <a class="icon-link" href="./">Overview</a>
+  <a class="icon-link" href="charts.html">Charts</a>
+  <a class="icon-link" href="watchlists.html">Watchlists</a>
+</div>
+</section>
+<section class="decision-section">
+<h2>Search inputs</h2>
+<ul>
+<li><code>searchTerm</code> — optional keyword search powered by the iTunes Search API. At least one of <code>searchTerm</code>, <code>chartRequests</code>, or <code>lookupIds</code> is required for a run.</li>
+<li><code>country</code> — default ISO country code (for example <code>us</code>)</li>
+<li><code>limit</code> — maximum number of podcasts returned for search</li>
+<li><code>includeEpisodes</code> — also fetch recent episodes for each resolved podcast. Store quickstart leaves this off.</li>
+</ul>
+<p>The Store README recommends starting with one search term and one country so the first source check stays small. Returned show IDs or source URLs can be reused in chart or watchlist runs, or in the Category Benchmark starter.</p>
+</section>
+<section class="code-section">
+<h2>Store README search example</h2>
+<p>Copied from the Actor Store README. Review live input schema on the Store page before running.</p>
+<pre><code>{
+  "searchTerm": "founder podcast",
+  "country": "us",
+  "limit": 10,
+  "includeEpisodes": false
+}</code></pre>
+</section>
+<section class="decision-section">
+<h2>What search rows contain</h2>
+<p>Store documentation lists show-level fields such as <code>rowType</code> (example: <code>podcast_search_result</code>), <code>collectionId</code>, <code>showName</code>, <code>publisher</code>, <code>country</code>, <code>rank</code>, <code>sourceUrl</code>, and <code>fetchedAt</code>. Search is catalog discovery; it does not by itself provide a full RSS episode archive.</p>
+</section>
+<section class="how">
+<h2>Run search on Apify</h2>
+<p><a class="primary" href="https://apify.com/taroyamada/apple-podcast-scraper" rel="noopener">Open Apple Podcasts Scraper</a></p>
+<p>From $10 per 1,000 results. No proxy. Official Apple/iTunes endpoints.</p>
+<p>Next lanes: <a href="charts.html">charts</a>, <a href="watchlists.html">watchlists</a>. Related: <a href="../../guides/apple-podcasts-scraper-apify/">RSS vs Store notes</a> and the <a href="../../podcast-category-network-benchmark-report/">Apple Podcasts Category Benchmark</a> starter.</p>
+</section>
+</main>
+<footer><a href="./">Apple Podcasts Scraper overview</a><a href="https://apify.com/taroyamada/apple-podcast-scraper" rel="noopener">Open Apple Podcasts Scraper</a></footer>
+</body></html>

@@ -4,6 +4,8 @@ Short notes for teams that collect **public Apple Podcasts metadata** on [Apify]
 
 **Use the Actor:** [Apple Podcasts Scraper on Apify](https://apify.com/taroyamada/apple-podcast-scraper)
 
+**Discovery docs:** [overview](../tools/apple-podcasts-scraper/), [search](../tools/apple-podcasts-scraper/search.html), [charts](../tools/apple-podcasts-scraper/charts.html), [watchlists](../tools/apple-podcasts-scraper/watchlists.html)
+
 **Price:** From $10 per 1,000 results. Confirm the live Store page before a paid run.
 
 ## What this Apple Podcasts scraper on Apify is for
@@ -69,4 +71,4 @@ Store listing: **From $10 per 1,000 results** (pay per event: result rows plus a
 
 **[Open Apple Podcasts Scraper](https://apify.com/taroyamada/apple-podcast-scraper)** — search, charts, episodes, and watchlists. From $10 per 1,000 results.
 
-Related in this repo: the [Apple Podcasts Scraper discovery page](../apple-podcasts-scraper/index.html) and the [Apple Podcasts Category Benchmark](https://apify.com/taroyamada/podcast-category-network-benchmark-report) starter kit, which uses public Apple metadata and public RSS for a capped planning sample.
+Related in this repo: the [Apple Podcasts Scraper discovery page](../apple-podcasts-scraper/index.html), [HTML tools docs](../tools/apple-podcasts-scraper/) ([search](../tools/apple-podcasts-scraper/search.html), [charts](../tools/apple-podcasts-scraper/charts.html), [watchlists](../tools/apple-podcasts-scraper/watchlists.html)), and the [Apple Podcasts Category Benchmark](https://apify.com/taroyamada/podcast-category-network-benchmark-report) starter kit, which uses public Apple metadata and public RSS for a capped planning sample.
