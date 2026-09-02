@@ -1,0 +1,12 @@
+{
+  "jurisdictions": "eu",
+  "keywords": "cloud,cybersecurity,IT services",
+  "cpvCodes": "72000000,72220000",
+  "daysAhead": 21,
+  "maxItemsPerSource": 40,
+  "minValue": 100000,
+  "delivery": "dataset",
+  "generateReport": false,
+  "emitExport": false,
+  "dryRun": false
+}
