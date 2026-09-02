@@ -6,7 +6,7 @@ Catalog inputs for 8 source-linked Apify report Actors. The seven deployment act
 
 - [Technical SEO & AI Crawler Audit](https://luxslime.github.io/apify-paid-report-starter-kits/technical-seo-portfolio-regression-report/): Find indexability and AI crawler access regressions across authorized sites. Sources: Public pages, robots.txt, sitemap.xml, and llms.txt.
 - [Apple Podcasts Category Benchmark](https://luxslime.github.io/apify-paid-report-starter-kits/podcast-category-network-benchmark-report/): Compare public show, category, publisher, and episode signals before a full benchmark. Sources: Apple Podcasts metadata and public RSS feeds.
-- [Apple Podcasts Scraper](https://luxslime.github.io/apify-paid-report-starter-kits/apple-podcasts-scraper/): Discovery and benchmark input tool for public Apple Podcasts search, charts, and watchlists. Pricing: From $10 per 1,000 results. Store: [taroyamada/apple-podcast-scraper](https://apify.com/taroyamada/apple-podcast-scraper).
+- [Apple Podcasts / iTunes Scraper: Search, Charts, Episodes](https://luxslime.github.io/apify-paid-report-starter-kits/apple-podcasts-scraper/): Related discovery Actor. Cheapest first paid run: small search, `includeEpisodes` false ([starter JSON](https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/apple-podcast-scraper.json)). Pricing: Result $10/1,000. Start $0.005. Store: [taroyamada/apple-podcast-scraper](https://apify.com/taroyamada/apple-podcast-scraper).
 - [Clinical Trials & PubMed Evidence Gap Report](https://luxslime.github.io/apify-paid-report-starter-kits/biomedical-trial-literature-evidence-report/): Compare trial records and publications to surface source-linked evidence gaps. Sources: ClinicalTrials.gov and PubMed APIs.
 - [App Store Release & Review Benchmark](https://luxslime.github.io/apify-paid-report-starter-kits/app-release-category-review-benchmark-report/): Compare releases, ratings, and review samples around app release windows. Sources: Public Apple App Store and Google Play metadata.
 - [npm & PyPI Dependency Risk Report](https://luxslime.github.io/apify-paid-report-starter-kits/package-portfolio-upgrade-risk-report/): Check package versions and vulnerability evidence before a portfolio report. Sources: npm, PyPI, and OSV public APIs.
@@ -16,15 +16,15 @@ Catalog inputs for 8 source-linked Apify report Actors. The seven deployment act
 
 ## Guides
 
-- [Apple Podcasts scraper Apify: RSS vs Store notes](https://luxslime.github.io/apify-paid-report-starter-kits/guides/apple-podcasts-scraper-apify/): Factual comparison of RSS collection vs Store / iTunes API scrapers. Covers search, charts, episodes, and watchlists. Actor: https://apify.com/taroyamada/apple-podcast-scraper. Price: From $10 per 1,000 results.
+- [Apple Podcasts scraper Apify: RSS vs Store notes](https://luxslime.github.io/apify-paid-report-starter-kits/guides/apple-podcasts-scraper-apify/): Factual comparison of RSS collection vs Store / iTunes API scrapers. Covers search, charts, episodes, and watchlists. Actor: https://apify.com/taroyamada/apple-podcast-scraper. Price: Result $10/1,000. Start $0.005.
 - [Apple Podcasts charts](https://luxslime.github.io/apify-paid-report-starter-kits/guides/apple-podcasts-charts.md)
 - [Apple Podcasts watchlists](https://luxslime.github.io/apify-paid-report-starter-kits/guides/apple-podcasts-watchlists.md)
-- [Apple Podcasts search and discovery](https://luxslime.github.io/apify-paid-report-starter-kits/guides/apple-podcasts-search-discovery.md)
+- [Apple Podcasts search and discovery](https://luxslime.github.io/apify-paid-report-starter-kits/guides/apple-podcasts-search-discovery.md): Cheapest first paid run. Small `searchTerm`, `includeEpisodes` false. Store: https://apify.com/taroyamada/apple-podcast-scraper
 
 ## Discovery tools
 
-- [Apple Podcasts Scraper](https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/): Search, charts, and watchlists via official Apple/iTunes endpoints. No proxy. Price: From $10 per 1,000 results. Store: https://apify.com/taroyamada/apple-podcast-scraper
-- [Search](https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/search.html): iTunes Search API via `searchTerm`
+- [Apple Podcasts Scraper](https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/): Search, charts, and watchlists via official Apple/iTunes endpoints. No proxy. Price: Result $10/1,000. Start $0.005. Store: https://apify.com/taroyamada/apple-podcast-scraper
+- [Search](https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/search.html): cheapest first paid run; iTunes Search API via `searchTerm`, `includeEpisodes` false
 - [Charts](https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/charts.html): storefront rankings via `chartRequests`
 - [Watchlists](https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/watchlists.html): collection ID refresh via `lookupIds`
 - [Webhooks](https://luxslime.github.io/apify-paid-report-starter-kits/tools/apple-podcasts-scraper/webhooks.html): `delivery` `webhook` plus `webhookUrl`; `dryRun` does not send webhooks
@@ -32,7 +32,7 @@ Catalog inputs for 8 source-linked Apify report Actors. The seven deployment act
 
 ## Buyer workflows
 
-- [Podcast Discovery Workflow](https://luxslime.github.io/apify-paid-report-starter-kits/bundles/podcast-discovery/): Use Apple Podcasts Scraper as step-0 discovery, then move into the Apple Podcasts Category Benchmark report. Pricing: From $10 per 1,000 results. Store: [taroyamada/apple-podcast-scraper](https://apify.com/taroyamada/apple-podcast-scraper).
+- [Podcast Discovery Workflow](https://luxslime.github.io/apify-paid-report-starter-kits/bundles/podcast-discovery/): Use Apple Podcasts Scraper as step-0 discovery, then move into the Apple Podcasts Category Benchmark report. Pricing: Result $10/1,000. Start $0.005. Store: [taroyamada/apple-podcast-scraper](https://apify.com/taroyamada/apple-podcast-scraper).
 - [Podcast Media Planning Workflow](https://luxslime.github.io/apify-paid-report-starter-kits/bundles/podcast-media-planning/): Benchmark public podcast metadata first, then move from a category signal to a source-linked planning report.
 - [Biomedical Research Evidence Workflow](https://luxslime.github.io/apify-paid-report-starter-kits/bundles/research-regulatory-evidence/): Use official trial and literature sources to triage evidence gaps without treating registry or citation metadata as clinical conclusions.
 - [Engineering & Product Operations Workflow](https://luxslime.github.io/apify-paid-report-starter-kits/bundles/engineering-product-operations/): Start with bounded audits for authorized sites, app reviews, and dependency risk before enabling portfolio reports.

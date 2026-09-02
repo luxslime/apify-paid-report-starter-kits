@@ -19,7 +19,7 @@ The seven deployment actors expose a source-linked static sample with `sample=tr
 
 ## Related Apify Actors / Guides
 
-- [Apple Podcasts Scraper: Search, Charts, Episodes & Watchlists](https://apify.com/taroyamada/apple-podcast-scraper) — [discovery page](docs/apple-podcasts-scraper/index.html) — [Apple Podcasts scraper Apify notes (RSS vs Store)](docs/guides/apple-podcasts-scraper-apify.md) — [HTML tools docs](docs/tools/apple-podcasts-scraper/) ([search](docs/tools/apple-podcasts-scraper/search.html), [charts](docs/tools/apple-podcasts-scraper/charts.html), [watchlists](docs/tools/apple-podcasts-scraper/watchlists.html), [webhooks](docs/tools/apple-podcasts-scraper/webhooks.html), [dataset fields](docs/tools/apple-podcasts-scraper/dataset-fields.html))
+- [Apple Podcasts / iTunes Scraper: Search, Charts, Episodes](https://apify.com/taroyamada/apple-podcast-scraper) — cheapest first paid run: small search, `includeEpisodes` false ([starter JSON](inputs/apple-podcast-scraper.json)). Live Store PPE: Result $10/1,000, Start $0.005. [discovery page](docs/apple-podcasts-scraper/index.html) — [Apple Podcasts scraper Apify notes (RSS vs Store)](docs/guides/apple-podcasts-scraper-apify.md) — [HTML tools docs](docs/tools/apple-podcasts-scraper/) ([search](docs/tools/apple-podcasts-scraper/search.html), [charts](docs/tools/apple-podcasts-scraper/charts.html), [watchlists](docs/tools/apple-podcasts-scraper/watchlists.html), [webhooks](docs/tools/apple-podcasts-scraper/webhooks.html), [dataset fields](docs/tools/apple-podcasts-scraper/dataset-fields.html))
 - [Apple Podcasts charts](docs/guides/apple-podcasts-charts.md)
 - [Apple Podcasts watchlists](docs/guides/apple-podcasts-watchlists.md)
 - [Apple Podcasts search and discovery](docs/guides/apple-podcasts-search-discovery.md)
@@ -36,6 +36,7 @@ The seven deployment actors expose a source-linked static sample with `sample=tr
 ## Billing behavior
 
 - No start charge is configured for these 8 Actors.
+- The related [Apple Podcasts / iTunes Scraper](https://apify.com/taroyamada/apple-podcast-scraper) uses live Store PPE Result $10/1,000 and Start $0.005. Its cheapest first paid run is [inputs/apple-podcast-scraper.json](inputs/apple-podcast-scraper.json).
 - Zero-row and unchanged monitor runs have zero event charge.
 - `maxChargeUsd` is a hard buyer-controlled cap checked before delivery; deployment paid previews use $0.25.
 - These starter inputs keep report and export events disabled.
