@@ -1,0 +1,9 @@
+{
+  "emails": [
+    "test@gmail.com"
+  ],
+  "checkMx": true,
+  "checkDisposable": true,
+  "delivery": "dataset",
+  "dryRun": false
+}

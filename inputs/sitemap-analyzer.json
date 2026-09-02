@@ -1,0 +1,9 @@
+{
+  "sitemapUrls": [
+    "https://apify.com/sitemap.xml"
+  ],
+  "maxUrls": 50,
+  "checkStatus": false,
+  "delivery": "dataset",
+  "dryRun": false
+}

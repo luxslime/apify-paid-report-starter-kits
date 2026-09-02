@@ -1,0 +1,8 @@
+{
+  "urls": [
+    "https://example.com"
+  ],
+  "concurrency": 3,
+  "delivery": "dataset",
+  "dryRun": false
+}

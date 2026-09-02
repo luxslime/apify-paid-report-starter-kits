@@ -1,0 +1,8 @@
+{
+  "urls": [
+    "https://schema.org/docs/gs.html"
+  ],
+  "concurrency": 3,
+  "delivery": "dataset",
+  "dryRun": false
+}

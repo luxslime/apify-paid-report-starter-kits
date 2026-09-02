@@ -1,0 +1,8 @@
+{
+  "domains": [
+    "openai.com"
+  ],
+  "datasetMode": "all",
+  "concurrency": 3,
+  "dryRun": false
+}

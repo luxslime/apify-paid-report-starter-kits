@@ -1,0 +1,9 @@
+{
+  "feedUrls": [
+    "https://blog.google/rss/"
+  ],
+  "maxItemsPerFeed": 5,
+  "deduplicate": true,
+  "delivery": "dataset",
+  "dryRun": false
+}

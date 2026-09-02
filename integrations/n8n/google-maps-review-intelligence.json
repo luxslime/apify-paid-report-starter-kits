@@ -1,0 +1,8 @@
+{
+  "placeUrls": [
+    "https://www.google.com/maps/place/Tokyo+Station/"
+  ],
+  "reviewLimit": 5,
+  "delivery": "dataset",
+  "dryRun": false
+}
