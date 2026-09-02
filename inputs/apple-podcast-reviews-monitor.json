@@ -1,0 +1,12 @@
+{
+  "mode": "snapshot",
+  "podcastIds": [
+    "1535809341"
+  ],
+  "countries": [
+    "us"
+  ],
+  "maxPagesPerPair": 1,
+  "generateReport": false,
+  "dryRun": false
+}
