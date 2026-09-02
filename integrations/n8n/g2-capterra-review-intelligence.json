@@ -1,0 +1,8 @@
+{
+  "reviewPageUrls": [
+    "https://www.g2.com/products/notion/reviews"
+  ],
+  "reviewLimit": 25,
+  "delivery": "dataset",
+  "dryRun": false
+}

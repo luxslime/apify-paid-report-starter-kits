@@ -1,0 +1,12 @@
+{
+  "urls": [
+    "https://en.wikipedia.org/wiki/Web_scraping"
+  ],
+  "outputFormat": "markdown",
+  "includeImages": true,
+  "concurrency": 5,
+  "delivery": "dataset",
+  "generateReport": false,
+  "emitExport": false,
+  "dryRun": false
+}
