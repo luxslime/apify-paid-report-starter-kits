@@ -21,6 +21,7 @@ The seven deployment actors expose a source-linked static sample with `sample=tr
 
 - [Apple Podcasts / iTunes Scraper: Search, Charts, Episodes](https://apify.com/taroyamada/apple-podcast-scraper) — cheapest first paid run: small search, `includeEpisodes` false ([starter JSON](inputs/apple-podcast-scraper.json)). Live Store PPE: Result $10/1,000, Start $0.005. [discovery page](docs/apple-podcasts-scraper/index.html) — [Apple Podcasts scraper Apify notes (RSS vs Store)](docs/guides/apple-podcasts-scraper-apify.md) — [HTML tools docs](docs/tools/apple-podcasts-scraper/) ([search](docs/tools/apple-podcasts-scraper/search.html), [charts](docs/tools/apple-podcasts-scraper/charts.html), [watchlists](docs/tools/apple-podcasts-scraper/watchlists.html), [webhooks](docs/tools/apple-podcasts-scraper/webhooks.html), [dataset fields](docs/tools/apple-podcasts-scraper/dataset-fields.html))
 - [Article Extractor & Reader Scraper (News, Blog, RAG)](https://apify.com/taroyamada/article-content-extractor) — cheapest first paid run: one public article URL, `generateReport` false, `emitExport` false ([starter JSON](inputs/article-content-extractor.json)). Live Store PPE: Actor Start $0.00005, Useful article row $0.008.
+- [G2 & Capterra Review Scraper](https://apify.com/taroyamada/g2-capterra-review-intelligence) — cheapest first paid run: one review page URL, modest `reviewLimit` (25), `dryRun` false ([starter JSON](inputs/g2-capterra-review-intelligence.json)). Live Store PPE: Actor Start $0.001, result $0.01.
 - [Apple Podcasts charts](docs/guides/apple-podcasts-charts.md)
 - [Apple Podcasts watchlists](docs/guides/apple-podcasts-watchlists.md)
 - [Apple Podcasts search and discovery](docs/guides/apple-podcasts-search-discovery.md)
@@ -39,6 +40,7 @@ The seven deployment actors expose a source-linked static sample with `sample=tr
 - No start charge is configured for these 8 Actors.
 - The related [Apple Podcasts / iTunes Scraper](https://apify.com/taroyamada/apple-podcast-scraper) uses live Store PPE Result $10/1,000 and Start $0.005. Its cheapest first paid run is [inputs/apple-podcast-scraper.json](inputs/apple-podcast-scraper.json).
 - The related [Article Extractor & Reader Scraper (News, Blog, RAG)](https://apify.com/taroyamada/article-content-extractor) uses live Store PPE Actor Start $0.00005 and Useful article row $0.008. Its cheapest first paid run is [inputs/article-content-extractor.json](inputs/article-content-extractor.json) (one URL; one useful row ≈ $0.00805 before optional report/export events).
+- The related [G2 & Capterra Review Scraper](https://apify.com/taroyamada/g2-capterra-review-intelligence) uses live Store PPE Actor Start $0.001 and result $0.01. Its cheapest first paid run is [inputs/g2-capterra-review-intelligence.json](inputs/g2-capterra-review-intelligence.json) (one review page URL; one result row ≈ $0.011 before scaling URLs or review depth).
 - Zero-row and unchanged monitor runs have zero event charge.
 - `maxChargeUsd` is a hard buyer-controlled cap checked before delivery; deployment paid previews use $0.25.
 - These starter inputs keep report and export events disabled.
