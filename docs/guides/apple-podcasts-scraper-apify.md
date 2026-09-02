@@ -2,15 +2,17 @@
 
 Short notes for teams that collect **public Apple Podcasts metadata** on [Apify](https://apify.com). This page compares typical **RSS** collection with **Store / iTunes API** scrapers. It does not rank vendors or invent speed, coverage, or cost benchmarks.
 
-**Use the Actor:** [Apple Podcasts Scraper on Apify](https://apify.com/taroyamada/apple-podcast-scraper)
+**Use the Actor:** [Apple Podcasts / iTunes Scraper: Search, Charts, Episodes](https://apify.com/taroyamada/apple-podcast-scraper)
 
 **Discovery docs:** [overview](../tools/apple-podcasts-scraper/), [search](../tools/apple-podcasts-scraper/search.html), [charts](../tools/apple-podcasts-scraper/charts.html), [watchlists](../tools/apple-podcasts-scraper/watchlists.html)
 
-**Price:** From $10 per 1,000 results. Confirm the live Store page before a paid run.
+**Cheapest first paid run:** [starter JSON](https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/apple-podcast-scraper.json) — small search, `includeEpisodes` false.
+
+**Price:** Result $10/1,000. Start $0.005. Confirm the live Store page before a paid run.
 
 ## What this Apple Podcasts scraper on Apify is for
 
-[Apple Podcasts Scraper: Search, Charts, Episodes & Watchlists](https://apify.com/taroyamada/apple-podcast-scraper) is a discovery and metadata Actor. It uses public Apple / iTunes endpoints (the Store listing notes no proxy). Typical jobs:
+[Apple Podcasts / iTunes Scraper: Search, Charts, Episodes](https://apify.com/taroyamada/apple-podcast-scraper) is a discovery and metadata Actor. It uses public Apple / iTunes endpoints (the Store listing notes no proxy). Typical jobs:
 
 - **Search** — keyword discovery via the iTunes Search API
 - **Charts** — country storefront rankings for podcasts or podcast episodes
@@ -58,7 +60,7 @@ At least one of `searchTerm`, `chartRequests`, or `lookupIds` is required. Deliv
 
 ## Pricing note
 
-Store listing: **From $10 per 1,000 results** (pay per event: result rows plus a small actor-start event). Empty unchanged watchlist polls are documented as avoiding payable default-dataset writes when there is nothing new to emit. Review current pricing on the Store page; this notes page does not freeze a quote.
+Live Store PPE: **Result $10/1,000**, **Start $0.005**. Empty unchanged watchlist polls are documented as avoiding payable default-dataset writes when there is nothing new to emit. Review current pricing on the Store page; this notes page does not freeze a quote.
 
 ## Limits (no extra claims)
 
@@ -69,6 +71,6 @@ Store listing: **From $10 per 1,000 results** (pay per event: result rows plus a
 
 ## Run the Apple Podcasts scraper on Apify
 
-**[Open Apple Podcasts Scraper](https://apify.com/taroyamada/apple-podcast-scraper)** — search, charts, episodes, and watchlists. From $10 per 1,000 results.
+**[Open Apple Podcasts / iTunes Scraper](https://apify.com/taroyamada/apple-podcast-scraper)** — search, charts, and episodes. Result $10/1,000. Start $0.005.
 
 Related in this repo: the [Apple Podcasts Scraper discovery page](../apple-podcasts-scraper/index.html), [HTML tools docs](../tools/apple-podcasts-scraper/) ([search](../tools/apple-podcasts-scraper/search.html), [charts](../tools/apple-podcasts-scraper/charts.html), [watchlists](../tools/apple-podcasts-scraper/watchlists.html)), and the [Apple Podcasts Category Benchmark](https://apify.com/taroyamada/podcast-category-network-benchmark-report) starter kit, which uses public Apple metadata and public RSS for a capped planning sample.

@@ -2,9 +2,11 @@
 
 Pull official Apple Podcasts rankings by country, then export ranked show or episode rows for market tracking.
 
-**Use the Actor:** [Apple Podcasts Scraper on Apify](https://apify.com/taroyamada/apple-podcast-scraper)
+**Use the Actor:** [Apple Podcasts / iTunes Scraper: Search, Charts, Episodes](https://apify.com/taroyamada/apple-podcast-scraper)
 
-**Price:** From $10 per 1,000 results. Confirm the live Store page before a paid run.
+**Price:** Result $10/1,000. Start $0.005. Confirm the live Store page before a paid run.
+
+Charts are a follow-on lane. The cheapest first paid run is a small search with `includeEpisodes` false: [starter JSON](https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/apple-podcast-scraper.json).
 
 Related: [overview](apple-podcasts-scraper-apify.md) · [search](apple-podcasts-search-discovery.md) · [watchlists](apple-podcasts-watchlists.md) · [HTML charts page](../tools/apple-podcasts-scraper/charts.html)
 
@@ -43,4 +45,4 @@ Chart requests can mix storefronts. A second item can use another country or `po
 
 Start with one country and a modest `limit`, inspect the ranked dataset, then scale.
 
-**[Get Apple Podcasts chart data](https://apify.com/taroyamada/apple-podcast-scraper)** — From $10 per 1,000 results.
+**[Get Apple Podcasts chart data](https://apify.com/taroyamada/apple-podcast-scraper)** — Result $10/1,000. Start $0.005.
