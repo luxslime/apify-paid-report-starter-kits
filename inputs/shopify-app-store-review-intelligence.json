@@ -1,0 +1,8 @@
+{
+  "appUrls": [
+    "https://apps.shopify.com/omnisend"
+  ],
+  "reviewLimit": 5,
+  "delivery": "dataset",
+  "dryRun": false
+}

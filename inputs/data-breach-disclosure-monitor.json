@@ -1,0 +1,6 @@
+{
+  "lookbackDays": 30,
+  "maxBreachesInEvidence": 10,
+  "delivery": "dataset",
+  "dryRun": false
+}

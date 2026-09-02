@@ -1,0 +1,17 @@
+{
+  "brand": "Apify",
+  "brandTerms": [
+    "apify.com",
+    "apify"
+  ],
+  "keywords": [
+    "web scraping platform"
+  ],
+  "searchSources": [
+    "google"
+  ],
+  "maxResultsPerKeyword": 5,
+  "datasetMode": "all",
+  "delivery": "dataset",
+  "dryRun": false
+}

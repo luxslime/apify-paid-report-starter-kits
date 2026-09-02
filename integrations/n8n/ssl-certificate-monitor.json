@@ -1,0 +1,9 @@
+{
+  "domains": [
+    "apify.com"
+  ],
+  "expiryWarningDays": 30,
+  "emitUnchanged": false,
+  "delivery": "dataset",
+  "dryRun": false
+}

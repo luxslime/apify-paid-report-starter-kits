@@ -1,0 +1,7 @@
+{
+  "searches": [
+    "instagram"
+  ],
+  "maxResultsPerSearch": 5,
+  "dryRun": false
+}

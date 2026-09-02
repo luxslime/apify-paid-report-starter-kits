@@ -1,0 +1,9 @@
+{
+  "urls": [
+    "https://example.com"
+  ],
+  "concurrency": 5,
+  "followRedirects": true,
+  "delivery": "dataset",
+  "dryRun": false
+}

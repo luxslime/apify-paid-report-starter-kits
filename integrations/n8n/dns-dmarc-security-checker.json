@@ -1,0 +1,9 @@
+{
+  "domains": [
+    "google.com"
+  ],
+  "checkDkim": false,
+  "concurrency": 3,
+  "delivery": "dataset",
+  "dryRun": false
+}

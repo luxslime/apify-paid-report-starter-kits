@@ -1,0 +1,13 @@
+{
+  "leads": [
+    {
+      "businessName": "Example Cafe",
+      "address": "1 Market St, San Francisco, CA",
+      "website": "https://example.com"
+    }
+  ],
+  "includeContacts": true,
+  "maxLeads": 1,
+  "delivery": "dataset",
+  "dryRun": false
+}

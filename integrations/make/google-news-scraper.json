@@ -1,0 +1,11 @@
+{
+  "queries": [
+    "artificial intelligence"
+  ],
+  "language": "en",
+  "country": "US",
+  "maxItems": 10,
+  "deduplicate": true,
+  "delivery": "dataset",
+  "dryRun": false
+}

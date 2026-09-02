@@ -1,0 +1,10 @@
+{
+  "urls": [
+    "https://docs.apify.com/platform/actors"
+  ],
+  "outputFormat": "markdown",
+  "includeMetadata": true,
+  "concurrency": 5,
+  "delivery": "dataset",
+  "dryRun": false
+}
