@@ -8,7 +8,7 @@ Short notes for teams that collect **public Apple Podcasts metadata** on [Apify]
 
 **Cheapest first paid run:** [starter JSON](https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/apple-podcast-scraper.json) — small search, `includeEpisodes` false.
 
-**Price:** Result $10/1,000. Start $0.005. Confirm the live Store page before a paid run.
+**Price:** Result $2.50/1,000. Start $0.005. Confirm the live Store page before a paid run.
 
 ## What this Apple Podcasts scraper on Apify is for
 
@@ -60,7 +60,7 @@ At least one of `searchTerm`, `chartRequests`, or `lookupIds` is required. Deliv
 
 ## Pricing note
 
-Live Store PPE: **Result $10/1,000**, **Start $0.005**. Empty unchanged watchlist polls are documented as avoiding payable default-dataset writes when there is nothing new to emit. Review current pricing on the Store page; this notes page does not freeze a quote.
+Live Store PPE: **Result $2.50/1,000**, **Start $0.005**. Empty unchanged watchlist polls are documented as avoiding payable default-dataset writes when there is nothing new to emit. Review current pricing on the Store page; this notes page does not freeze a quote.
 
 ## Limits (no extra claims)
 
@@ -71,6 +71,6 @@ Live Store PPE: **Result $10/1,000**, **Start $0.005**. Empty unchanged watchlis
 
 ## Run the Apple Podcasts scraper on Apify
 
-**[Open Apple Podcasts / iTunes Scraper](https://apify.com/taroyamada/apple-podcast-scraper)** — search, charts, and episodes. Result $10/1,000. Start $0.005.
+**[Open Apple Podcasts / iTunes Scraper](https://apify.com/taroyamada/apple-podcast-scraper)** — search, charts, and episodes. Result $2.50/1,000. Start $0.005.
 
 Related in this repo: the [Apple Podcasts Scraper discovery page](../apple-podcasts-scraper/index.html), [HTML tools docs](../tools/apple-podcasts-scraper/) ([search](../tools/apple-podcasts-scraper/search.html), [charts](../tools/apple-podcasts-scraper/charts.html), [watchlists](../tools/apple-podcasts-scraper/watchlists.html)), and the [Apple Podcasts Category Benchmark](https://apify.com/taroyamada/podcast-category-network-benchmark-report) starter kit, which uses public Apple metadata and public RSS for a capped planning sample.
