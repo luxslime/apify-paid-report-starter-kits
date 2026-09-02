@@ -4,7 +4,7 @@ Refresh known shows by Apple collection ID. Use this lane when you already have 
 
 **Use the Actor:** [Apple Podcasts / iTunes Scraper: Search, Charts, Episodes](https://apify.com/taroyamada/apple-podcast-scraper)
 
-**Price:** Result $10/1,000. Start $0.005. Confirm the live Store page before a paid run.
+**Price:** Result $2.50/1,000. Start $0.005. Confirm the live Store page before a paid run.
 
 Watchlists are a follow-on lane. The cheapest first paid run is a small search with `includeEpisodes` false: [starter JSON](https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/apple-podcast-scraper.json).
 
@@ -44,4 +44,4 @@ Unchanged watchlist polls are documented as avoiding payable default-dataset wri
 
 Add your collection IDs, inspect one dataset, then schedule the refresh.
 
-**[Set up a podcast watchlist](https://apify.com/taroyamada/apple-podcast-scraper)** — Result $10/1,000. Start $0.005.
+**[Set up a podcast watchlist](https://apify.com/taroyamada/apple-podcast-scraper)** — Result $2.50/1,000. Start $0.005.

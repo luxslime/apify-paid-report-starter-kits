@@ -4,7 +4,7 @@ Find public shows by keyword in any Apple country storefront, then reuse the ret
 
 **Use the Actor:** [Apple Podcasts / iTunes Scraper: Search, Charts, Episodes](https://apify.com/taroyamada/apple-podcast-scraper)
 
-**Price:** Result $10/1,000. Start $0.005. Confirm the live Store page before a paid run.
+**Price:** Result $2.50/1,000. Start $0.005. Confirm the live Store page before a paid run.
 
 Related: [overview](apple-podcasts-scraper-apify.md) · [charts](apple-podcasts-charts.md) · [watchlists](apple-podcasts-watchlists.md) · [HTML search page](../tools/apple-podcasts-scraper/search.html) · [starter JSON](https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/apple-podcast-scraper.json)
 
@@ -57,4 +57,4 @@ Search uses the public iTunes Search API. `rank` is a chart field and is typical
 
 Run the 3-result search starter, inspect the dataset, then scale the `limit` or add charts and watchlists.
 
-**[Search Apple Podcasts now](https://apify.com/taroyamada/apple-podcast-scraper)** — Result $10/1,000. Start $0.005.
+**[Search Apple Podcasts now](https://apify.com/taroyamada/apple-podcast-scraper)** — Result $2.50/1,000. Start $0.005.
