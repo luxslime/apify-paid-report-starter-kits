@@ -4,6 +4,10 @@ Short notes for teams that collect **public Apple Podcasts metadata** on [Apify]
 
 **Use the Actor:** [Apple Podcasts / iTunes Scraper: Search, Charts, Episodes](https://apify.com/taroyamada/apple-podcast-scraper)
 
+**Store ID:** `taroyamada/apple-podcast-scraper`
+
+Publisher catalog: [https://apify.momiji-space.com/llms.txt](https://apify.momiji-space.com/llms.txt). MCP JSON: [mcp-agents.md](../mcp-agents.md).
+
 **Discovery docs:** [overview](../tools/apple-podcasts-scraper/), [search](../tools/apple-podcasts-scraper/search.html), [charts](../tools/apple-podcasts-scraper/charts.html), [watchlists](../tools/apple-podcasts-scraper/watchlists.html)
 
 **Cheapest first paid run:** [starter JSON](https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/apple-podcast-scraper.json) — small search, `includeEpisodes` false.
