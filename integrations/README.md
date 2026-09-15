@@ -2,6 +2,8 @@
 
 Paste-ready Actor input for [Make](https://docs.apify.com/integrations/make) (**Run an Actor** → Input JSON) and [n8n](https://docs.apify.com/integrations/n8n) (**Run Actor** → Custom input). Each file is the same cheapest first paid run as `inputs/`. Select the Actor ID in the module, paste this JSON, keep `delivery` `dataset`, then use **Get Dataset Items** on `defaultDatasetId`. Do not enable report or export options on the first paid run.
 
+MCP / agents: use the exact Store ID (`taroyamada/{actor}`) plus the same JSON. Catalog: [docs/mcp-agents.md](../docs/mcp-agents.md). Publisher listing (no prices): [https://apify.momiji-space.com/llms.txt](https://apify.momiji-space.com/llms.txt). Profile: [https://apify.com/taroyamada](https://apify.com/taroyamada).
+
 | Actor | Actor ID | Cheapest first paid run | Make | n8n |
 | --- | --- | --- | --- | --- |
 | [Article Extractor & Reader Scraper (News, Blog, RAG)](https://apify.com/taroyamada/article-content-extractor) | `taroyamada/article-content-extractor` | One public article URL; `generateReport` false; `emitExport` false. Live Store PPE: Actor Start $0.00005, Useful article row $0.008. | [input](make/article-content-extractor.json) | [input](n8n/article-content-extractor.json) |

@@ -4,6 +4,10 @@ Refresh known shows by Apple collection ID. Use this lane when you already have 
 
 **Use the Actor:** [Apple Podcasts / iTunes Scraper: Search, Charts, Episodes](https://apify.com/taroyamada/apple-podcast-scraper)
 
+**Store ID:** `taroyamada/apple-podcast-scraper`
+
+Publisher catalog: [https://apify.momiji-space.com/llms.txt](https://apify.momiji-space.com/llms.txt). MCP JSON: [mcp-agents.md](../mcp-agents.md).
+
 **Price:** Result $2.50/1,000. Start $0.005. Confirm the live Store page before a paid run.
 
 Watchlists are a follow-on lane. The cheapest first paid run is a small search with `includeEpisodes` false: [starter JSON](https://github.com/luxslime/apify-paid-report-starter-kits/blob/master/inputs/apple-podcast-scraper.json).
