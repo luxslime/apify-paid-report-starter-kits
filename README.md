@@ -19,11 +19,97 @@ Publisher catalog (no prices): [https://apify.momiji-space.com/llms.txt](https:/
 | [eCFR & Federal Register Change Report](https://apify.com/taroyamada/regulatory-obligation-change-impact-report?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=regulatory-obligation-change-impact-report__github_readme) | `taroyamada/regulatory-obligation-change-impact-report` | Free static sample (not live data) | $0.00 | $0.25 | [sample](inputs/regulatory-obligation-change-impact-report.json) / [paid preview](preview-inputs/regulatory-obligation-change-impact-report.json) / [full report](report-inputs/regulatory-obligation-change-impact-report.json) |
 | [PubMed Literature Watch & Research Report](https://apify.com/taroyamada/pubmed-research-intelligence?utm_source=github_pages&utm_medium=starter_catalog&utm_campaign=phase10_paid_reports&utm_content=pubmed-research-intelligence__github_readme) | `taroyamada/pubmed-research-intelligence` | `new-publication-alert` | $0.25 | $0.25 | [sample](inputs/pubmed-research-intelligence.json) / [paid preview](preview-inputs/pubmed-research-intelligence.json) / [full report](report-inputs/pubmed-research-intelligence.json) |
 
+## Run on Apify (priority)
+
+Exact Store URLs + momiji landing pages. Paste the Input JSON into the Actor **Input** tab, then Start. No price changes in this repo.
+
+### APS — Apple Podcasts / iTunes Scraper
+
+Store ID: `taroyamada/apple-podcast-scraper`
+
+- **Run on Apify:** [Open Store](https://apify.com/taroyamada/apple-podcast-scraper) · [Open Input](https://apify.com/taroyamada/apple-podcast-scraper/input)
+- **Landing page:** [Apple Podcasts Scraper](https://apify.momiji-space.com/apple-podcasts-scraper/)
+- **Starter JSON:** [inputs/apple-podcast-scraper.json](inputs/apple-podcast-scraper.json)
+
+```json
+{
+  "searchTerm": "technology",
+  "country": "us",
+  "limit": 3,
+  "includeEpisodes": false
+}
+```
+
+### Article Content Extractor
+
+Store ID: `taroyamada/article-content-extractor`
+
+- **Run on Apify:** [Open Store](https://apify.com/taroyamada/article-content-extractor) · [Open Input](https://apify.com/taroyamada/article-content-extractor/input)
+- **Landing page:** [Article Content Extractor](https://apify.momiji-space.com/article-content-extractor/)
+- **Starter JSON:** [inputs/article-content-extractor.json](inputs/article-content-extractor.json)
+
+```json
+{
+  "urls": [
+    "https://en.wikipedia.org/wiki/Web_scraping"
+  ],
+  "outputFormat": "markdown",
+  "includeImages": true,
+  "concurrency": 5,
+  "delivery": "dataset",
+  "generateReport": false,
+  "emitExport": false,
+  "dryRun": false
+}
+```
+
+### G2 & Capterra Review Scraper
+
+Store ID: `taroyamada/g2-capterra-review-intelligence`
+
+- **Run on Apify:** [Open Store](https://apify.com/taroyamada/g2-capterra-review-intelligence) · [Open Input](https://apify.com/taroyamada/g2-capterra-review-intelligence/input)
+- **Landing page:** [G2 & Capterra Review Scraper](https://apify.momiji-space.com/g2-capterra-review-scraper/)
+- **Starter JSON:** [inputs/g2-capterra-review-intelligence.json](inputs/g2-capterra-review-intelligence.json)
+
+```json
+{
+  "reviewPageUrls": [
+    "https://www.g2.com/products/notion/reviews"
+  ],
+  "reviewLimit": 1,
+  "delivery": "dataset",
+  "dryRun": false
+}
+```
+
+### TED / SAM.gov / Grants (procurement)
+
+Store ID: `taroyamada/procurement-intel-actor`
+
+- **Run on Apify:** [Open Store](https://apify.com/taroyamada/procurement-intel-actor) · [Open Input](https://apify.com/taroyamada/procurement-intel-actor/input)
+- **Landing page:** [TED, SAM.gov & Grants Bid Alerts](https://apify.momiji-space.com/ted-sam-grants-bid-alerts/)
+- **Starter JSON:** [inputs/procurement-intel-actor.json](inputs/procurement-intel-actor.json)
+
+```json
+{
+  "jurisdictions": "eu",
+  "keywords": "cloud,cybersecurity,IT services",
+  "cpvCodes": "72000000,72220000",
+  "daysAhead": 21,
+  "maxItemsPerSource": 40,
+  "minValue": 100000,
+  "delivery": "dataset",
+  "generateReport": false,
+  "emitExport": false,
+  "dryRun": false
+}
+```
+
 ## MCP / agents (featured kits)
 
 Pass the Store ID and this Input JSON. Keep `delivery` `dataset` when the schema includes it. Fetch rows from `defaultDatasetId`. Full catalog: [docs/mcp-agents.md](docs/mcp-agents.md).
 
-**APS** — Store ID `taroyamada/apify-store-ranking-radar` — [Store](https://apify.com/taroyamada/apify-store-ranking-radar)
+**Apify Store Ranking** — Store ID `taroyamada/apify-store-ranking-radar` — [Store](https://apify.com/taroyamada/apify-store-ranking-radar)
 
 ```json
 {
